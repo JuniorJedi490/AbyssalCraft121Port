@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelShadowBeast extends ModelBase {
+/*public class ModelShadowBeast extends ModelBase {
 
 	public ModelRenderer head;
 	public ModelRenderer btooth1;
@@ -361,4 +361,4 @@ public class ModelShadowBeast extends ModelBase {
 		rarm1.rotateAngleX += MathHelper.sin(f2 * 0.067F) * 0.05F;
 		larm1.rotateAngleX -= MathHelper.sin(f2 * 0.067F) * 0.05F;
 	}
-}
+}*/

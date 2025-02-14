@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelGatekeeperMinion extends ModelBase {
+/*public class ModelGatekeeperMinion extends ModelBase {
 
 	public ModelRenderer mask1;
 	public ModelRenderer maskpart1;
@@ -323,4 +323,4 @@ public class ModelGatekeeperMinion extends ModelBase {
 			leftarm1.rotateAngleZ = MathHelper.sin(swingProgress * (float)Math.PI) * 0.4F;
 		}
 	}
-}
+}*/

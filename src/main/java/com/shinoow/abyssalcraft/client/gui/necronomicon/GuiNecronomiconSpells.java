@@ -11,22 +11,22 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui.necronomicon;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.item.ACItems;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonCategory;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonCategory;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.server.OpenSpellbookMessage;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.item.ItemStack;
 
-public class GuiNecronomiconSpells extends GuiNecronomicon {
+/*public class GuiNecronomiconSpells extends GuiNecronomicon {
 
 	private ButtonNextPage buttonNextPage, buttonPreviousPage;
 	private ButtonCategory buttonCat1, buttonCat2, buttonCat3;
@@ -108,4 +108,4 @@ public class GuiNecronomiconSpells extends GuiNecronomicon {
 		fontRenderer.drawSplitString(stuff, k + 20, b0 + 16, 116, 0xC40000);
 		writeText(2, book != null ? NecronomiconText.SPELL_INFO : "Whoops");
 	}
-}
+}*/

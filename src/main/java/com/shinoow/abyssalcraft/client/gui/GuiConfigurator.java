@@ -16,13 +16,13 @@ import com.shinoow.abyssalcraft.common.inventory.InventoryConfigurator;
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.server.UpdateModeMessage;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiConfigurator extends GuiContainer
+/*public class GuiConfigurator extends GuiContainer
 {
 
 	private static final ResourceLocation iconLocation = new ResourceLocation("abyssalcraft:textures/gui/container/configurator.png");
@@ -83,4 +83,4 @@ public class GuiConfigurator extends GuiContainer
 		int l = (height - ySize) / 2;
 		drawTexturedModalRect(k, l, 0, 0, xSize, ySize);
 	}
-}
+}*/

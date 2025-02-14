@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
 /**
  * shub_offspring - cybercat5555
  * Created using Tabula 5.1.0
  */
-public class ModelShubOffspring extends ModelBase {
+/*public class ModelShubOffspring extends ModelBase {
 	public ModelRenderer body01;
 	public ModelRenderer body02;
 	public ModelRenderer lLeg01a;
@@ -826,7 +826,7 @@ public class ModelShubOffspring extends ModelBase {
 	/**
 	 * This is a helper function from Tabula to set the rotation of model parts
 	 */
-	public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+	/*public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
@@ -871,4 +871,4 @@ public class ModelShubOffspring extends ModelBase {
 		//		lspike05a;
 		//		lspike06a;
 	}
-}
+}*/

@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.item;
 
-import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.item.EntityArmorStand;
+//import net.minecraft.client.model.ModelBiped;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.item.EntityArmorStand;
 
-public class ModelDreadiumSamuraiArmor extends ModelBiped {
+/*public class ModelDreadiumSamuraiArmor extends ModelBiped {
 
 	ModelRenderer headpiece1;
 	ModelRenderer headpiece2;
@@ -234,3 +234,4 @@ public class ModelDreadiumSamuraiArmor extends ModelBiped {
 		model.rotateAngleZ = z;
 	}
 }
+*/

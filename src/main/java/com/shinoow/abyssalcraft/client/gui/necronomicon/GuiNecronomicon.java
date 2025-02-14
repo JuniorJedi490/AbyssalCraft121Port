@@ -14,7 +14,7 @@ package com.shinoow.abyssalcraft.client.gui.necronomicon;
 import java.io.IOException;
 import java.util.*;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
@@ -24,36 +24,36 @@ import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 import com.shinoow.abyssalcraft.api.knowledge.condition.NecronomiconCondition;
 import com.shinoow.abyssalcraft.api.knowledge.condition.caps.INecroDataCapability;
 import com.shinoow.abyssalcraft.api.knowledge.condition.caps.NecroDataCapability;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonCategory;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonCategory;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 import com.shinoow.abyssalcraft.lib.client.GuiRenderHelper;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.DestFactor;
-import net.minecraft.client.renderer.GlStateManager.SourceFactor;
-import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.renderer.RenderItem;
-import net.minecraft.client.renderer.texture.DynamicTexture;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.client.util.ITooltipFlag.TooltipFlags;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.client.gui.FontRenderer;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.DestFactor;
+//import net.minecraft.client.renderer.GlStateManager.SourceFactor;
+//import net.minecraft.client.renderer.RenderHelper;
+//import net.minecraft.client.renderer.RenderItem;
+//import net.minecraft.client.renderer.texture.DynamicTexture;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.client.util.ITooltipFlag.TooltipFlags;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.item.crafting.Ingredient;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.text.TextFormatting;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraftforge.oredict.OreDictionary;
 
-@SideOnly(Side.CLIENT)
-public class GuiNecronomicon extends GuiScreen {
+//@SideOnly(Side.CLIENT)
+/*public class GuiNecronomicon extends GuiScreen {
 
 	private static ResourceLocation bookGuiTextures = new ResourceLocation("abyssalcraft:textures/gui/necronomicon.png");
 	protected static final ResourceLocation MISSING_PICTURE = new ResourceLocation("abyssalcraft", "textures/gui/necronomicon/missing.png");
@@ -64,7 +64,7 @@ public class GuiNecronomicon extends GuiScreen {
 	public final int guiHeight = 192;
 	private int bookTotalTurnups = 2;
 	/** Current turn-up, use to switch text between multiple pages */
-	protected int currTurnup;
+	/*protected int currTurnup;
 	private ButtonNextPage buttonNextPage, buttonPreviousPage;
 	private ButtonCategory buttonCat1, buttonCat2, buttonCat3, buttonCat4, buttonCat5, buttonCat6, buttonCat7;
 	private GuiButton buttonDone;
@@ -72,10 +72,10 @@ public class GuiNecronomicon extends GuiScreen {
 	private static final int cycleTime = 1000;
 	private long startTime, drawTime;
 	/** Used to check if we're at a text entry (true), or a index (false) */
-	protected boolean isInfo;
+	/*protected boolean isInfo;
 	private boolean isNecroInfo, isKnowledgeInfo;
 	/** Used to invalidate the current Necronomicon Gui (like if a lower Necronomicon tries to read information for a higher one) */
-	protected boolean isInvalid;
+	/*protected boolean isInvalid;
 	public static final Map<String, DynamicTexture> successcache = new HashMap<>();
 	public static final List<String> failcache = new ArrayList<>();
 	private INecroDataCapability cap;
@@ -126,7 +126,7 @@ public class GuiNecronomicon extends GuiScreen {
 	/**
 	 * Called from the main game loop to update the screen.
 	 */
-	@Override
+	/*@Override
 	public void updateScreen()
 	{
 		drawTime = System.currentTimeMillis();
@@ -136,7 +136,7 @@ public class GuiNecronomicon extends GuiScreen {
 	/**
 	 * Adds the buttons (and other controls) to the screen in question.
 	 */
-	@Override
+	/*@Override
 	public void initGui()
 	{
 		currentNecro = this;
@@ -183,7 +183,7 @@ public class GuiNecronomicon extends GuiScreen {
 	/**
 	 * Called when the screen is unloaded. Used to disable keyboard repeat events
 	 */
-	@Override
+	/*@Override
 	public void onGuiClosed()
 	{
 		Keyboard.enableRepeatEvents(false);
@@ -264,7 +264,7 @@ public class GuiNecronomicon extends GuiScreen {
 	/**
 	 * Fired when a key is typed. This is the equivalent of KeyListener.keyTyped(KeyEvent e).
 	 */
-	@Override
+	/*@Override
 	protected void keyTyped(char par1, int par2) throws IOException
 	{
 		super.keyTyped(par1, par2);
@@ -286,7 +286,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param x X-coordinate on screen
 	 * @param y Y-coordinate on screen
 	 */
-	protected void drawInformationText(int x, int y){
+	/*protected void drawInformationText(int x, int y){
 		if(isNecroInfo) {
 			if(currTurnup == 0){
 				if(bookType < 4){
@@ -316,7 +316,7 @@ public class GuiNecronomicon extends GuiScreen {
 	/**
 	 * Index version of {@link #drawInformationText()}, called when {@link #isInfo} is false
 	 */
-	protected void drawIndexText(){
+	/*protected void drawIndexText(){
 		int k = (width - guiWidth) / 2;
 		byte b0 = 2;
 		String stuff;
@@ -343,7 +343,7 @@ public class GuiNecronomicon extends GuiScreen {
 	/**
 	 * Draws the screen and all the components in it.
 	 */
-	@Override
+	/*@Override
 	public void drawScreen(int par1, int par2, float par3)
 	{
 		boolean unicode = fontRenderer.getUnicodeFlag();
@@ -383,7 +383,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param page Which open page to write in (can be either 1 or 2)
 	 * @param text A long string of text (max is 368 characters)
 	 */
-	protected void writeText(int page, String text){
+	/*protected void writeText(int page, String text){
 		writeText(page, text, 28);
 	}
 
@@ -392,7 +392,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param page Which open page to write in (can be either 1 or 2)
 	 * @param text A long string of text (max is 368 characters)
 	 */
-	protected void writeText(int page, String text, boolean aklo){
+	/*protected void writeText(int page, String text, boolean aklo){
 		writeText(page, text, 28, aklo);
 	}
 
@@ -402,7 +402,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param text A long string of text (max is 368 characters)
 	 * @param height The height where the text will appear at (0 is the top of the GUI)
 	 */
-	protected void writeText(int page, String text, int height){
+	/*protected void writeText(int page, String text, int height){
 		writeText(page, text, height, 0);
 	}
 
@@ -413,7 +413,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param height The height where the text will appear at (0 is the top of the GUI)
 	 * @param aklo Whether or not to use the Aklo font instead of the normal
 	 */
-	protected void writeText(int page, String text, int height, boolean aklo){
+	/*protected void writeText(int page, String text, int height, boolean aklo){
 		writeText(page, text, height, 0, aklo);
 	}
 
@@ -424,7 +424,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param height The height where the text will appear at (0 is the top of the GUI)
 	 * @param width The width where the text will appear at (0 is the leftmost part of the page)
 	 */
-	protected void writeText(int page, String text, int height, int width){
+	/*protected void writeText(int page, String text, int height, int width){
 		writeText(page, text, height, width, false);
 	}
 
@@ -436,7 +436,7 @@ public class GuiNecronomicon extends GuiScreen {
 	 * @param width The width where the text will appear at (0 is the leftmost part of the page)
 	 * @param aklo Whether or not to use the Aklo font instead of the normal
 	 */
-	protected void writeText(int page, String text, int height, int width, boolean aklo){
+	/*protected void writeText(int page, String text, int height, int width, boolean aklo){
 		int k = (this.width - guiWidth) / 2;
 		if(page > 2)
 			throw new IndexOutOfBoundsException("Number is greater than 2 ("+page+")!");
@@ -590,4 +590,4 @@ public class GuiNecronomicon extends GuiScreen {
 			res += " > " + str1;
 		return res;
 	}
-}
+}*/

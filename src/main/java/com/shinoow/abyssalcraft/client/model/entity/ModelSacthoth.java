@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelSacthoth extends ModelBase {
+/*public class ModelSacthoth extends ModelBase {
 
 	public ModelRenderer head;
 	public ModelRenderer leftshoulder;
@@ -611,4 +611,4 @@ public class ModelSacthoth extends ModelBase {
 		}
 	}
 
-}
+}*/

@@ -11,11 +11,11 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.block;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
 
-public class ModelDGhead extends ModelBase
+/*public class ModelDGhead extends ModelBase
 {
 
 	ModelRenderer Head;
@@ -121,4 +121,4 @@ public class ModelDGhead extends ModelBase
 		Tooth5.rotateAngleX = par5 / (180F / (float)Math.PI);
 	}
 
-}
+}*/

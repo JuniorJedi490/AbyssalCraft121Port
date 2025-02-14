@@ -15,15 +15,15 @@ import java.util.Random;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.Particle;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.item.Item;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.BufferBuilder;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.item.Item;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class ItemRitualParticle extends Particle {
+//@SideOnly(Side.CLIENT)
+/*public class ItemRitualParticle extends Particle {
 
 	Random random = new Random();
 
@@ -47,7 +47,7 @@ public class ItemRitualParticle extends Particle {
 	 * Retrieve what effect layer (what texture) the particle should be rendered with. 0 for the particle sprite sheet,
 	 * 1 for the main Texture atlas, and 3 for a custom texture
 	 */
-	@Override
+	/*@Override
 	public int getFXLayer()
 	{
 		return 1;
@@ -56,7 +56,7 @@ public class ItemRitualParticle extends Particle {
 	/**
 	 * Renders the particle
 	 */
-	@Override
+	/*@Override
 	public void renderParticle(BufferBuilder buffer, Entity entityIn, float partialTicks, float rotationX, float rotationZ, float rotationYZ, float rotationXY, float rotationXZ)
 	{
 		float f = (particleTextureIndexX + particleTextureJitterX / 4.0F) / 16.0F;
@@ -95,4 +95,4 @@ public class ItemRitualParticle extends Particle {
 
 		particleAlpha = lifeCoeff;
 	}
-}
+}*/

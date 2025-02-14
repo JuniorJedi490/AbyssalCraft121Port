@@ -14,28 +14,28 @@ package com.shinoow.abyssalcraft.client.gui;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.api.item.ACItems;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
 import com.shinoow.abyssalcraft.common.world.data.NecromancyWorldSavedData;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.DestFactor;
-import net.minecraft.client.renderer.GlStateManager.SourceFactor;
-import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.renderer.RenderItem;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.DestFactor;
+//import net.minecraft.client.renderer.GlStateManager.SourceFactor;
+//import net.minecraft.client.renderer.RenderHelper;
+//import net.minecraft.client.renderer.RenderItem;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Tuple;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraftforge.oredict.OreDictionary;
 
-public class GuiFaceBook extends GuiScreen {
+/*public class GuiFaceBook extends GuiScreen {
 
 	private static final ResourceLocation bookGuiTextures = new ResourceLocation("abyssalcraft:textures/gui/face_book.png");
 
@@ -170,4 +170,4 @@ public class GuiFaceBook extends GuiScreen {
 
 		GlStateManager.disableLighting();
 	}
-}
+}*/

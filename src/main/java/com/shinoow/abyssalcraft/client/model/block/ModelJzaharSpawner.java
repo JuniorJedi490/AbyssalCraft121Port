@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.block;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelJzaharSpawner extends ModelBase
+/*public class ModelJzaharSpawner extends ModelBase
 {
 
 	public ModelRenderer head;
@@ -562,4 +562,4 @@ public class ModelJzaharSpawner extends ModelBase
 		foot4.rotationPointZ =- 12;
 		foot5.rotationPointZ =- 12;
 	}
-}
+}*/

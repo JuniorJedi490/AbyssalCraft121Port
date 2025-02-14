@@ -13,7 +13,7 @@ package com.shinoow.abyssalcraft.client.handlers;
 
 import java.util.List;
 
-import org.lwjgl.input.Mouse;
+//import org.lwjgl.input.Mouse;
 
 import com.shinoow.abyssalcraft.AbyssalCraft;
 import com.shinoow.abyssalcraft.api.APIUtils;
@@ -43,51 +43,51 @@ import com.shinoow.abyssalcraft.lib.item.ItemCrystal;
 import com.shinoow.abyssalcraft.lib.item.ItemCrystalFragment;
 import com.shinoow.abyssalcraft.lib.item.ItemCrystalShard;
 
-import net.minecraft.block.*;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
+//import net.minecraft.block.*;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.renderer.block.model.ModelBakery;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.renderer.block.statemap.StateMap;
-import net.minecraft.client.renderer.block.statemap.StateMapperBase;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.renderer.block.model.ModelBakery;
+//import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+//import net.minecraft.client.renderer.block.statemap.StateMap;
+//import net.minecraft.client.renderer.block.statemap.StateMapperBase;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
-import net.minecraft.util.math.*;
-import net.minecraft.util.math.BlockPos.MutableBlockPos;
-import net.minecraft.util.math.RayTraceResult.Type;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.world.World;
+//import net.minecraft.util.math.*;
+//import net.minecraft.util.math.BlockPos.MutableBlockPos;
+//import net.minecraft.util.math.RayTraceResult.Type;
+//import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.util.text.TextFormatting;
+//import net.minecraft.world.World;
 import net.minecraftforge.client.event.*;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.event.entity.EntityJoinWorldEvent;
-import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+//import net.minecraftforge.client.model.ModelLoader;
+//import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+//import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.fml.client.FMLClientHandler;
-import net.minecraftforge.fml.common.eventhandler.Event;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
-import net.minecraftforge.fml.common.gameevent.TickEvent.RenderTickEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraftforge.fml.client.FMLClientHandler;
+//import net.minecraftforge.fml.common.eventhandler.Event;
+//import net.minecraftforge.fml.common.eventhandler.EventPriority;
+//import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+//import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
+//import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
+//import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
+//import net.minecraftforge.fml.common.gameevent.TickEvent.RenderTickEvent;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class AbyssalCraftClientEventHooks {
 
 	public static float partialTicks = 0;
 
-	@SubscribeEvent
-	public void onUpdateFOV(FOVUpdateEvent event) {
+	//@SubscribeEvent
+	/*public void onUpdateFOV(FOVUpdateEvent event) {
 
 		if(event.getEntity().isHandActive() && !event.getEntity().getActiveItemStack().isEmpty()
 				&& event.getEntity().getActiveItemStack().getItem() == ACItems.coralium_longbow) {
@@ -104,9 +104,9 @@ public class AbyssalCraftClientEventHooks {
 			event.setNewfov(fov);
 		}
 
-	}
+	}*/
 
-	@SubscribeEvent
+	/*@SubscribeEvent
 	public void onMouseEvent(MouseEvent event) {
 		int button = event.getButton() - 100;
 		Minecraft mc = Minecraft.getMinecraft();
@@ -122,9 +122,9 @@ public class AbyssalCraftClientEventHooks {
 					if (world.getBlockState(pos).getBlock() != null)
 						extinguishFire(player, pos, face, world, event);
 			}
-	}
+	}*/
 
-	private void extinguishFire(EntityPlayer player, BlockPos posIn, EnumFacing face, World world, Event event) {
+	/*private void extinguishFire(EntityPlayer player, BlockPos posIn, EnumFacing face, World world, Event event) {
 		BlockPos pos = posIn.offset(face);
 
 		if (world.getBlockState(pos).getBlock() == ACBlocks.mimic_fire)
@@ -133,10 +133,10 @@ public class AbyssalCraftClientEventHooks {
 				player.swingArm(EnumHand.MAIN_HAND);
 				event.setCanceled(true);
 			}
-	}
+	}*/
 
-	@SideOnly(Side.CLIENT)
-	public static RayTraceResult getMouseOverExtended(float dist)
+	//@SideOnly(Side.CLIENT)
+	/*public static RayTraceResult getMouseOverExtended(float dist)
 	{
 		Minecraft mc = FMLClientHandler.instance().getClient();
 		Entity theRenderViewEntity = mc.getRenderViewEntity();
@@ -210,9 +210,9 @@ public class AbyssalCraftClientEventHooks {
 				returnMOP = new RayTraceResult(pointedEntity);
 		}
 		return returnMOP;
-	}
+	}*/
 
-	@SubscribeEvent(priority=EventPriority.NORMAL, receiveCanceled=true)
+	/*@SubscribeEvent(priority=EventPriority.NORMAL, receiveCanceled=true)
 	public void onKeyPressed(KeyInputEvent event){
 
 		if(ClientProxy.staff_mode.isPressed()){
@@ -318,64 +318,64 @@ public class AbyssalCraftClientEventHooks {
 				Minecraft.getMinecraft().player.sendMessage(new TextComponentTranslation("message.configurator.5"));
 			}
 		}
-	}
+	}*/
 
-	@SubscribeEvent
+	//@SubscribeEvent
 	public void tooltipStuff(ItemTooltipEvent event){
-		ItemStack stack = event.getItemStack();
+		//ItemStack stack = event.getItemStack();
 
-		if(stack.getItem() instanceof IEnergyContainerItem)
-			event.getToolTip().add(1, String.format("%d/%d PE", (int)((IEnergyContainerItem)stack.getItem()).getContainedEnergy(stack), ((IEnergyContainerItem)stack.getItem()).getMaxEnergy(stack)));
+		//if(stack.getItem() instanceof IEnergyContainerItem)
+			//event.getToolTip().add(1, String.format("%d/%d PE", (int)((IEnergyContainerItem)stack.getItem()).getContainedEnergy(stack), ((IEnergyContainerItem)stack.getItem()).getMaxEnergy(stack)));
 
-		if(stack.getItem() instanceof IScroll) {
-			Spell spell = SpellUtils.getSpell(stack);
-			if(spell != null){
-				event.getToolTip().add(1, I18n.format(NecronomiconText.LABEL_SPELL_NAME)+": "+TextFormatting.AQUA+spell.getLocalizedName());
-				event.getToolTip().add(2, I18n.format(NecronomiconText.LABEL_SPELL_PE)+": "+(int)spell.getReqEnergy());
-				event.getToolTip().add(3, I18n.format(NecronomiconText.LABEL_SPELL_TYPE)+": "+TextFormatting.GOLD+I18n.format(NecronomiconText.getSpellType(spell.requiresCharging())));
-			}
-		}
-		if(stack.getItem() instanceof ICrystal)
-			event.getToolTip().add(String.format("%s: %s", I18n.format("tooltip.crystal"), ((ICrystal) stack.getItem()).getFormula(stack)));
+		//if(stack.getItem() instanceof IScroll) {
+			//Spell spell = SpellUtils.getSpell(stack);
+			//if(spell != null){
+				//event.getToolTip().add(1, I18n.format(NecronomiconText.LABEL_SPELL_NAME)+": "+TextFormatting.AQUA+spell.getLocalizedName());
+				//event.getToolTip().add(2, I18n.format(NecronomiconText.LABEL_SPELL_PE)+": "+(int)spell.getReqEnergy());
+				//event.getToolTip().add(3, I18n.format(NecronomiconText.LABEL_SPELL_TYPE)+": "+TextFormatting.GOLD+I18n.format(NecronomiconText.getSpellType(spell.requiresCharging())));
+			//}
+		//}
+		//if(stack.getItem() instanceof ICrystal)
+			//event.getToolTip().add(String.format("%s: %s", I18n.format("tooltip.crystal"), ((ICrystal) stack.getItem()).getFormula(stack)));
 
 		if(!APIUtils.display_names)
-			if(stack.getItem() instanceof IResearchable && event.getEntityPlayer() != null){
-				IResearchItem research = ((IResearchable)stack.getItem()).getResearchItem(stack);
-				if(!NecroDataCapability.getCap(event.getEntityPlayer()).isUnlocked(research, event.getEntityPlayer())) {
+			//if(stack.getItem() instanceof IResearchable && event.getEntityPlayer() != null){
+				//IResearchItem research = ((IResearchable)stack.getItem()).getResearchItem(stack);
+				//if(!NecroDataCapability.getCap(event.getEntityPlayer()).isUnlocked(research, event.getEntityPlayer())) {
 					event.getToolTip().remove(0);
-					event.getToolTip().add(0, "...What's this?");
-				}
-			}
+					//event.getToolTip().add(0, "...What's this?");
+				//}
+			//}
 	}
 
-	@SubscribeEvent
+	//@SubscribeEvent
 	public void tooltipFont(RenderTooltipEvent.Pre event) {
-		if(!APIUtils.display_names && event.getLines().get(0).startsWith("\u00A7f...What's this?"))
-			event.setFontRenderer(AbyssalCraftAPI.getAkloFont());
+		//if(!APIUtils.display_names && event.getLines().get(0).startsWith("\u00A7f...What's this?"))
+			//event.setFontRenderer(AbyssalCraftAPI.getAkloFont());
 	}
 
-	@SubscribeEvent
-	public void renderTick(RenderTickEvent event) {
+	//@SubscribeEvent
+	/*public void renderTick(RenderTickEvent event) {
 		if(event.phase == Phase.START)
 			partialTicks = event.renderTickTime;
-	}
+	}*/
 
-	@SubscribeEvent
-	public void clientTickEnd(ClientTickEvent event) {
+	//@SubscribeEvent
+	/*public void clientTickEnd(ClientTickEvent event) {
 		if(event.phase == Phase.END) {
 			GuiScreen gui = Minecraft.getMinecraft().currentScreen;
 			if(gui == null || !gui.doesGuiPauseGame())
 				partialTicks = 0;
 		}
-	}
+	}*/
 
-	@SubscribeEvent
-	public void voidFog(LivingUpdateEvent event) {
+	//@SubscribeEvent
+	/*public void voidFog(LivingUpdateEvent event) {
 		if(event.getEntityLiving() == Minecraft.getMinecraft().player)
 			doVoidFogParticles(event.getEntityLiving().world, event.getEntityLiving());
-	}
+	}*/
 
-	public void doVoidFogParticles(World world, Entity entity)
+	/*public void doVoidFogParticles(World world, Entity entity)
 	{
 		if(Minecraft.getMinecraft().isGamePaused() || !world.isRemote) return;
 		if(!(world.provider instanceof IAbyssalWorldProvider)) return;
@@ -419,16 +419,16 @@ public class AbyssalCraftClientEventHooks {
 						world.spawnParticle(EnumParticleTypes.SUSPENDED_DEPTH, i1 + world.rand.nextFloat(), j1 + world.rand.nextFloat(), k1 + world.rand.nextFloat(), 0.0D, 0.0D, 0.0D);
 				}
 		}
-	}
+	}*/
 
-	@SubscribeEvent
-	public void onEntityJoin(EntityJoinWorldEvent event){
+	//@SubscribeEvent
+	/*public void onEntityJoin(EntityJoinWorldEvent event){
 		if(event.getEntity() == Minecraft.getMinecraft().player)
 			AbyssalCraft.proxy.resetParticleCount();
-	}
+	}*/
 
-	@SubscribeEvent
-	public void registerModels(ModelRegistryEvent event){
+	//@SubscribeEvent
+	/*public void registerModels(ModelRegistryEvent event){
 
 		ModelBakery.registerItemVariants(ACItems.staff_of_the_gatekeeper, makerl("staff", "staff2"));
 
@@ -958,9 +958,9 @@ public class AbyssalCraftClientEventHooks {
 		registerItemRender(ACBlocks.tombstone_ethaxium, 0);
 		registerItemRender(ACBlocks.tombstone_monolith_stone, 0);
 		registerItemRender(ACBlocks.tombstone_omothol_stone, 0);
-	}
+	}*/
 
-	private void registerFluidModel(Block fluidBlock, String name) {
+	/*private void registerFluidModel(Block fluidBlock, String name) {
 		Item item = Item.getItemFromBlock(fluidBlock);
 
 		ModelBakery.registerItemVariants(item);
@@ -975,38 +975,38 @@ public class AbyssalCraftClientEventHooks {
 				return modelResourceLocation;
 			}
 		});
-	}
+	}*/
 
-	protected void registerItemRender(Item item, int meta, String res){
+	/*protected void registerItemRender(Item item, int meta, String res){
 		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation("abyssalcraft:" + res, "inventory"));
-	}
+	}*/
 
-	protected void registerItemRender(Item item, int meta){
+	/*protected void registerItemRender(Item item, int meta){
 		registerItemRender(item, meta, item.getRegistryName().getPath());
-	}
+	}*/
 
-	protected void registerItemRenders(Item item, int metas){
+	/*protected void registerItemRenders(Item item, int metas){
 		for(int i = 0; i < metas; i++)
 			registerItemRender(item, i);
-	}
+	}*/
 
-	protected void registerItemRender(Block block, int meta, String res){
+	/*protected void registerItemRender(Block block, int meta, String res){
 		registerItemRender(Item.getItemFromBlock(block), meta, res);
-	}
+	}*/
 
-	protected void registerItemRender(Block block, int meta){
+	/*protected void registerItemRender(Block block, int meta){
 		registerItemRender(block, meta, block.getRegistryName().getPath());
-	}
+	}*/
 
-	protected void registerItemRenders(Block block, int metas){
+	/*protected void registerItemRenders(Block block, int metas){
 		for(int i = 0; i < metas; i++)
 			registerItemRender(block, i);
-	}
+	}*/
 
-	private ResourceLocation[] makerl(String...strings){
+	/*private ResourceLocation[] makerl(String...strings){
 		ResourceLocation[] res = new ResourceLocation[strings.length];
 		for(int i = 0; i < strings.length; i++)
 			res[i] = new ResourceLocation("abyssalcraft", strings[i]);
 		return res;
-	}
+	}*/
 }

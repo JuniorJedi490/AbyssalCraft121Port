@@ -14,13 +14,13 @@ package com.shinoow.abyssalcraft.client.gui;
 import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityResearchTable;
 import com.shinoow.abyssalcraft.common.inventory.ContainerResearchTable;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiResearchTable extends GuiContainer {
+/*public class GuiResearchTable extends GuiContainer {
 
 	private static final ResourceLocation transmutatorGuiTexture = new ResourceLocation("abyssalcraft:textures/gui/container/research_table.png");
 	public GuiResearchTable(InventoryPlayer par1InventoryPlayer, TileEntityResearchTable par2TileEntityTransmutator)
@@ -54,4 +54,4 @@ public class GuiResearchTable extends GuiContainer {
 		int l = (height - ySize) / 2;
 		drawTexturedModalRect(k, l, 0, 0, xSize, ySize);
 	}
-}
+}*/

@@ -13,22 +13,22 @@ package com.shinoow.abyssalcraft.client.gui;
 
 import com.shinoow.abyssalcraft.common.inventory.ContainerSequentialBrewingStand;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.inventory.IInventory;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class GuiSequentialBrewingStand extends GuiContainer
+//@SideOnly(Side.CLIENT)
+/*public class GuiSequentialBrewingStand extends GuiContainer
 {
 	private static final ResourceLocation BREWING_STAND_GUI_TEXTURES = new ResourceLocation("abyssalcraft", "textures/gui/container/sequential_brewing_stand.png");
 	private static final int[] BUBBLELENGTHS = new int[] {29, 24, 20, 16, 11, 6, 0};
 	/** The player inventory bound to this GUI. */
-	private final InventoryPlayer playerInventory;
+	/*private final InventoryPlayer playerInventory;
 	private final IInventory tileBrewingStand;
 
 	public GuiSequentialBrewingStand(InventoryPlayer playerInv, IInventory inventoryIn)
@@ -41,7 +41,7 @@ public class GuiSequentialBrewingStand extends GuiContainer
 	/**
 	 * Draws the screen and all the components in it.
 	 */
-	@Override
+	/*@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks)
 	{
 		drawDefaultBackground();
@@ -52,7 +52,7 @@ public class GuiSequentialBrewingStand extends GuiContainer
 	/**
 	 * Draw the foreground layer for the GuiContainer (everything in front of the items)
 	 */
-	@Override
+	/*@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
 	{
 		String s = tileBrewingStand.getDisplayName().getUnformattedText();
@@ -63,7 +63,7 @@ public class GuiSequentialBrewingStand extends GuiContainer
 	/**
 	 * Draws the background layer of this container (behind the items).
 	 */
-	@Override
+	/*@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY)
 	{
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
@@ -92,4 +92,4 @@ public class GuiSequentialBrewingStand extends GuiContainer
 				this.drawTexturedModalRect(i + 63, j + 14 + 29 - j1, 185, 29 - j1, 12, j1);
 		}
 	}
-}
+}*/

@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelShadowCreature extends ModelBase
+/*public class ModelShadowCreature extends ModelBase
 {
 
 	public ModelRenderer Body;
@@ -158,4 +158,4 @@ public class ModelShadowCreature extends ModelBase
 		LeftArm2.rotateAngleZ = 0.0F;
 	}
 
-}
+}*/

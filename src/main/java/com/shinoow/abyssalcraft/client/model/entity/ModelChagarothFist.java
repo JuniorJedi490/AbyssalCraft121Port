@@ -11,11 +11,11 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
 
-public class ModelChagarothFist extends ModelBase {
+/*public class ModelChagarothFist extends ModelBase {
 
 	public ModelRenderer arm1;
 	public ModelRenderer ground;
@@ -223,4 +223,4 @@ public class ModelChagarothFist extends ModelBase {
 
 
 	}
-}
+}*/

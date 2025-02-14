@@ -16,14 +16,14 @@ import com.shinoow.abyssalcraft.common.inventory.ContainerStateTransformer;
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.server.UpdateModeMessage;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiStateTransformer extends GuiContainer {
+/*public class GuiStateTransformer extends GuiContainer {
 
 	private static final ResourceLocation engraverGuiTexture = new ResourceLocation("abyssalcraft:textures/gui/container/statetransformer.png");
 	private TileEntityStateTransformer tileCompressorThing;
@@ -92,4 +92,4 @@ public class GuiStateTransformer extends GuiContainer {
 		int i1 = tileCompressorThing.processingTime * 24 / 200;
 		drawTexturedModalRect(k + 6, l + 43, 176, 14, i1 + 1, 16);
 	}
-}
+}*/

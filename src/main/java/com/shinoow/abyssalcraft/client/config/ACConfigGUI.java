@@ -17,23 +17,23 @@ import java.util.List;
 import com.shinoow.abyssalcraft.init.InitHandler;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.resources.I18n;
-import net.minecraftforge.common.config.ConfigElement;
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.client.config.DummyConfigElement.DummyCategoryElement;
-import net.minecraftforge.fml.client.config.GuiConfig;
-import net.minecraftforge.fml.client.config.GuiConfigEntries;
-import net.minecraftforge.fml.client.config.GuiConfigEntries.CategoryEntry;
-import net.minecraftforge.fml.client.config.IConfigElement;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraftforge.common.config.ConfigElement;
+//import net.minecraftforge.common.config.Configuration;
+//import net.minecraftforge.fml.client.config.DummyConfigElement.DummyCategoryElement;
+//import net.minecraftforge.fml.client.config.GuiConfig;
+//import net.minecraftforge.fml.client.config.GuiConfigEntries;
+//import net.minecraftforge.fml.client.config.GuiConfigEntries.CategoryEntry;
+//import net.minecraftforge.fml.client.config.IConfigElement;
 
-public class ACConfigGUI extends GuiConfig {
+/*public class ACConfigGUI extends GuiConfig {
 
-	public ACConfigGUI(GuiScreen parent) {
+	/*public ACConfigGUI(GuiScreen parent) {
 		super(parent, getConfigElements(), "abyssalcraft", true, false, "AbyssalCraft");
-	}
+	}*/
 
-	private static List<IConfigElement> getConfigElements(){
+	/*private static List<IConfigElement> getConfigElements(){
 		List<IConfigElement> list = new ArrayList<>();
 		list.add(new DummyCategoryElement(I18n.format("ac_client"), "ac_client", ClientEntry.class));
 		list.add(new DummyCategoryElement(I18n.format("ac_mod_compat"), "ac_mod_compat", CompatEntry.class));
@@ -48,9 +48,9 @@ public class ACConfigGUI extends GuiConfig {
 		list.add(new DummyCategoryElement(I18n.format("ac_wet_noodle"), "ac_wet_noodle", WetNoodleEntry.class));
 		list.add(new DummyCategoryElement(I18n.format("ac_worldgen"), "ac_worldgen", WorldGenEntry.class));
 		return list;
-	}
+	}*/
 
-	public static class DimensionEntry extends CategoryEntry{
+	/*public static class DimensionEntry extends CategoryEntry{
 
 		public DimensionEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -61,8 +61,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_DIMENSIONS)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_DIMENSIONS, true, true, I18n.format("ac_dimensions"));
 
 		}
-	}
-	public static class GeneralEntry extends CategoryEntry{
+	}*/
+	/*public static class GeneralEntry extends CategoryEntry{
 
 		public GeneralEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -73,8 +73,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(), "abyssalcraft", Configuration.CATEGORY_GENERAL, false, false, I18n.format("ac_general"));
 
 		}
-	}
-	public static class ShoggothEntry extends CategoryEntry{
+	}*/
+	/*public static class ShoggothEntry extends CategoryEntry{
 
 		public ShoggothEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -85,8 +85,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_SHOGGOTH)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_SHOGGOTH, false, false, I18n.format("ac_shoggoth"));
 
 		}
-	}
-	public static class WorldGenEntry extends CategoryEntry{
+	}*/
+	/*public static class WorldGenEntry extends CategoryEntry{
 
 		public WorldGenEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -97,8 +97,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_WORLDGEN)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_WORLDGEN, false, false, I18n.format("ac_worldgen"));
 
 		}
-	}
-	public static class SillySettingsEntry extends CategoryEntry{
+	}*/
+	/*public static class SillySettingsEntry extends CategoryEntry{
 
 		public SillySettingsEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -109,8 +109,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_SILLY_SETTINGS)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_SILLY_SETTINGS, false, false, I18n.format("ac_silly_settings"));
 
 		}
-	}
-	public static class CompatEntry extends CategoryEntry{
+	}*/
+	/*public static class CompatEntry extends CategoryEntry{
 
 		public CompatEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -121,8 +121,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_MOD_COMPAT)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_MOD_COMPAT, false, false, I18n.format("ac_mod_compat"));
 
 		}
-	}
-	public static class WetNoodleEntry extends CategoryEntry{
+	}*/
+	/*public static class WetNoodleEntry extends CategoryEntry{
 
 		public WetNoodleEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -133,8 +133,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_WET_NOODLE)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_WET_NOODLE, false, false, I18n.format("ac_wet_noodle"));
 
 		}
-	}
-	public static class ModuleEntry extends CategoryEntry{
+	}*/
+	/*public static class ModuleEntry extends CategoryEntry{
 
 		public ModuleEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -145,8 +145,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_MODULES)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_MODULES, true, true, I18n.format("ac_modules"));
 
 		}
-	}
-	public static class SpellEntry extends CategoryEntry{
+	}*/
+	/*public static class SpellEntry extends CategoryEntry{
 
 		public SpellEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -157,8 +157,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_SPELLS)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_SPELLS, true, true, I18n.format("ac_spells"));
 
 		}
-	}
-	public static class ClientEntry extends CategoryEntry{
+	}*/
+	/*public static class ClientEntry extends CategoryEntry{
 
 		public ClientEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -169,8 +169,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(Configuration.CATEGORY_CLIENT)).getChildElements(), "abyssalcraft", Configuration.CATEGORY_CLIENT, false, false, I18n.format("ac_client"));
 
 		}
-	}
-	public static class RitualsEntry extends CategoryEntry{
+	}*/
+	/*public static class RitualsEntry extends CategoryEntry{
 
 		public RitualsEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -181,8 +181,8 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_RITUALS)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_RITUALS, false, false, I18n.format("ac_rituals"));
 
 		}
-	}
-	public static class MobsEntry extends CategoryEntry{
+	}*/
+	/*public static class MobsEntry extends CategoryEntry{
 
 		public MobsEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -193,5 +193,5 @@ public class ACConfigGUI extends GuiConfig {
 			return new GuiConfig(owningScreen, new ConfigElement(InitHandler.cfg.getCategory(ACConfig.CATEGORY_MOBS)).getChildElements(), "abyssalcraft", ACConfig.CATEGORY_MOBS, true, true, I18n.format("ac_mobs"));
 
 		}
-	}
-}
+	}*/
+//}

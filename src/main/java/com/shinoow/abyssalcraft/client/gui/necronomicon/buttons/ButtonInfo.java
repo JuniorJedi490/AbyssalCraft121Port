@@ -12,14 +12,14 @@
 package com.shinoow.abyssalcraft.client.gui.necronomicon.buttons;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class ButtonInfo extends GuiButton
+//@SideOnly(Side.CLIENT)
+/*public class ButtonInfo extends GuiButton
 {
 
 	public ButtonInfo(int par1, int par2, int par3)
@@ -30,7 +30,7 @@ public class ButtonInfo extends GuiButton
 	/**
 	 * Draws this button to the screen.
 	 */
-	@Override
+	/*@Override
 	public void drawButton(Minecraft mc, int mx, int mz, float f)
 	{
 		if (visible)
@@ -48,4 +48,4 @@ public class ButtonInfo extends GuiButton
 			drawTexturedModalRect(x, y, k, l, 10, 10);
 		}
 	}
-}
+}*/

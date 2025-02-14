@@ -14,13 +14,13 @@ package com.shinoow.abyssalcraft.client.gui;
 import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityEnergyDepositioner;
 import com.shinoow.abyssalcraft.common.inventory.ContainerEnergyDepositioner;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiEnergyDepositioner extends GuiContainer {
+/*public class GuiEnergyDepositioner extends GuiContainer {
 
 	private static final ResourceLocation engraverGuiTexture = new ResourceLocation("abyssalcraft:textures/gui/container/energydepositioner.png");
 	private TileEntityEnergyDepositioner tilePEGenerator;
@@ -60,4 +60,4 @@ public class GuiEnergyDepositioner extends GuiContainer {
 		int i1 = tilePEGenerator.getField(0) * 24 / 200;
 		drawTexturedModalRect(k + 76, l + 38, 176, 14, i1 + 1, 16);
 	}
-}
+}*/

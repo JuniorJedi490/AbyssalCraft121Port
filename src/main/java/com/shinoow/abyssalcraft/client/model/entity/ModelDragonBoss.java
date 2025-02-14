@@ -13,17 +13,17 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.common.entity.EntityDragonBoss;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.CullFace;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.CullFace;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class ModelDragonBoss extends ModelBase {
+//@SideOnly(Side.CLIENT)
+/*public class ModelDragonBoss extends ModelBase {
 
 	private ModelRenderer head;
 	private ModelRenderer neck;
@@ -234,7 +234,7 @@ public class ModelDragonBoss extends ModelBase {
 	 * or subtracts 360 degrees, so that the appearance is the same, although the numbers are then simplified to range
 	 * -180 to 180
 	 */
-	private float updateRotations(double par1)
+	/*private float updateRotations(double par1)
 	{
 		while (par1 >= 180.0D)
 			par1 -= 360.0D;
@@ -244,4 +244,4 @@ public class ModelDragonBoss extends ModelBase {
 
 		return (float)par1;
 	}
-}
+}*/

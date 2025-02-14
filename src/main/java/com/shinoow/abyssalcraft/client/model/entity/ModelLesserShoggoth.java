@@ -11,17 +11,17 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
 /**
  * shoggoth - cybercat5555
  * Created using Tabula 5.1.0
  */
-public class ModelLesserShoggoth extends ModelBase {
+/*public class ModelLesserShoggoth extends ModelBase {
 	public ModelRenderer bodyBase;
 	public ModelRenderer headJoint;
 	public ModelRenderer bodyMid;
@@ -959,7 +959,7 @@ public class ModelLesserShoggoth extends ModelBase {
 	/**
 	 * This is a helper function from Tabula to set the rotation of model parts
 	 */
-	public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+	/*public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
@@ -1148,4 +1148,4 @@ public class ModelLesserShoggoth extends ModelBase {
 			lBodyTentacle01a.rotateAngleZ = MathHelper.sin(swingProgress * (float)Math.PI) * 0.4F;
 		}
 	}
-}
+}*/

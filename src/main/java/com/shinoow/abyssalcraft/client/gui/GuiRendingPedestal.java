@@ -14,13 +14,13 @@ package com.shinoow.abyssalcraft.client.gui;
 import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityRendingPedestal;
 import com.shinoow.abyssalcraft.common.inventory.ContainerRendingPedestal;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiRendingPedestal extends GuiContainer {
+/*public class GuiRendingPedestal extends GuiContainer {
 
 	private static final ResourceLocation engraverGuiTexture = new ResourceLocation("abyssalcraft:textures/gui/container/rendingpedestal.png");
 	private TileEntityRendingPedestal tileRendingPedestal;
@@ -64,4 +64,4 @@ public class GuiRendingPedestal extends GuiContainer {
 		//		i1 = tileEnergyContainer.getProcessProgressScaled(24);
 		//		drawTexturedModalRect(k + 79, l + 34, 176, 14, i1 + 1, 16);
 	}
-}
+}*/

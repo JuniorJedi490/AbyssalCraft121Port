@@ -12,18 +12,18 @@
 package com.shinoow.abyssalcraft.client.gui.necronomicon.buttons;
 
 import com.shinoow.abyssalcraft.api.item.ACItems;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.GuiNecronomicon;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.GuiNecronomicon;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 import com.shinoow.abyssalcraft.lib.client.GuiRenderHelper;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.item.Item;
+//import net.minecraft.util.ResourceLocation;
 
-public class ButtonCategory extends GuiButton {
+/*public class ButtonCategory extends GuiButton {
 
 	private GuiNecronomicon gui;
 	private Item icon;
@@ -73,4 +73,4 @@ public class ButtonCategory extends GuiButton {
 			return new ResourceLocation("abyssalcraft:textures/items/necronahicon.png");
 		else return new ResourceLocation("abyssalcraft:textures/items/necronomicon.png");
 	}
-}
+}*/

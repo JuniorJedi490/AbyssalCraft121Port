@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelRemnant extends ModelBase {
+/*public class ModelRemnant extends ModelBase {
 
 	public ModelRenderer mask1;
 	public ModelRenderer mask2;
@@ -332,3 +332,4 @@ public class ModelRemnant extends ModelBase {
 		}
 	}
 }
+*/

@@ -13,24 +13,24 @@ package com.shinoow.abyssalcraft.client.gui.necronomicon;
 
 import java.util.List;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.api.item.ACItems;
 import com.shinoow.abyssalcraft.api.recipe.*;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonCategory;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonHome;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonCategory;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonHome;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
 import com.shinoow.abyssalcraft.lib.NecronomiconResources;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.item.ItemStack;
 
-public class GuiNecronomiconMachines extends GuiNecronomicon {
+/*public class GuiNecronomiconMachines extends GuiNecronomicon {
 
 	private ButtonNextPage buttonNextPage, buttonNextPageLong;
 	private ButtonNextPage buttonPreviousPage, buttonPreviousPageLong;
@@ -328,4 +328,4 @@ public class GuiNecronomiconMachines extends GuiNecronomicon {
 
 		fontRenderer.setUnicodeFlag(unicode);
 	}
-}
+}*/

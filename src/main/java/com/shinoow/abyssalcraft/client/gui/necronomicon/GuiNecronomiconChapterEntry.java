@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui.necronomicon;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.necronomicon.NecroData.Chapter;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.resources.I18n;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.resources.I18n;
 
-public class GuiNecronomiconChapterEntry extends GuiNecronomiconEntry {
+/*public class GuiNecronomiconChapterEntry extends GuiNecronomiconEntry {
 
 	private GuiButton buttonDone;
 	private ButtonNextPage buttonPreviousPage;
@@ -70,3 +70,4 @@ public class GuiNecronomiconChapterEntry extends GuiNecronomiconEntry {
 			drawChapter(chapter, x, y);
 	}
 }
+*/

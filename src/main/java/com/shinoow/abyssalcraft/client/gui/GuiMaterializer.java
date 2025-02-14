@@ -13,19 +13,19 @@ package com.shinoow.abyssalcraft.client.gui;
 
 import java.io.IOException;
 
-import org.lwjgl.input.Mouse;
+//import org.lwjgl.input.Mouse;
 
 import com.shinoow.abyssalcraft.api.recipe.MaterializerRecipes;
 import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityMaterializer;
 import com.shinoow.abyssalcraft.common.inventory.ContainerMaterializer;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiMaterializer extends GuiContainer {
+/*public class GuiMaterializer extends GuiContainer {
 
 	private static final ResourceLocation materializerGuiTexture = new ResourceLocation("abyssalcraft:textures/gui/container/materializer.png");
 	private TileEntityMaterializer tileMaterializer;
@@ -173,4 +173,4 @@ public class GuiMaterializer extends GuiContainer {
 			if (offset >= 0 && offset <= maxOffset) this.offset = offset;
 		}
 	}
-}
+}*/
