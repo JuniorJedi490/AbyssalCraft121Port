@@ -13,7 +13,7 @@ package com.shinoow.abyssalcraft.api.knowledge.condition;
 
 import com.shinoow.abyssalcraft.api.knowledge.condition.caps.INecroDataCapability;
 
-import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.entity.player.EntityPlayer;
 
 /**
  * Condition Processor<br>
@@ -31,5 +31,5 @@ public interface IConditionProcessor {
 	 * @param player Player context for the capability holder
 	 * @return True if the condition has been met, otherwise false
 	 */
-	boolean processUnlock(IUnlockCondition condition, INecroDataCapability cap, EntityPlayer player);
+	//boolean processUnlock(IUnlockCondition condition, INecroDataCapability cap, EntityPlayer player);
 }

@@ -13,16 +13,16 @@ package com.shinoow.abyssalcraft.api.ritual;
 
 import java.util.Map;
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentData;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.enchantment.Enchantment;
+//import net.minecraft.enchantment.EnchantmentData;
+//import net.minecraft.enchantment.EnchantmentHelper;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
+//import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * A Necronomicon Enchantment Ritual
@@ -30,9 +30,9 @@ import net.minecraftforge.oredict.OreDictionary;
  *
  * @since 1.7.5
  */
-public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
+/*public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 
-	private EnchantmentData enchantment;
+	//private EnchantmentData enchantment;
 
 	/**
 	 * A Necronomicon Creation Ritual
@@ -44,11 +44,11 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 	 * @param enchantment EnchantmentData for the Enchantment applied through the ritual
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	public NecronomiconEnchantmentRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice, EnchantmentData enchantment, Object...offerings) {
+	/*public NecronomiconEnchantmentRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice, EnchantmentData enchantment, Object...offerings) {
 		super(unlocalizedName, bookType, dimension, requiredEnergy, requiresSacrifice, offerings);
 		this.enchantment = enchantment;
 		setRitualParticle(EnumRitualParticle.GLYPHS);
-	}
+	}*/
 
 	/**
 	 * A Necronomicon Creation Ritual
@@ -59,9 +59,9 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 	 * @param enchantment EnchantmentData for the Enchantment applied through the ritual
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	public NecronomiconEnchantmentRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, EnchantmentData enchantment, Object...offerings) {
+	/*public NecronomiconEnchantmentRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, EnchantmentData enchantment, Object...offerings) {
 		this(unlocalizedName, bookType, dimension, requiredEnergy, false, enchantment, offerings);
-	}
+	}*/
 
 	/**
 	 * A Necronomicon Creation Ritual
@@ -71,11 +71,11 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 	 * @param enchantment EnchantmentData for the Enchantment applied through the ritual
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	public NecronomiconEnchantmentRitual(String unlocalizedName, int bookType, float requiredEnergy, EnchantmentData enchantment, Object...offerings) {
+	/*public NecronomiconEnchantmentRitual(String unlocalizedName, int bookType, float requiredEnergy, EnchantmentData enchantment, Object...offerings) {
 		this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, enchantment, offerings);
-	}
+	}*/
 
-	@Override
+	/*@Override
 	public boolean requiresItemSacrifice(){
 		return true;
 	}
@@ -84,12 +84,12 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 	 * Getter for the EnchantmentData
 	 * @return EnchantmentData for the Enchantment applied through the ritual
 	 */
-	public EnchantmentData getEnchantment(){
+	/*public EnchantmentData getEnchantment(){
 		return enchantment;
-	}
+	}*/
 
-	@Override
-	public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
+	//@Override
+	/*public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
 
 		TileEntity altar = world.getTileEntity(pos);
 
@@ -98,9 +98,9 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 		NBTTagCompound nbtItem = compound.getCompoundTag("Item");
 
 		return canEnchant(new ItemStack(nbtItem));
-	}
+	}*/
 
-	private boolean canEnchant(ItemStack stack){
+	/*private boolean canEnchant(ItemStack stack){
 		if(stack.isEmpty()) return false;
 		if(stack.isItemEnchanted()){
 			Map<Enchantment, Integer> enchantments = EnchantmentHelper.getEnchantments(stack);
@@ -110,13 +110,13 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 			return enchantment.enchantment.canApply(stack);
 		}
 		return enchantment.enchantment.canApply(stack);
-	}
+	}*/
 
-	@Override
-	protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player) {}
+	//@Override
+	//protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player) {}
 
-	@Override
-	protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player) {
+	//@Override
+	/*protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player) {
 		TileEntity altar = world.getTileEntity(pos);
 
 		NBTTagCompound compound = new NBTTagCompound();
@@ -130,5 +130,5 @@ public class NecronomiconEnchantmentRitual extends NecronomiconRitual {
 			compound.setTag("Item", nbtItem);
 		}
 		altar.readFromNBT(compound);
-	}
-}
+	}*/
+//}

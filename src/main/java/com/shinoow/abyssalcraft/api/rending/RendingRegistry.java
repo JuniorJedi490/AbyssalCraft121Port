@@ -44,10 +44,10 @@ public class RendingRegistry {
 	 * @param rending The Rending object, contains all data used to collect energy
 	 */
 	public void registerRending(Rending rending) {
-		if(rendings.stream().anyMatch(r -> r.getName().equalsIgnoreCase(rending.getName()))) {
+		/*if(rendings.stream().anyMatch(r -> r.getName().equalsIgnoreCase(rending.getName()))) {
 			logger.log(Level.ERROR, "Rending already registered: {}", rending.getName());
 			return;
-		}
+		}*/
 
 		rendings.add(rending);
 	}
@@ -64,7 +64,7 @@ public class RendingRegistry {
 	 * @param name
 	 */
 	public void removeRending(String name) {
-		if(rendings.removeIf(r -> r.getName().equalsIgnoreCase(name)))
+		//if(rendings.removeIf(r -> r.getName().equalsIgnoreCase(name)))
 			logger.log(Level.ERROR, "Removed rending with name: {}", name);
 	}
 }

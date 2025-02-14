@@ -11,8 +11,8 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.knowledge.condition;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityList;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityList;
 
 public class EntityCondition implements IUnlockCondition {
 
@@ -22,9 +22,9 @@ public class EntityCondition implements IUnlockCondition {
 		name = str;
 	}
 
-	public EntityCondition(Class<? extends Entity> clz){
+	/*public EntityCondition(Class<? extends Entity> clz){
 		name = EntityList.getKey(clz).toString();
-	}
+	}*/
 
 	@Override
 	public boolean areConditionObjectsEqual(Object stuff) {

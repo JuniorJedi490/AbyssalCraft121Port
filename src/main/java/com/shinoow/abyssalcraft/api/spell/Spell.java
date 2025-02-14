@@ -16,15 +16,15 @@ import com.shinoow.abyssalcraft.api.knowledge.IResearchable;
 import com.shinoow.abyssalcraft.api.knowledge.ResearchItems;
 import com.shinoow.abyssalcraft.api.spell.SpellEnum.ScrollType;
 
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Base Necronomicon Spell.<br>
@@ -37,14 +37,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public abstract class Spell implements IResearchable<Spell, Spell> {
 
 	private Object[] reagents = new Object[5];
-	private ItemStack parchment = ItemStack.EMPTY;
+	//private ItemStack parchment = ItemStack.EMPTY;
 	private final String unlocalizedName;
 	private int bookType, color;
 	private float requiredEnergy;
 	private boolean nbtSensitive, requiresCharging, canBeCastByOthers;
 	private Spell parent;
-	private ResourceLocation glyph;
-	private IResearchItem condition = ResearchItems.DEFAULT;
+	//private ResourceLocation glyph;
+	//private IResearchItem condition = ResearchItems.DEFAULT;
 	private ScrollType scrollType = ScrollType.BASIC;
 
 	/**
@@ -81,10 +81,10 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	/**
 	 * Sets a parchment required in order to inscribe this spell
 	 */
-	public Spell setParchment(ItemStack parchment){
+	/*public Spell setParchment(ItemStack parchment){
 		this.parchment = parchment;
 		return this;
-	}
+	}*/
 
 	/**
 	 * Sets the spell glyph color
@@ -121,10 +121,10 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	/**
 	 * Sets the spell glyph texture
 	 */
-	public Spell setGlyph(ResourceLocation glyph){
+	/*public Spell setGlyph(ResourceLocation glyph){
 		this.glyph = glyph;
 		return this;
-	}
+	}*/
 
 	/**
 	 * Sets a Scroll Type required in order to inscribe this spell
@@ -155,9 +155,9 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * Used to fetch the parchment this spell can be inscribed on
 	 * @return An ItemStack representing the parchment
 	 */
-	public ItemStack getParchment(){
+	/*public ItemStack getParchment(){
 		return parchment;
-	}
+	}*/
 
 	/**
 	 * Used to fetch the required book type
@@ -203,9 +203,9 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * Used to fetch the Spell Glyph texture
 	 * @return A ResourceLocation pointing to the glyph texture
 	 */
-	public ResourceLocation getSpellGlyph(){
+	/*public ResourceLocation getSpellGlyph(){
 		return glyph;
-	}
+	}*/
 
 	/**
 	 * Used to fetch the Scroll Type required to inscribe this spell
@@ -243,19 +243,19 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * Used to fetch the localized name for a spell
 	 * @return A localized string representing a name
 	 */
-	@SideOnly(Side.CLIENT)
-	public String getLocalizedName(){
+	//@SideOnly(Side.CLIENT)
+	/*public String getLocalizedName(){
 		return I18n.format(getTranslationKey());
-	}
+	}*/
 
 	/**
 	 * Used to fetch the description for the spell
 	 * @return A localized string representing a description
 	 */
-	@SideOnly(Side.CLIENT)
-	public String getDescription(){
+	//@SideOnly(Side.CLIENT)
+	/*public String getDescription(){
 		return I18n.format(getTranslationKey() + ".desc");
-	}
+	}*/
 
 	/**
 	 * Determines if the spell should check for identical NBT tag compounds while<br>
@@ -273,7 +273,7 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * @param scrollType Quality of the scroll being used
 	 * @return True if all conditions are met, otherwise false
 	 */
-	public abstract boolean canCastSpell(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType);
+	//public abstract boolean canCastSpell(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType);
 
 	/**
 	 * Called when a spell is cast
@@ -282,10 +282,10 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * @param player Player casting the spell
 	 * @param scrollType Quality of the scroll being used
 	 */
-	public void castSpell(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType){
+	/*public void castSpell(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType){
 		if(!world.isRemote) castSpellServer(world, pos, player, scrollType);
 		if(world.isRemote) castSpellClient(world, pos, player, scrollType);
-	}
+	}*/
 
 	/**
 	 * Override this to do something client-side when the spell is cast
@@ -294,7 +294,7 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * @param player Player casting the spell
 	 * @param scrollType Quality of the scroll being used
 	 */
-	protected abstract void castSpellClient(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType);
+	//protected abstract void castSpellClient(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType);
 
 	/**
 	 * Override this to do something server-side when the spell is casted
@@ -303,7 +303,7 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * @param player Player casting the spell
 	 * @param scrollType Quality of the scroll being used
 	 */
-	protected abstract void castSpellServer(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType);
+	//protected abstract void castSpellServer(World world, BlockPos pos, EntityPlayer player, ScrollType scrollType);
 
 	/**
 	 * Override this to do something if a non-player entity casts this spell
@@ -312,20 +312,20 @@ public abstract class Spell implements IResearchable<Spell, Spell> {
 	 * @param caster Caster of the spell (likely a Remnant, a MoTGK or J'zahar)
 	 * @param scrollType "Skillset" of the caster
 	 */
-	public void castSpellOther(World  world, BlockPos pos, EntityLiving caster, ScrollType scrollType) {
+	/*public void castSpellOther(World  world, BlockPos pos, EntityLiving caster, ScrollType scrollType) {
 
-	}
+	}*/
 
 	@Override
 	public Spell setResearchItem(IResearchItem condition) {
 
-		this.condition = condition;
+		//this.condition = condition;
 		return this;
 	}
 
-	@Override
-	public IResearchItem getResearchItem(Spell object) {
+	//@Override
+	/*public IResearchItem getResearchItem(Spell object) {
 
-		return condition;
-	}
+		//return condition;
+	}*/
 }

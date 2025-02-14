@@ -13,7 +13,7 @@ package com.shinoow.abyssalcraft.api.knowledge;
 
 import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.ResourceLocation;
 
 public interface IResearchItem {
 
@@ -35,5 +35,5 @@ public interface IResearchItem {
 
 	int getPointsCost();
 
-	ResourceLocation getID();
+	//ResourceLocation getID();
 }

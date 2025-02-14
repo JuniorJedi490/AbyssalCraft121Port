@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.recipe;
 
-import net.minecraft.item.ItemStack;
+//import net.minecraft.item.ItemStack;
 
 /**
  * A Transmutator recipe
@@ -21,12 +21,12 @@ import net.minecraft.item.ItemStack;
  */
 public class Transmutation {
 
-	public final ItemStack INPUT, OUTPUT;
-	public final float XP;
+	//public final ItemStack INPUT, OUTPUT;
+	//public final float XP;
 
-	public Transmutation(ItemStack input, ItemStack output, float xp) {
+	/*public Transmutation(ItemStack input, ItemStack output, float xp) {
 		INPUT = input;
 		OUTPUT = output;
 		XP = xp;
-	}
+	}*/
 }

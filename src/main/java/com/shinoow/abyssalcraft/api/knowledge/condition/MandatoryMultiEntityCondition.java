@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.knowledge.condition;
 
-import net.minecraft.entity.Entity;
+//import net.minecraft.entity.Entity;
 
 public class MandatoryMultiEntityCondition extends MultiEntityCondition {
 
@@ -19,9 +19,9 @@ public class MandatoryMultiEntityCondition extends MultiEntityCondition {
 		super(names);
 	}
 
-	public MandatoryMultiEntityCondition(Class<? extends Entity>...entities){
+	/*public MandatoryMultiEntityCondition(Class<? extends Entity>...entities){
 		super(entities);
-	}
+	}*/
 
 	@Override
 	public boolean areConditionObjectsEqual(Object stuff) {

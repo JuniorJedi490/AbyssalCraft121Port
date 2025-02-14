@@ -16,9 +16,9 @@ import javax.annotation.Nonnull;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI.FuelType;
 
-import net.minecraft.item.ItemStack;
+//import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.eventhandler.Event;
+//import net.minecraftforge.fml.common.eventhandler.Event;
 
 /**
  * FuelBurnTimeEvent is fired when determining the fuel value for an ItemStack. <br>
@@ -33,33 +33,33 @@ import net.minecraftforge.fml.common.eventhandler.Event;
  *
  * @since 1.21.0
  */
-public class FuelBurnTimeEvent extends Event
+/*public class FuelBurnTimeEvent extends Event
 {
 	@Nonnull
-	private final ItemStack itemStack;
+	//private final ItemStack itemStack;
 	private int burnTime = -1;
 	private final FuelType fuelType;
 
-	public FuelBurnTimeEvent(@Nonnull ItemStack itemStack, FuelType fuelType)
+	/*public FuelBurnTimeEvent(@Nonnull ItemStack itemStack, FuelType fuelType)
 	{
 		this.itemStack = itemStack;
 		this.fuelType = fuelType;
-	}
+	}*/
 
 	/**
 	 * Get the ItemStack "fuel" in question.
 	 */
-	@Nonnull
-	public ItemStack getItemStack()
+	//@Nonnull
+	/*public ItemStack getItemStack()
 	{
 		return itemStack;
-	}
+	}*/
 
 	/**
 	 * Set the burn time for the given ItemStack.
 	 * Setting it to 0 will prevent the item from being used as fuel.
 	 */
-	public void setBurnTime(int burnTime)
+	/*public void setBurnTime(int burnTime)
 	{
 		this.burnTime = burnTime;
 	}
@@ -69,7 +69,7 @@ public class FuelBurnTimeEvent extends Event
 	 * A value of 0 will prevent the item from being used as fuel.
 	 * A value of -1 will let the machine in question decide on the fuel value.
 	 */
-	public int getBurnTime()
+	/*public int getBurnTime()
 	{
 		return burnTime;
 	}
@@ -77,7 +77,7 @@ public class FuelBurnTimeEvent extends Event
 	/**
 	 * Get the machine this fuel will be used in (Crystallizer or Transmutator).
 	 */
-	public FuelType getFuelType() {
+	/*public FuelType getFuelType() {
 		return fuelType;
 	}
-}
+}*/

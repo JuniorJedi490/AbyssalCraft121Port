@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.armor;
 
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.ResourceLocation;
 
 /**
  * Class holding armor-related data for custom armors
@@ -23,15 +23,15 @@ public class ArmorData {
 
 	private boolean overlay, colored;
 
-	private ResourceLocation texture_1, texture_2, overlay_1, overlay_2;
+	//private ResourceLocation texture_1, texture_2, overlay_1, overlay_2;
 
 	// enum or string target
 
-	public ArmorData(ResourceLocation texture1, ResourceLocation texture2) {
+	/*public ArmorData(ResourceLocation texture1, ResourceLocation texture2) {
 		this(texture1, texture2, false);
-	}
+	}*/
 
-	public ArmorData(ResourceLocation texture1, ResourceLocation texture2, boolean overlay) {
+	/*public ArmorData(ResourceLocation texture1, ResourceLocation texture2, boolean overlay) {
 		texture_1 = texture1;
 		texture_2 = texture2;
 		this.overlay = overlay;
@@ -42,7 +42,7 @@ public class ArmorData {
 			overlay_1 = new ResourceLocation("");
 			overlay_2 = new ResourceLocation("");
 		}
-	}
+	}*/
 
 	/**
 	 * Returns if the material has an overlay
@@ -54,30 +54,30 @@ public class ArmorData {
 	/**
 	 * Returns the texture for Head, chest, feet
 	 */
-	public ResourceLocation getFirstTexture() {
+	/*public ResourceLocation getFirstTexture() {
 		return texture_1;
-	}
+	}*/
 
 	/**
 	 * Returns the texture for Legs
 	 */
-	public ResourceLocation getSecondTexture() {
+	/*public ResourceLocation getSecondTexture() {
 		return texture_2;
-	}
+	}*/
 
 	/**
 	 * Returns the overlay texture for Head, chest, feet
 	 */
-	public ResourceLocation getFirstOverlay() {
+	/*public ResourceLocation getFirstOverlay() {
 		return overlay_1;
-	}
+	}*/
 
 	/**
 	 * Returns the overlay texture for Legs
 	 */
-	public ResourceLocation getSecondOverlay() {
+	/*public ResourceLocation getSecondOverlay() {
 		return overlay_2;
-	}
+	}*/
 
 	/**
 	 * Returns if the ArmorData is colored (this allows other logic to color it besides layers)
@@ -91,9 +91,9 @@ public class ArmorData {
 		return this;
 	}
 
-	private ResourceLocation getOverlay(ResourceLocation texture) {
+	/*private ResourceLocation getOverlay(ResourceLocation texture) {
 		String domain = texture.getNamespace();
 		String path = texture.getPath();
 		return new ResourceLocation(domain, path.substring(0, path.length() -4).concat("_overlay.png"));
-	}
+	}*/
 }

@@ -21,19 +21,19 @@ import com.shinoow.abyssalcraft.api.energy.structure.IStructureBase;
 import com.shinoow.abyssalcraft.api.energy.structure.IStructureComponent;
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.BlockPos.MutableBlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.entity.item.EntityItem;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.math.BlockPos.MutableBlockPos;
+//import net.minecraft.world.World;
 
 /**
  * Backbone for handling interactions between<br>
@@ -50,7 +50,7 @@ public class PEUtils {
 	 * @param manipulator PE Manipulator
 	 * @param range Transfer Range
 	 */
-	public static void transferPEToNearbyPlayers(World world, BlockPos pos, IEnergyManipulator manipulator, int range){
+	/*public static void transferPEToNearbyPlayers(World world, BlockPos pos, IEnergyManipulator manipulator, int range){
 
 		List<EntityPlayer> players = world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB(pos, pos.add(1, 1, 1)).grow(range, range, range),
 				EntityUtil::hasNecronomicon);
@@ -65,13 +65,13 @@ public class PEUtils {
 					AbyssalCraftAPI.getInternalMethodHandler().spawnPEStream(pos, player, world.provider.getDimension());
 				}
 		}
-	}
+	}*/
 
-	private static boolean canStackAcceptPE(ItemStack stack) {
+	/*private static boolean canStackAcceptPE(ItemStack stack) {
 		if(stack.getItem() instanceof IEnergyTransporterItem)
 			return ((IEnergyTransporterItem) stack.getItem()).canAcceptPEExternally(stack);
 		else return false;
-	}
+	}*/
 
 	/**
 	 * Attempts to transfer PE from a Manipulator to nearby Dropped Items<br>
@@ -81,7 +81,7 @@ public class PEUtils {
 	 * @param manipulator PE Manipulator
 	 * @param range Transfer Range
 	 */
-	public static void transferPEToNearbyDroppedItems(World world, BlockPos pos, IEnergyManipulator manipulator, int range){
+	/*public static void transferPEToNearbyDroppedItems(World world, BlockPos pos, IEnergyManipulator manipulator, int range){
 
 		List<EntityItem> items = world.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(pos, pos.add(1, 1, 1)).grow(range, range, range),
 				e -> canStackAcceptPE(e.getItem()));
@@ -92,20 +92,20 @@ public class PEUtils {
 					transferPEToStack(item.getItem(), manipulator);
 					AbyssalCraftAPI.getInternalMethodHandler().spawnPEStream(pos, item, world.provider.getDimension());
 				}
-	}
+	}*/
 
 	/**
 	 * Shortcut method for Transferring PE to an ItemStack
 	 * @param stack ItemStack to potentially transfer PE to
 	 * @param manipulator PE Manipulator to transfer said PE
 	 */
-	private static void transferPEToStack(ItemStack stack, IEnergyManipulator manipulator){
+	/*private static void transferPEToStack(ItemStack stack, IEnergyManipulator manipulator){
 		if(stack.getItem() instanceof IEnergyTransporterItem)
 			if(((IEnergyTransporterItem) stack.getItem()).canAcceptPEExternally(stack)){
 				((IEnergyTransporterItem) stack.getItem()).addEnergy(stack, manipulator.getEnergyQuanta());
 				manipulator.addTolerance(manipulator.isActive() ? 4 : 2);
 			}
-	}
+	}*/
 
 	/**
 	 * Attempts to transfer PE from a Manipulator to nearby Collectors
@@ -113,7 +113,7 @@ public class PEUtils {
 	 * @param pos Current BlockPos
 	 * @param manipulator PE Manipulator
 	 */
-	public static void transferPEToCollectors(World world, BlockPos pos, IEnergyManipulator manipulator){
+	/*public static void transferPEToCollectors(World world, BlockPos pos, IEnergyManipulator manipulator){
 		int timeDiscount = (int)(20 * manipulator.getAmplifier(AmplifierType.DURATION));
 
 		manipulator.getEnergyCollectors().stream().map(p -> world.getTileEntity(p)).filter(PEUtils::isCollector).forEach(tile -> {
@@ -125,7 +125,7 @@ public class PEUtils {
 						AbyssalCraftAPI.getInternalMethodHandler().spawnPEStream(pos, tile.getPos(), world.provider.getDimension());
 					}
 		});
-	}
+	}*/
 
 	/**
 	 * Locates and stores the positions of Energy Containers in range of the Manipulator
@@ -133,7 +133,7 @@ public class PEUtils {
 	 * @param pos Current Position
 	 * @param manipulator PE Manipulator
 	 */
-	public static void locateCollectors(World world, BlockPos pos, IEnergyManipulator manipulator) {
+	/*public static void locateCollectors(World world, BlockPos pos, IEnergyManipulator manipulator) {
 		manipulator.getEnergyCollectors().clear();
 
 		Set<BlockPos> positions = manipulator.getEnergyCollectors();
@@ -153,7 +153,7 @@ public class PEUtils {
 						if(isCollector(te))
 							positions.add(pos1.toImmutable());
 					}
-	}
+	}*/
 
 	/**
 	 * Utility method for clearing the active Deity and Amplifier<br>
@@ -162,7 +162,7 @@ public class PEUtils {
 	 * to ensure the data is properly erased when it should be.
 	 * @param manipulator PE Manipulator to reset
 	 */
-	public static void clearManipulatorData(IEnergyManipulator manipulator){
+	/*public static void clearManipulatorData(IEnergyManipulator manipulator){
 		if(manipulator.getActiveAmplifier() != null || manipulator.getActiveDeity() != null){
 			NBTTagCompound tag = new NBTTagCompound();
 			((TileEntity) manipulator).writeToNBT(tag);
@@ -172,7 +172,7 @@ public class PEUtils {
 			manipulator.setActiveAmplifier(null);
 			((TileEntity) manipulator).readFromNBT(tag);
 		}
-	}
+	}*/
 
 	/**
 	 * Utility method for reading specific NBT data in a PE Manipulator.<br>
@@ -180,12 +180,12 @@ public class PEUtils {
 	 * @param manipulator PE Manipulator
 	 * @param compound NBT Tag Compound
 	 */
-	public static void readManipulatorNBT(IEnergyManipulator manipulator, NBTTagCompound compound){
+	/*public static void readManipulatorNBT(IEnergyManipulator manipulator, NBTTagCompound compound){
 		if(compound.hasKey("ActiveDeity") && !compound.getString("ActiveDeity").equals(""))
 			manipulator.setActiveDeity(DeityType.valueOf(compound.getString("ActiveDeity")));
 		if(compound.hasKey("ActiveAmplifier") && !compound.getString("ActiveAmplifier").equals(""))
 			manipulator.setActiveAmplifier(AmplifierType.valueOf(compound.getString("ActiveAmplifier")));
-	}
+	}*/
 
 	/**
 	 * Utility method for writing specific NBT data in a PE Manipulator.<br>
@@ -193,14 +193,14 @@ public class PEUtils {
 	 * @param manipulator PE Manipulator
 	 * @param compound NBT Tag Compound
 	 */
-	public static void writeManipulatorNBT(IEnergyManipulator manipulator, NBTTagCompound compound){
+	/*public static void writeManipulatorNBT(IEnergyManipulator manipulator, NBTTagCompound compound){
 		if(manipulator.getActiveDeity() != null)
 			compound.setString("ActiveDeity", manipulator.getActiveDeity().name());
 		else compound.setString("ActiveDeity", "");
 		if(manipulator.getActiveAmplifier() != null)
 			compound.setString("ActiveAmplifier", manipulator.getActiveAmplifier().name());
 		else compound.setString("ActiveAmplifier", "");
-	}
+	}*/
 
 	/**
 	 * Checks for any range amplifying blocks below a specific BlockPos
@@ -208,7 +208,7 @@ public class PEUtils {
 	 * @param pos Current BlockPos
 	 * @return A number between 0 and 2, representing the amount of range amplifiers below this BlockPos
 	 */
-	public static int getRangeAmplifiers(World world, BlockPos pos, IEnergyManipulator manipulator){
+	/*public static int getRangeAmplifiers(World world, BlockPos pos, IEnergyManipulator manipulator){
 		Block block1 = world.getBlockState(new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ())).getBlock();
 		Block block2 = world.getBlockState(new BlockPos(pos.getX(), pos.getY() - 2, pos.getZ())).getBlock();
 		int num = 0;
@@ -225,7 +225,7 @@ public class PEUtils {
 			num += PEUtils.getStructureAmplifier(world, (IStructureComponent) manipulator, AmplifierType.RANGE);
 
 		return num;
-	}
+	}*/
 
 	/**
 	 * Checks if the Structure Component is currently part of a structure, then attempts to fetch any amplifiers
@@ -234,7 +234,7 @@ public class PEUtils {
 	 * @param type Amplifier Type to check for
 	 * @return A value to amplify a stat with, or 0
 	 */
-	public static float getStructureAmplifier(World world, IStructureComponent component, AmplifierType type) {
+	/*public static float getStructureAmplifier(World world, IStructureComponent component, AmplifierType type) {
 
 		float amplifier = 0;
 
@@ -247,34 +247,34 @@ public class PEUtils {
 		}
 
 		return amplifier;
-	}
+	}*/
 
 	/**
 	 * Checks if a TileEntity is a PE Collector (extends IEnergyCollector)
 	 * @param tile TileEntity to check
 	 * @return True if the TileEntity is a PE Collector, otherwise false
 	 */
-	public static boolean isCollector(TileEntity tile){
+	/*public static boolean isCollector(TileEntity tile){
 		return tile instanceof IEnergyCollector;
-	}
+	}*/
 
 	/**
 	 * Checks if a TileEntity is a PE Manipulator (extends IEnergyManipulator)
 	 * @param tile TileEntity to check
 	 * @return True if the TileEntity is a PE Manipulator, otherwise false
 	 */
-	public static boolean isManipulator(TileEntity tile){
+	/*public static boolean isManipulator(TileEntity tile){
 		return tile instanceof IEnergyManipulator;
-	}
+	}*/
 
 	/**
 	 * Checks if a TileEntity is a PE Container (extends IEnergyContainer)
 	 * @param tile TileEntity to check
 	 * @return True if the TileEntity is a PE Collector, otherwise false
 	 */
-	public static boolean isContainer(TileEntity tile){
+	/*public static boolean isContainer(TileEntity tile){
 		return tile instanceof IEnergyContainer;
-	}
+	}*/
 
 	/**
 	 * Checks that the BlockPos has no adjacent PE Collectors
@@ -282,12 +282,12 @@ public class PEUtils {
 	 * @param pos Current BlockPos
 	 * @return True if the BlockPos has no adjacent PE Collectors, otherwise false
 	 */
-	public static boolean checkForAdjacentCollectors(World world, BlockPos pos){
+	/*public static boolean checkForAdjacentCollectors(World world, BlockPos pos){
 		for(EnumFacing face : EnumFacing.values())
 			if(isCollector(world.getTileEntity(pos.offset(face))))
 				return false;
 		return true;
-	}
+	}*/
 
 	/**
 	 * Checks that the BlockPos has no adjacent PE Manipulators
@@ -295,7 +295,7 @@ public class PEUtils {
 	 * @param pos Current BlockPos
 	 * @return True if the BlockPos has no adjacent PE Manipulators, otherwise false
 	 */
-	public static boolean checkForAdjacentManipulators(World world, BlockPos pos){
+	/*public static boolean checkForAdjacentManipulators(World world, BlockPos pos){
 		for(EnumFacing face : EnumFacing.values())
 			if(isManipulator(world.getTileEntity(pos.offset(face))))
 				return false;
@@ -304,7 +304,7 @@ public class PEUtils {
 		if(isManipulator(world.getTileEntity(pos.down(2)))) // ^
 			return false;
 		return true;
-	}
+	}*/
 
 	/**
 	 * Checks for anything accepting PE in the given direction
@@ -314,7 +314,7 @@ public class PEUtils {
 	 * @param dist Transport distance
 	 * @return True if a PE Container is found, otherwise false
 	 */
-	public static boolean canTransfer(World world, BlockPos pos, EnumFacing face, int dist){
+	/*public static boolean canTransfer(World world, BlockPos pos, EnumFacing face, int dist){
 
 		for(int i = 1; i < dist+1; i++){
 			if(world.getBlockState(pos.offset(face, i)).isFullCube() && !world.isAirBlock(pos.offset(face, i))) return false;
@@ -322,7 +322,7 @@ public class PEUtils {
 				return ((IEnergyContainer) world.getTileEntity(pos.offset(face, i))).canAcceptPE();
 		}
 		return false;
-	}
+	}*/
 
 	/**
 	 * Looks for a PE Collector in the given direction
@@ -332,12 +332,12 @@ public class PEUtils {
 	 * @param dist Transport distance
 	 * @return A PE Collector if one is found, otherwise null
 	 */
-	public static IEnergyCollector getCollector(World world, BlockPos pos, EnumFacing face, int dist){
+	/*public static IEnergyCollector getCollector(World world, BlockPos pos, EnumFacing face, int dist){
 		for(int i = 1; i < dist+1; i++)
 			if(isCollector(world.getTileEntity(pos.offset(face, i))))
 				return (IEnergyCollector) world.getTileEntity(pos.offset(face, i));
 		return null;
-	}
+	}*/
 
 	/**
 	 * Looks for a PE Container in the given distance
@@ -347,12 +347,12 @@ public class PEUtils {
 	 * @param dist Transport distance
 	 * @return A TileEntity that can accept PE, otherwise null
 	 */
-	public static IEnergyContainer getContainer(World world, BlockPos pos, EnumFacing face, int dist){
+	/*public static IEnergyContainer getContainer(World world, BlockPos pos, EnumFacing face, int dist){
 		for(int i = 1; i < dist+1; i++)
 			if(isContainer(world.getTileEntity(pos.offset(face, i))))
 				return (IEnergyContainer) world.getTileEntity(pos.offset(face, i));
 		return null;
-	}
+	}*/
 
 	/**
 	 * Attempts to collect PE from nearby PE Collectors
@@ -362,14 +362,14 @@ public class PEUtils {
 	 * @param face Direction to collect from
 	 * @param amount Amount of PE to drain
 	 */
-	public static void collectNearbyPE(IEnergyTransporter relay, World world, BlockPos pos, EnumFacing face, float amount){
+	/*public static void collectNearbyPE(IEnergyTransporter relay, World world, BlockPos pos, EnumFacing face, float amount){
 		if(relay.canAcceptPE()){
 			IEnergyContainer container = getContainer(world, pos, face, 1);
 			if(container != null && container.canTransferPE())
 				container.addEnergy(relay.addEnergy(container.consumeEnergy(amount)));
 
 		}
-	}
+	}*/
 
 	/**
 	 * Gets the current contained PE from a ItemStack<br>
@@ -377,7 +377,7 @@ public class PEUtils {
 	 * @param stack ItemStack containing energy
 	 * @return The contained energy, if any
 	 */
-	public static float getContainedEnergy(ItemStack stack){
+	/*public static float getContainedEnergy(ItemStack stack){
 		float energy;
 		if(!stack.hasTagCompound())
 			stack.setTagCompound(new NBTTagCompound());
@@ -388,7 +388,7 @@ public class PEUtils {
 			stack.getTagCompound().setFloat("PotEnergy", energy);
 		}
 		return energy;
-	}
+	}*/
 
 	/**
 	 * Adds PE to the supplied ItemStack<br>
@@ -398,7 +398,7 @@ public class PEUtils {
 	 * @param energy Energy quanta to add
 	 * @return Energy overflow, if any
 	 */
-	public static float addEnergy(IEnergyContainerItem container, ItemStack stack, float energy){
+	/*public static float addEnergy(IEnergyContainerItem container, ItemStack stack, float energy){
 		float total = container.getContainedEnergy(stack) + energy;
 		if(total >= container.getMaxEnergy(stack)) {
 			float ret = total - container.getMaxEnergy(stack);
@@ -407,7 +407,7 @@ public class PEUtils {
 		}
 		stack.getTagCompound().setFloat("PotEnergy", total);
 		return 0;
-	}
+	}*/
 
 	/**
 	 * Consumes PE from the supplied ItemStack<br>
@@ -416,7 +416,7 @@ public class PEUtils {
 	 * @param energy Energy quanta to consume
 	 * @return The amount of energy consumed
 	 */
-	public static float consumeEnergy(ItemStack stack, float energy){
+	/*public static float consumeEnergy(ItemStack stack, float energy){
 		float contained = getContainedEnergy(stack);
 		if(energy < contained){
 			stack.getTagCompound().setFloat("PotEnergy", contained -= energy);
@@ -425,7 +425,7 @@ public class PEUtils {
 			stack.getTagCompound().setFloat("PotEnergy", 0);
 			return contained;
 		}
-	}
+	}*/
 
 	/**
 	 * Adds PE to the supplied Energy Container<br>
@@ -470,13 +470,13 @@ public class PEUtils {
 	 * @param container PE Container
 	 * @param amount Amount of PE to transfer
 	 */
-	public static void transferPEToContainer(ItemStack stack, IEnergyContainer container, float amount) {
+	/*public static void transferPEToContainer(ItemStack stack, IEnergyContainer container, float amount) {
 		if(!stack.isEmpty() && stack.getItem() instanceof IEnergyContainerItem) {
 			IEnergyContainerItem containerItem = (IEnergyContainerItem) stack.getItem();
 			if(containerItem.canTransferPE(stack) && container.canAcceptPE())
 				containerItem.addEnergy(stack, container.addEnergy(containerItem.consumeEnergy(stack, amount))); // returns overflow
 		}
-	}
+	}*/
 
 	/**
 	 * Transfers PE from an IEnergyContainer to a IEnergyContainerItem (that the former likely contains)
@@ -484,13 +484,13 @@ public class PEUtils {
 	 * @param container PE Container
 	 * @param amount Amount of PE to transfer
 	 */
-	public static void transferPEFromContainer(ItemStack stack, IEnergyContainer container, float amount) {
+	/*public static void transferPEFromContainer(ItemStack stack, IEnergyContainer container, float amount) {
 		if(!stack.isEmpty() && stack.getItem() instanceof IEnergyContainerItem) {
 			IEnergyContainerItem containerItem = (IEnergyContainerItem) stack.getItem();
 			if(containerItem.canAcceptPE(stack) && container.canTransferPE())
 				container.addEnergy(containerItem.addEnergy(stack, container.consumeEnergy(amount))); // returns overflow
 		}
-	}
+	}*/
 
 	/**
 	 * Drains PE from an IEnergyTransporterItem
@@ -498,12 +498,12 @@ public class PEUtils {
 	 * @param amount Amount of PE to drain
 	 * @return Amount of PE drained
 	 */
-	public static float drainPEFromItem(ItemStack stack, float amount) {
+	/*public static float drainPEFromItem(ItemStack stack, float amount) {
 		if(!stack.isEmpty() && stack.getItem() instanceof IEnergyTransporterItem) {
 			IEnergyTransporterItem containerItem = (IEnergyTransporterItem) stack.getItem();
 			if(containerItem.canTransferPEExternally(stack))
 				return containerItem.consumeEnergy(stack, amount);
 		}
 		return 0;
-	}
+	}*/
 }

@@ -11,8 +11,8 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.energy;
 
-import net.minecraft.util.text.translation.I18n;
-import net.minecraftforge.common.util.EnumHelper;
+//import net.minecraft.util.text.translation.I18n;
+//import net.minecraftforge.common.util.EnumHelper;
 
 /**
  * Collection of Enums used by various parts of the Potential Energy system.<br>
@@ -52,9 +52,9 @@ public class EnergyEnum {
 		/**
 		 * Getter for the Amplifier's localized name
 		 */
-		public String getLocalizedName(){
+		/*public String getLocalizedName(){
 			return I18n.translateToLocal(getUnlocalizedName());
-		}
+		}*/
 	}
 
 	/**
@@ -90,10 +90,10 @@ public class EnergyEnum {
 	 *
 	 * @since 1.5
 	 */
-	public static String getAmplifierName(AmplifierType type){
-		if(type == null) return I18n.translateToLocal("ac.text.none");
+	/*public static String getAmplifierName(AmplifierType type){
+		//if(type == null) return I18n.translateToLocal("ac.text.none");
 		return type.getLocalizedName();
-	}
+	}*/
 
 	/**
 	 * Fetches the localized name of a DeityType
@@ -103,7 +103,7 @@ public class EnergyEnum {
 	 * @since 1.5
 	 */
 	public static String getDeityName(DeityType type){
-		if(type == null) return I18n.translateToLocal("ac.text.none");
+		//if(type == null) return I18n.translateToLocal("ac.text.none");
 		return type.getName();
 	}
 
@@ -115,9 +115,9 @@ public class EnergyEnum {
 	 *
 	 * @since 1.5
 	 */
-	public AmplifierType addAmplifierType(String enumName, String name){
+	/*public AmplifierType addAmplifierType(String enumName, String name){
 		return EnumHelper.addEnum(AmplifierType.class, enumName, new Class[]{String.class}, name);
-	}
+	}*/
 
 	/**
 	 * Adds a Deity Type
@@ -127,7 +127,7 @@ public class EnergyEnum {
 	 *
 	 * @since 1.5
 	 */
-	public DeityType addDeityType(String enumName, String name){
+	/*public DeityType addDeityType(String enumName, String name){
 		return EnumHelper.addEnum(DeityType.class, enumName, new Class[]{String.class}, name);
-	}
+	}*/
 }

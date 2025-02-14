@@ -15,10 +15,10 @@ import java.util.List;
 
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.translation.I18n;
-import net.minecraft.world.World;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.text.translation.I18n;
+//import net.minecraft.world.World;
 
 /**
  * A Disruption Entry
@@ -62,17 +62,17 @@ public abstract class DisruptionEntry {
 	 * Used to fetch the localized name for a disruption
 	 * @return A localized string representing a name
 	 */
-	public String getLocalizedName(){
+	/*public String getLocalizedName(){
 		return I18n.translateToLocal(getUnlocalizedName());
-	}
+	}*/
 
 	/**
 	 * Used to fetch the description for the disruption
 	 * @return A localized string representing a description
 	 */
-	public String getDescrption(){
+	/*public String getDescrption(){
 		return I18n.translateToLocal(getUnlocalizedName() + ".desc");
-	}
+	}*/
 
 	/**
 	 * This is where all the evil things happen
@@ -80,5 +80,5 @@ public abstract class DisruptionEntry {
 	 * @param pos Current BlockPos
 	 * @param players Nearby Players (16 block range or larger)
 	 */
-	public abstract void disrupt(World world, BlockPos pos, List<EntityPlayer> players);
+	//public abstract void disrupt(World world, BlockPos pos, List<EntityPlayer> players);
 }

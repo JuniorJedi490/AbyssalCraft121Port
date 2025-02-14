@@ -20,11 +20,11 @@ import org.apache.logging.log4j.Logger;
 
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
-import com.shinoow.abyssalcraft.api.event.ACEvents.DisruptionEvent;
+//import com.shinoow.abyssalcraft.api.event.ACEvents.DisruptionEvent;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 
 /**
@@ -97,7 +97,7 @@ public class DisruptionHandler {
 	 *
 	 * @since 1.5
 	 */
-	public void generateDisruption(DeityType deity, World world, BlockPos pos, List<EntityPlayer> players){
+	/*public void generateDisruption(DeityType deity, World world, BlockPos pos, List<EntityPlayer> players){
 
 		DisruptionEntry disruption = getRandomDisruption(deity, world);
 
@@ -106,7 +106,7 @@ public class DisruptionHandler {
 				disruption.disrupt(world, pos, players);
 			AbyssalCraftAPI.getInternalMethodHandler().sendDisruption(deity, disruption.getUnlocalizedName().substring("ac.disruption.".length()), pos, world.provider.getDimension());
 		}
-	}
+	}*/
 
 	/**
 	 * Fetches a random Disruption
@@ -116,7 +116,7 @@ public class DisruptionHandler {
 	 *
 	 * @since 1.17.0
 	 */
-	public DisruptionEntry getRandomDisruption(DeityType deity, World world) {
+	/*public DisruptionEntry getRandomDisruption(DeityType deity, World world) {
 		if(world.isRemote) return null;
 		List<DisruptionEntry> dis = new ArrayList<>();
 
@@ -130,5 +130,5 @@ public class DisruptionHandler {
 					dis.add(entry);
 
 		return dis.get(world.rand.nextInt(dis.size()));
-	}
+	}*/
 }
