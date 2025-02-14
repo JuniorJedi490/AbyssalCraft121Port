@@ -13,29 +13,29 @@ package com.shinoow.abyssalcraft.api.knowledge.condition;
 
 import com.google.common.base.Predicate;
 
-import net.minecraft.world.biome.Biome;
+//import net.minecraft.world.biome.Biome;
 
-public class BiomePredicateCondition implements IUnlockCondition {
+/*public class BiomePredicateCondition implements IUnlockCondition {
 
-	Predicate<Biome> predicate;
+	//Predicate<Biome> predicate;
 	String hint;
 
-	public BiomePredicateCondition(Predicate<Biome> predicate){
+	/*public BiomePredicateCondition(Predicate<Biome> predicate){
 		this.predicate = predicate;
-	}
+	}*/
 
-	@Override
-	public boolean areConditionObjectsEqual(Object stuff) {
+	//@Override
+	/*public boolean areConditionObjectsEqual(Object stuff) {
 
 		return predicate.equals(stuff);
-	}
+	}*/
 
-	@Override
-	public Object getConditionObject() {
+	//@Override
+	/*public Object getConditionObject() {
 		return predicate;
-	}
+	}*/
 
-	@Override
+	/*@Override
 	public int getType() {
 		return 5;
 	}
@@ -52,4 +52,4 @@ public class BiomePredicateCondition implements IUnlockCondition {
 		return this;
 	}
 
-}
+}*/

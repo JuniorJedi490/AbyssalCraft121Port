@@ -16,14 +16,14 @@ import java.util.List;
 import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
 import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.ResourceLocation;
 
 public interface INecroDataCapability {
 
-	boolean isUnlocked(IUnlockCondition cond, EntityPlayer player);
+	//boolean isUnlocked(IUnlockCondition cond, EntityPlayer player);
 
-	boolean isUnlocked(IResearchItem research, EntityPlayer player);
+	//boolean isUnlocked(IResearchItem research, EntityPlayer player);
 
 	void triggerEntityUnlock(String name);
 
@@ -39,7 +39,7 @@ public interface INecroDataCapability {
 
 	void triggerMiscUnlock(String name);
 
-	void completeResearch(ResourceLocation rel);
+	//void completeResearch(ResourceLocation rel);
 
 	void unlockAllKnowledge(boolean unlock);
 
@@ -67,7 +67,7 @@ public interface INecroDataCapability {
 
 	List<String> getMiscTriggers();
 
-	List<ResourceLocation> getCompletedResearches();
+	//List<ResourceLocation> getCompletedResearches();
 
 	boolean hasUnlockedAllKnowledge();
 

@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.energy;
 
-import net.minecraft.item.ItemStack;
+//import net.minecraft.item.ItemStack;
 
 /**
  * Interface to use on blocks for storing metadata used in the item
@@ -44,5 +44,5 @@ public interface IEnergyBlock {
 	 * of this block can hold
 	 * @param stack ItemStack containing the Block
 	 */
-	int getMaxEnergy(ItemStack stack);
+	//int getMaxEnergy(ItemStack stack);
 }

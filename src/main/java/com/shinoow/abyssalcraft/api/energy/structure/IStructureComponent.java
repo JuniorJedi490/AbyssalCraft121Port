@@ -16,7 +16,7 @@ import javax.annotation.Nullable;
 import com.shinoow.abyssalcraft.api.energy.IEnergyContainer;
 import com.shinoow.abyssalcraft.api.energy.IEnergyManipulator;
 
-import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.math.BlockPos;
 
 /**
  * Interface to use on Tile Entities that can gain stat boosts when part of a Place of Power multiblock structure<br>
@@ -43,10 +43,10 @@ public interface IStructureComponent {
 	/**
 	 * Getter for the position of the structure base for the Place of Power this component is part of
 	 */
-	@Nullable BlockPos getBasePosition();
+	//@Nullable BlockPos getBasePosition();
 
 	/**
 	 * Setter for the structure base position for the Place of Power this component is part of
 	 */
-	void setBasePosition(BlockPos pos);
+	//void setBasePosition(BlockPos pos);
 }

@@ -22,9 +22,9 @@ import org.apache.logging.log4j.Logger;
 import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.spell.SpellEnum.ScrollType;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
 
 /**
  * Registry class for Necronomicon Spells<br>
@@ -36,7 +36,7 @@ import net.minecraft.nbt.NBTTagCompound;
 public class SpellRegistry {
 
 	private final List<Spell> spells = new ArrayList<>();
-	private final List<ItemStack> scrolls = new ArrayList<>();
+	//private final List<ItemStack> scrolls = new ArrayList<>();
 
 	private final Logger logger = LogManager.getLogger("SpellRegistry");
 
@@ -71,15 +71,15 @@ public class SpellRegistry {
 		return spells;
 	}
 
-	public Spell getSpell(int bookType, ItemStack parchment, ItemStack[] reagents){
+	/*public Spell getSpell(int bookType, ItemStack parchment, ItemStack[] reagents){
 		return spells.stream().filter(spell -> areSpellsEqual(spell, bookType, parchment, reagents)).findFirst().orElse(null);
-	}
+	}*/
 
 	public Spell getSpell(String name){
 		return spells.stream().filter(spell -> spell.getID().equals(name)).findFirst().orElse(null);
 	}
 
-	private boolean areSpellsEqual(Spell spell, int bookType, ItemStack parchment, ItemStack[] reagents){
+	/*private boolean areSpellsEqual(Spell spell, int bookType, ItemStack parchment, ItemStack[] reagents){
 		if(spell.getBookType() <= bookType)
 			if(APIUtils.areItemStackArraysEqual(spell.getReagents(), reagents, spell.isNBTSensitive()))
 				if(spell.getParent() == null && (!parchment.hasTagCompound() || !parchment.getTagCompound().hasKey("Spell")) ||
@@ -87,9 +87,9 @@ public class SpellRegistry {
 					if(spell.getParchment().isEmpty() || APIUtils.areStacksEqual(parchment, spell.getParchment()))
 						return SpellUtils.getScrollType(parchment).getQuality() >= spell.getScrollType().getQuality();
 						return false;
-	}
+	}*/
 
-	public ItemStack inscribeSpell(Spell spell, ItemStack parchment){
+	/*public ItemStack inscribeSpell(Spell spell, ItemStack parchment){
 
 		if(spell != null){
 			if(!parchment.hasTagCompound())
@@ -99,32 +99,32 @@ public class SpellRegistry {
 		}
 
 		return ItemStack.EMPTY;
-	}
+	}*/
 
 	/**
 	 * Add a scroll to the list of scrolls to display<br>
 	 * in the Necronomicon for compatible spells
 	 * @param scroll Item implementing IScroll
 	 */
-	public void addScroll(Item scroll) {
+	/*public void addScroll(Item scroll) {
 		addScroll(new ItemStack(scroll));
-	}
+	}*/
 
 	/**
 	 * Add a scroll to the list of scrolls to display<br>
 	 * in the Necronomicon for compatible spells
 	 * @param scroll ItemStack implementing IScroll
 	 */
-	public void addScroll(ItemStack scroll) {
+	/*public void addScroll(ItemStack scroll) {
 		if(scroll.getItem() instanceof IScroll)
 			scrolls.add(scroll);
-	}
+	}*/
 
 	/**
 	 * Grabs a list of all scroll items
 	 */
-	public List<ItemStack> getScrolls(ScrollType scrollType){
+	/*public List<ItemStack> getScrolls(ScrollType scrollType){
 		return scrolls.stream().filter(s -> SpellUtils.getScrollType(s).getQuality() >= scrollType.getQuality())
 				.collect(Collectors.toList());
-	}
+	}*/
 }

@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.knowledge.condition;
 
-import net.minecraft.world.biome.Biome;
+//import net.minecraft.world.biome.Biome;
 
 public class MultiBiomeCondition implements IUnlockCondition {
 
 	String[] names;
 	String hint;
 
-	public MultiBiomeCondition(Biome...biomes){
+	/*public MultiBiomeCondition(Biome...biomes){
 		names = new String[biomes.length];
 		for(int i = 0; i < biomes.length; i++)
 			names[i] = biomes[i].getRegistryName().toString();
-	}
+	}*/
 
 	@Override
 	public boolean areConditionObjectsEqual(Object stuff) {

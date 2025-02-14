@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.block;
 
-import net.minecraft.block.Block;
+//import net.minecraft.block.Block;
 
 /**
  * Contains all blocks added in AbyssalCraft
@@ -21,7 +21,7 @@ import net.minecraft.block.Block;
  */
 public class ACBlocks {
 
-	public static Block darkstone;
+	/*public static Block darkstone;
 	public static Block abyssal_stone;
 	public static Block dreadstone;
 	public static Block elysian_stone;
@@ -281,5 +281,5 @@ public class ACBlocks {
 	public static Block tombstone_elysian_stone;
 	public static Block tombstone_ethaxium;
 	public static Block tombstone_monolith_stone;
-	public static Block tombstone_omothol_stone;
+	public static Block tombstone_omothol_stone;*/
 }

@@ -16,13 +16,13 @@ import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
 import com.shinoow.abyssalcraft.api.knowledge.IResearchable;
 import com.shinoow.abyssalcraft.api.knowledge.ResearchItems;
 
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Base Necronomicon Ritual.<br>
@@ -39,7 +39,7 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	private int bookType, dimension;
 	private float requiredEnergy;
 	private boolean requiresSacrifice, nbtSensitive, nbtSensitiveSacrifice;
-	private IResearchItem condition = ResearchItems.DEFAULT;
+	//private IResearchItem condition = ResearchItems.DEFAULT;
 	private EnumRitualParticle particle = EnumRitualParticle.ITEM;
 
 	/**
@@ -85,7 +85,7 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
 	public NecronomiconRitual(String unlocalizedName, int bookType, float requiredEnergy, Object...offerings){
-		this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, offerings);
+		//this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, offerings);
 	}
 
 	/**
@@ -172,19 +172,19 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	 * Used to fetch the localized name for a ritual
 	 * @return A localized string representing a name
 	 */
-	@SideOnly(Side.CLIENT)
-	public String getLocalizedName(){
+	//@SideOnly(Side.CLIENT)
+	/*public String getLocalizedName(){
 		return I18n.format(getUnlocalizedName());
-	}
+	}*/
 
 	/**
 	 * Used to fetch the description for the ritual
 	 * @return A localized string representing a description
 	 */
-	@SideOnly(Side.CLIENT)
-	public String getDescription(){
+	//@SideOnly(Side.CLIENT)
+	/*public String getDescription(){
 		return I18n.format(getUnlocalizedName() + ".desc");
-	}
+	}*/
 
 	/**
 	 * Used for Ritual types that don't require a specific Item sacrifice, but needs<br>
@@ -231,15 +231,15 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	@Override
 	public NecronomiconRitual setResearchItem(IResearchItem condition) {
 
-		this.condition = condition;
+		//this.condition = condition;
 		return this;
 	}
 
-	@Override
-	public IResearchItem getResearchItem(NecronomiconRitual object) {
+	//@Override
+	/*public IResearchItem getResearchItem(NecronomiconRitual object) {
 
-		return condition;
-	}
+		//return condition;
+	}*/
 
 	/**
 	 * Override this to ensure that the ritual can be completed (only fires on the server)
@@ -250,7 +250,7 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	 * @param player Player performing the ritual
 	 * @return True if all conditions are met, otherwise false
 	 */
-	public abstract boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player);
+	//public abstract boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player);
 
 	/**
 	 * Called when a ritual is completed
@@ -260,13 +260,13 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	 * @param z Z coordinate
 	 * @param player Player who performed the ritual
 	 */
-	public void completeRitual(World world, BlockPos pos, EntityPlayer player){
+	/*public void completeRitual(World world, BlockPos pos, EntityPlayer player){
 		if(!world.isRemote) {
 			completeRitualServer(world, pos, player);
 			AbyssalCraftAPI.getInternalMethodHandler().completeRitualClient(pos, player, unlocalizedName);
 		}
 		if(world.isRemote) completeRitualClient(world, pos, player);
-	}
+	}*/
 
 	/**
 	 * Override this to do something client-side when the ritual is completed
@@ -276,7 +276,7 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	 * @param z Z coordinate
 	 * @param player Player who performed the ritual
 	 */
-	protected abstract void completeRitualClient(World world, BlockPos pos, EntityPlayer player);
+	//protected abstract void completeRitualClient(World world, BlockPos pos, EntityPlayer player);
 
 	/**
 	 * Override this to do something server-side when the ritual is completed
@@ -286,5 +286,5 @@ public abstract class NecronomiconRitual implements IResearchable<NecronomiconRi
 	 * @param z Z coordinate
 	 * @param player Player who performed the ritual
 	 */
-	protected abstract void completeRitualServer(World world, BlockPos pos, EntityPlayer player);
+	//protected abstract void completeRitualServer(World world, BlockPos pos, EntityPlayer player);
 }

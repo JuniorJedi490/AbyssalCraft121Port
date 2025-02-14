@@ -14,10 +14,10 @@ package com.shinoow.abyssalcraft.api.energy.structure;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.AmplifierType;
 import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
 
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
 /**
  * Places of Power are structures capable of harvesting PE through energy manipulators without angering the gods<br>
@@ -64,14 +64,14 @@ public interface IPlaceOfPower {
 	 * @param world Current world
 	 * @param pos Current position (where the Player constructing this right-clicked)
 	 */
-	void construct(World world, BlockPos pos);
+	//void construct(World world, BlockPos pos);
 
 	/**
 	 * Check that the structure is still valid, then take actions accordingly
 	 * @param world Current World
 	 * @param pos Position of base block
 	 */
-	void validate(World world, BlockPos pos);
+	//void validate(World world, BlockPos pos);
 
 	/**
 	 * Checks whether or not the structure can be constructed (the Book Type and Unlock Condition are checked prior to this)
@@ -80,17 +80,17 @@ public interface IPlaceOfPower {
 	 * @param player Player attempting to construct this
 	 * @return True if the structure can be constructed, otherwise false
 	 */
-	boolean canConstruct(World world, BlockPos pos, EntityPlayer player);
+	//boolean canConstruct(World world, BlockPos pos, EntityPlayer player);
 
 	/**
 	 * Returns a multidimensional array of Block States depicting how the structure looks when assembled
 	 */
-	IBlockState[][][] getRenderData();
+	//IBlockState[][][] getRenderData();
 
 	/**
 	 * Returns the position of the block that forms the structure when activated
 	 */
-	BlockPos getActivationPointForRender();
+	//BlockPos getActivationPointForRender();
 
 	/**
 	 * Returns a String (either the localization name or a fixed one) with semi-colon (;) separated values listing the

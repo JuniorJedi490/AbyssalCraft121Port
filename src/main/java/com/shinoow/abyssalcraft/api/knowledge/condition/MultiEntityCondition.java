@@ -11,8 +11,8 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.knowledge.condition;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityList;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityList;
 
 public class MultiEntityCondition implements IUnlockCondition {
 
@@ -23,11 +23,11 @@ public class MultiEntityCondition implements IUnlockCondition {
 		this.names = names;
 	}
 
-	public MultiEntityCondition(Class<? extends Entity>...entities){
+	/*public MultiEntityCondition(Class<? extends Entity>...entities){
 		names = new String[entities.length];
 		for(int i = 0; i < entities.length; i++)
 			names[i] = EntityList.getKey(entities[i]).toString();
-	}
+	}*/
 
 	@Override
 	public boolean areConditionObjectsEqual(Object stuff) {
