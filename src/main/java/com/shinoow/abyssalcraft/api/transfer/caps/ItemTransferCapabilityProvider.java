@@ -11,14 +11,14 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.transfer.caps;
 
-//import net.minecraft.nbt.NBTBase;
-//import net.minecraft.util.EnumFacing;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;
-//import net.minecraftforge.common.capabilities.CapabilityInject;
+import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.util.INBTSerializable;
 
-/*public class ItemTransferCapabilityProvider implements ICapabilityProvider, INBTSerializable<NBTBase> {
+public class ItemTransferCapabilityProvider implements ICapabilityProvider, INBTSerializable<NBTBase> {
 
 	@CapabilityInject(IItemTransferCapability.class)
 	public static final Capability<IItemTransferCapability> ITEM_TRANSFER_CAP = null;
@@ -54,4 +54,4 @@ import net.minecraftforge.common.util.INBTSerializable;
 		ItemTransferCapabilityStorage.instance.readNBT(ITEM_TRANSFER_CAP, capability, null, nbt);
 	}
 
-}*/
+}

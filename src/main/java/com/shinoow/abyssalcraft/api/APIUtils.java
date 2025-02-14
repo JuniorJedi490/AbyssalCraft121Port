@@ -22,18 +22,18 @@ import com.shinoow.abyssalcraft.api.knowledge.IResearchable;
 import com.shinoow.abyssalcraft.api.knowledge.condition.caps.INecroDataCapability;
 import com.shinoow.abyssalcraft.api.knowledge.condition.caps.NecroDataCapability;
 
-//import net.minecraft.block.Block;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-//import net.minecraft.client.gui.FontRenderer;
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.item.Item;
-//import net.minecraft.item.ItemStack;
-//import net.minecraft.item.crafting.Ingredient;
-//import net.minecraft.nbt.NBTBase;
-//import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraftforge.fml.relauncher.Side;
-//import net.minecraftforge.fml.relauncher.SideOnly;
-//import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Utilities for the AbyssalCraft API
@@ -52,18 +52,18 @@ public class APIUtils {
 	 *
 	 * @since 1.4
 	 */
-	/*public static boolean isCrystal(ItemStack item){
+	public static boolean isCrystal(ItemStack item){
 		if(item.getItem() instanceof ICrystal)
 			return true;
 		return AbyssalCraftAPI.getCrystals().stream().anyMatch(crystal -> areStacksEqual(item, crystal));
-	}*/
+	}
 
 	/**
 	 * Converts an Object to an ItemStack, if possible
 	 * @param obj Object to convert
 	 * @return An ItemStack, or a ClassCastException if not possible
 	 */
-	/*public static ItemStack convertToStack(Object obj){
+	public static ItemStack convertToStack(Object obj){
 		if(obj == null)
 			return ItemStack.EMPTY;
 		else if(obj instanceof ItemStack)
@@ -81,7 +81,7 @@ public class APIUtils {
 			else if(obj instanceof List)
 				return ((ItemStack)((List) obj).get(0)).copy();
 			else throw new ClassCastException("Not a Item, Block, ItemStack, Ingredient, Array of ItemStacks, String or List of ItemStacks!");
-	}*/
+	}
 
 	/**
 	 * Compares an array of Objects to one containing ItemStacks
@@ -90,7 +90,7 @@ public class APIUtils {
 	 * @param nbt If ItemStack NBT should be compared as well
 	 * @return True if the contents are equal, otherwise false
 	 */
-	/*public static boolean areItemStackArraysEqual(Object[] array1, ItemStack[] array2, boolean nbt){
+	public static boolean areItemStackArraysEqual(Object[] array1, ItemStack[] array2, boolean nbt){
 
 		List<Object> compareList = nonNullList(array1);
 		List<ItemStack> itemList = Arrays.stream(array2).filter(Predicates.not(ItemStack::isEmpty)).collect(Collectors.toList());
@@ -104,7 +104,7 @@ public class APIUtils {
 					}
 
 		return compareList.isEmpty();
-	}*/
+	}
 
 	/**
 	 * Converts an array of Objects into a List without any null elements.<br>
@@ -122,7 +122,7 @@ public class APIUtils {
 	 * @param nbt If ItemStack NBT should be compared as well
 	 * @return True if both Objects are equal, otherwise false
 	 */
-	/*public static boolean areObjectsEqual(ItemStack stack, Object obj, boolean nbt){
+	public static boolean areObjectsEqual(ItemStack stack, Object obj, boolean nbt){
 		if(obj instanceof ItemStack)
 			return areStacksEqual(stack, (ItemStack)obj, nbt);
 		else if(obj instanceof Item)
@@ -142,7 +142,7 @@ public class APIUtils {
 				if(areStacksEqual(stack, item, nbt))
 					return true;
 		return false;
-	}*/
+	}
 
 	/**
 	 * Compares two ItemStacks
@@ -151,11 +151,11 @@ public class APIUtils {
 	 * @param nbt If ItemStack NBT should be compared as well
 	 * @return True if both stacks are equal, otherwise false
 	 */
-	/*public static boolean areStacksEqual(ItemStack stack1, ItemStack stack2, boolean nbt){
+	public static boolean areStacksEqual(ItemStack stack1, ItemStack stack2, boolean nbt){
 		if(stack1.isEmpty() || stack2.isEmpty()) return false;
 		return nbt ? areStacksEqual(stack1, stack2) && areItemStackTagsEqual(stack2, stack1, 0) :
 			areStacksEqual(stack1, stack2);
-	}*/
+	}
 
 	/**
 	 * Compares two ItemStacks
@@ -163,12 +163,12 @@ public class APIUtils {
 	 * @param stack2 Second ItemStack to compare (the recipe Item Stack)
 	 * @return True if both stacks are equal, otherwise false
 	 */
-	/*public static boolean areStacksEqual(ItemStack stack1, ItemStack stack2)
+	public static boolean areStacksEqual(ItemStack stack1, ItemStack stack2)
 	{
 		if (stack1.isEmpty() || stack2.isEmpty()) return false;
 		return stack1.getItem() == stack2.getItem() && (stack2.getItemDamage() == OreDictionary.WILDCARD_VALUE
 				|| stack1.getItemDamage() == stack2.getItemDamage());
-	}*/
+	}
 
 	/**
 	 * Convenience method to call in getFontRenderer of any Item implementing IUnlockableItem<br>
@@ -176,15 +176,15 @@ public class APIUtils {
 	 * @param stack The current ItemStack
 	 * @return The Aklo font renderer if the Item is locked, otherwise null
 	 */
-	//@SideOnly(Side.CLIENT)
-	/*public static FontRenderer getFontRenderer(ItemStack stack){
+	@SideOnly(Side.CLIENT)
+	public static FontRenderer getFontRenderer(ItemStack stack){
 		if(!(stack.getItem() instanceof IResearchable) || display_names) return null;
 		EntityPlayer player = Minecraft.getMinecraft().player;
 		if(player == null) return null;
 		INecroDataCapability cap = NecroDataCapability.getCap(player);
 
 		return cap.isUnlocked(((IResearchable) stack.getItem()).getResearchItem(stack), player) ? null : AbyssalCraftAPI.getAkloFont();
-	}*/
+	}
 
 	/**
 	 * Checks if two ItemStacks have the same NBT tags ({@link ItemStack#areItemStackTagsEqual(ItemStack, ItemStack)} without comparing capabilities)
@@ -198,7 +198,7 @@ public class APIUtils {
 	 * </ul>
 	 * @return True if the NBT tags match, otherwise false
 	 */
-	/*public static boolean areItemStackTagsEqual(ItemStack stackA, ItemStack stackB, int strictness)
+	public static boolean areItemStackTagsEqual(ItemStack stackA, ItemStack stackB, int strictness)
 	{
 		switch(strictness) {
 		case 0:
@@ -229,7 +229,7 @@ public class APIUtils {
 		default:
 			return false;
 		}
-	}*/
+	}
 
 	/**
 	 * Checks if the second NBT tag compound contains the tags of the first one
@@ -237,7 +237,7 @@ public class APIUtils {
 	 * @param tag1 Second tag compound
 	 * @return True if the second compound contains all of the tags from the first one, otherwise false
 	 */
-	/*private static boolean compoundContainsCompound(NBTTagCompound tag, NBTTagCompound tag1) {
+	private static boolean compoundContainsCompound(NBTTagCompound tag, NBTTagCompound tag1) {
 
 		for (String s : tag.getKeySet())
 		{
@@ -258,24 +258,24 @@ public class APIUtils {
 		}
 
 		return true;
-	}*/
+	}
 
 	/**
 	 * Need an array of all statues? Well, here you go!
 	 */
-	/*public static final ItemStack[] getAllStatues() {
+	public static final ItemStack[] getAllStatues() {
 		return new ItemStack[]{new ItemStack(ACBlocks.jzahar_statue), new ItemStack(ACBlocks.cthulhu_statue),
 				new ItemStack(ACBlocks.hastur_statue), new ItemStack(ACBlocks.azathoth_statue), new ItemStack(ACBlocks.nyarlathotep_statue),
 				new ItemStack(ACBlocks.yog_sothoth_statue), new ItemStack(ACBlocks.shub_niggurath_statue)};
-	}*/
+	}
 
 	/**
 	 * Oh, you want the decorative statues? Ta-da!
 	 */
-	/*public static final ItemStack[] getAllDecorativeStatues() {
+	public static final ItemStack[] getAllDecorativeStatues() {
 		return new ItemStack[]{new ItemStack(ACBlocks.decorative_jzahar_statue), new ItemStack(ACBlocks.decorative_cthulhu_statue),
 				new ItemStack(ACBlocks.decorative_hastur_statue), new ItemStack(ACBlocks.decorative_azathoth_statue),
 				new ItemStack(ACBlocks.decorative_nyarlathotep_statue), new ItemStack(ACBlocks.decorative_yog_sothoth_statue),
 				new ItemStack(ACBlocks.decorative_shub_niggurath_statue)};
-	}*/
+	}
 }

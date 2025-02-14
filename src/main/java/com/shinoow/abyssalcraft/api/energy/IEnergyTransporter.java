@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.energy;
 
-//import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumFacing;
 
 /**
  * Interface to use on tile entities that can transport Potential Energy
@@ -28,5 +28,5 @@ public interface IEnergyTransporter extends IEnergyContainer {
 	 * @param energy PE quanta to transfer
 	 * @return True if the transfer succeeded, otherwise false
 	 */
-	//void transferPE(EnumFacing facing, float energy);
+	void transferPE(EnumFacing facing, float energy);
 }

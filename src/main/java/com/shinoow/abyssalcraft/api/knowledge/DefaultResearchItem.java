@@ -14,15 +14,15 @@ package com.shinoow.abyssalcraft.api.knowledge;
 import com.shinoow.abyssalcraft.api.knowledge.condition.DefaultCondition;
 import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 
-//import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.ResourceLocation;
 
-/*public class DefaultResearchItem extends ResearchItem {
+public class DefaultResearchItem extends ResearchItem {
 
-	/*public DefaultResearchItem() {
+	public DefaultResearchItem() {
 		super("", -1, new ResourceLocation("abyssalcraft:default"));
-	}*/
+	}
 
-	/*@Override
+	@Override
 	public IUnlockCondition[] getUnlockConditions() {
 
 		return new IUnlockCondition[] {new DefaultCondition()};
@@ -45,4 +45,4 @@ import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 
 		return "This is the blank (unlocked) default research item.";
 	}
-}*/
+}

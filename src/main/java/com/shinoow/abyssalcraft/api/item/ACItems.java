@@ -11,8 +11,8 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.item;
 
-//import net.minecraft.item.Item;
-//import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 /**
  * Contains all items added in AbyssalCraft
@@ -22,11 +22,11 @@ package com.shinoow.abyssalcraft.api.item;
  */
 public class ACItems {
 
-	/*public static ItemStack liquid_coralium_bucket_stack;
-	public static ItemStack liquid_antimatter_bucket_stack;*/
+	public static ItemStack liquid_coralium_bucket_stack;
+	public static ItemStack liquid_antimatter_bucket_stack;
 
 	// Miscellaneous
-	/*public static Item oblivion_catalyst;
+	public static Item oblivion_catalyst;
 	public static Item eye_of_the_abyss;
 	public static Item essence_of_the_gatekeeper;
 	public static Item anti_bone;
@@ -41,10 +41,10 @@ public class ACItems {
 	public static Item configurator_shard_2;
 	public static Item configurator_shard_3;
 	public static Item lost_page;
-	public static Item scriptures_of_omniscience;*/
+	public static Item scriptures_of_omniscience;
 
 	// Tools/Weapons
-	/*public static Item abyssalnite_pickaxe;
+	public static Item abyssalnite_pickaxe;
 	public static Item abyssalnite_axe;
 	public static Item abyssalnite_shovel;
 	public static Item abyssalnite_sword;
@@ -69,10 +69,10 @@ public class ACItems {
 	public static Item ethaxium_axe;
 	public static Item ethaxium_shovel;
 	public static Item ethaxium_sword;
-	public static Item ethaxium_hoe;*/
+	public static Item ethaxium_hoe;
 
 	// Armor
-	/*public static Item abyssalnite_helmet;
+	public static Item abyssalnite_helmet;
 	public static Item abyssalnite_chestplate;
 	public static Item abyssalnite_leggings;
 	public static Item abyssalnite_boots;
@@ -103,10 +103,10 @@ public class ACItems {
 	public static Item ethaxium_helmet;
 	public static Item ethaxium_chestplate;
 	public static Item ethaxium_leggings;
-	public static Item ethaxium_boots;*/
+	public static Item ethaxium_boots;
 
 	// Misc Tools
-	/*public static Item gateway_key;
+	public static Item gateway_key;
 	public static Item staff_of_the_gatekeeper;
 	public static Item powerstone_tracker;
 	public static Item transmutation_gem;
@@ -125,10 +125,10 @@ public class ACItems {
 	public static Item medium_crystal_bag;
 	public static Item large_crystal_bag;
 	public static Item huge_crystal_bag;
-	public static Item sealing_key;*/
+	public static Item sealing_key;
 
 	// Ritualistic Tools
-	/*public static Item necronomicon;
+	public static Item necronomicon;
 	public static Item abyssal_wasteland_necronomicon;
 	public static Item dreadlands_necronomicon;
 	public static Item omothol_necronomicon;
@@ -164,19 +164,19 @@ public class ACItems {
 	public static Item shub_niggurath_charm;
 	public static Item range_shub_niggurath_charm;
 	public static Item duration_shub_niggurath_charm;
-	public static Item power_shub_niggurath_charm;*/
+	public static Item power_shub_niggurath_charm;
 
 	// Spellcasting
-	/*public static Item stone_tablet;
+	public static Item stone_tablet;
 	public static Item basic_scroll;
 	public static Item lesser_scroll;
 	public static Item moderate_scroll;
 	public static Item greater_scroll;
 	public static Item antimatter_scroll;
-	public static Item oblivion_scroll;*/
+	public static Item oblivion_scroll;
 
 	// Materials
-	/*public static Item dreaded_shard_of_abyssalnite;
+	public static Item dreaded_shard_of_abyssalnite;
 	public static Item dreaded_chunk_of_abyssalnite;
 	public static Item chunk_of_abyssalnite;
 	public static Item abyssalnite_ingot;
@@ -205,10 +205,10 @@ public class ACItems {
 	public static Item charcoal;
 	public static Item methane;
 	public static Item nitre;
-	public static Item sulfur;*/
+	public static Item sulfur;
 
 	// Misc Materials
-	/*public static Item coralium_plate;
+	public static Item coralium_plate;
 	public static Item shadow_fragment;
 	public static Item shadow_shard;
 	public static Item shadow_gem;
@@ -230,10 +230,10 @@ public class ACItems {
 	public static Item omothol_essence;
 	public static Item skin_of_the_abyssal_wasteland;
 	public static Item skin_of_the_dreadlands;
-	public static Item skin_of_omothol;*/
+	public static Item skin_of_omothol;
 
 	// Food (maybe don't eat all of them)
-	/*public static Item coralium_plagued_flesh;
+	public static Item coralium_plagued_flesh;
 	public static Item coralium_plagued_flesh_on_a_bone;
 	public static Item anti_beef;
 	public static Item anti_chicken;
@@ -244,10 +244,10 @@ public class ACItems {
 	public static Item anti_plagued_flesh;
 	public static Item anti_plagued_flesh_on_a_bone;
 	public static Item generic_meat;
-	public static Item cooked_generic_meat;*/
+	public static Item cooked_generic_meat;
 
 	// Crystals
-	/*public static Item crystal_iron;
+	public static Item crystal_iron;
 	public static Item crystal_gold;
 	public static Item crystal_sulfur;
 	public static Item crystal_carbon;
@@ -330,5 +330,5 @@ public class ACItems {
 	public static Item crystal_fragment_zinc;
 	public static Item crystal_fragment_calcium;
 	public static Item crystal_fragment_beryllium;
-	public static Item crystal_fragment_beryl;*/
+	public static Item crystal_fragment_beryl;
 }

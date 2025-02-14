@@ -21,7 +21,7 @@ package com.shinoow.abyssalcraft.api.knowledge;
 public class ResearchItems {
 
 	// Default Research Item
-	//public static IResearchItem DEFAULT = new DefaultResearchItem();
+	public static IResearchItem DEFAULT = new DefaultResearchItem();
 
 	// Biome conditions
 	public static IResearchItem DARKLANDS_BIOME;
@@ -74,7 +74,7 @@ public class ResearchItems {
 	public static IResearchItem OMOTHOL_NECRO;
 	public static IResearchItem ABYSSALNOMICON;
 
-	/*public static IResearchItem getBookResearch(int book) {
+	public static IResearchItem getBookResearch(int book) {
 		switch (book) {
 		case 1:
 			return ABYSSAL_WASTELAND_NECRO;
@@ -85,7 +85,7 @@ public class ResearchItems {
 		case 4:
 			return ABYSSALNOMICON;
 		default:
-			//return DEFAULT;
+			return DEFAULT;
 		}
-	}*/
+	}
 }

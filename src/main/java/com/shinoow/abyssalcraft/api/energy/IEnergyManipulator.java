@@ -16,8 +16,8 @@ import java.util.Set;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.AmplifierType;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 
-//import net.minecraft.block.state.IBlockState;
-//import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.math.BlockPos;
 
 /**
  * Interface to use on tile entities that can manipulate Ley Lines (WIP)<br>
@@ -50,7 +50,7 @@ public interface IEnergyManipulator {
 	/**
 	 * Returns the Deity associated with this manipulator (can be null)
 	 */
-	//DeityType getDeity(IBlockState state);
+	DeityType getDeity(IBlockState state);
 
 	/**
 	 * Used to calculate Amplification through Charms.<br>
@@ -107,7 +107,7 @@ public interface IEnergyManipulator {
 	/**
 	 * Returns the current positions of the currently tracked Energy Collectors within range of the manipulator
 	 */
-	/*default Set<BlockPos> getEnergyCollectors(){
+	default Set<BlockPos> getEnergyCollectors(){
 		return null;
-	}*/
+	}
 }

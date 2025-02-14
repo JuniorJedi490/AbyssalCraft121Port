@@ -15,7 +15,7 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.item.ICrystal;
 
-//import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemStack;
 
 /**
  * A Materializer recipe
@@ -25,8 +25,8 @@ import com.shinoow.abyssalcraft.api.item.ICrystal;
  */
 public class Materialization {
 
-	//public final ItemStack output;
-	//public final ItemStack[] input;
+	public final ItemStack output;
+	public final ItemStack[] input;
 
 	/**
 	 * A Materializer recipe.<br>
@@ -34,7 +34,7 @@ public class Materialization {
 	 * @param input An array of ItemStacks (maximum is 5)
 	 * @param output The output
 	 */
-	/*public Materialization(ItemStack[] input, ItemStack output){
+	public Materialization(ItemStack[] input, ItemStack output){
 
 		if(input.length > 5) throw new ArrayIndexOutOfBoundsException("Array is too large ("+input.length+")! Maximum size is 5!");
 		for(ItemStack item : input)
@@ -42,5 +42,5 @@ public class Materialization {
 
 		this.output = output;
 		this.input = input;
-	}*/
+	}
 }

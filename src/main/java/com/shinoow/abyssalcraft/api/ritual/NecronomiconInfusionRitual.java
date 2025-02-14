@@ -13,13 +13,13 @@ package com.shinoow.abyssalcraft.api.ritual;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.item.ItemStack;
-//import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraft.tileentity.TileEntity;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
-//import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * A Necronomicon Infusion Ritual
@@ -27,7 +27,7 @@ import com.shinoow.abyssalcraft.api.APIUtils;
  *
  * @since 1.4
  */
-/*public class NecronomiconInfusionRitual extends NecronomiconCreationRitual {
+public class NecronomiconInfusionRitual extends NecronomiconCreationRitual {
 
 	private String[] tags;
 
@@ -42,12 +42,12 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 	 * @param sacrifice Item to upgrade
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconInfusionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy,
+	public NecronomiconInfusionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy,
 			boolean requiresSacrifice, ItemStack item, Object sacrifice, Object...offerings) {
 		super(unlocalizedName, bookType, dimension, requiredEnergy, requiresSacrifice, item, offerings);
 		this.sacrifice = sacrifice;
 		setRitualParticle(EnumRitualParticle.ITEM_SMOKE_COMBO);
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Infusion Ritual
@@ -59,11 +59,11 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 	 * @param sacrifice Item to upgrade
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconInfusionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy,
+	public NecronomiconInfusionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy,
 			ItemStack item, Object sacrifice, Object...offerings) {
 		this(unlocalizedName, bookType, dimension, requiredEnergy, false, item, sacrifice, offerings);
 
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Infusion Ritual
@@ -74,17 +74,17 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 	 * @param sacrifice Item to upgrade
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconInfusionRitual(String unlocalizedName, int bookType, float requiredEnergy, ItemStack item, Object sacrifice, Object...offerings) {
+	public NecronomiconInfusionRitual(String unlocalizedName, int bookType, float requiredEnergy, ItemStack item, Object sacrifice, Object...offerings) {
 		this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, item, sacrifice, offerings);
-	}*/
+	}
 
-	/*public NecronomiconInfusionRitual setTags(String... strings){
+	public NecronomiconInfusionRitual setTags(String... strings){
 		tags = strings;
 		return this;
-	}*/
+	}
 
-	//@Override
-	/*public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
+	@Override
+	public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
 
 		TileEntity altar = world.getTileEntity(pos);
 
@@ -93,10 +93,10 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 		NBTTagCompound nbtItem = compound.getCompoundTag("Item");
 
 		return APIUtils.areObjectsEqual(new ItemStack(nbtItem), sacrifice, false);
-	}*/
+	}
 
-	//@Override
-	/*protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
+	@Override
+	protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
 		if(canCompleteRitual(world, pos, player)){
 			NBTTagCompound data = new NBTTagCompound();
 			if(tags != null && tags.length > 0){
@@ -129,9 +129,9 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 				altar.readFromNBT(compound);
 			}
 		}
-	}*/
+	}
 
 
-	//@Override
-	//protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){}
-//}
+	@Override
+	protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){}
+}

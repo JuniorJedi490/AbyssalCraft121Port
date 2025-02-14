@@ -13,13 +13,13 @@ package com.shinoow.abyssalcraft.api.ritual;
 
 import java.util.Random;
 
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.init.MobEffects;
-//import net.minecraft.potion.Potion;
-//import net.minecraft.potion.PotionEffect;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
-//import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * A Necronomicon Potion Ritual
@@ -27,7 +27,7 @@ import java.util.Random;
  *
  * @since 1.4
  */
-/*public class NecronomiconPotionRitual extends NecronomiconRitual {
+public class NecronomiconPotionRitual extends NecronomiconRitual {
 
 	private Object potion;
 
@@ -41,11 +41,11 @@ import java.util.Random;
 	 * @param potions Either a Potion effect or a Potion ID (will last for 2 minutes)
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconPotionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice,
+	public NecronomiconPotionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice,
 			Object potion, Object...offerings) {
 		super(unlocalizedName, bookType, dimension, requiredEnergy, requiresSacrifice, offerings);
 		this.potion = potion;
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Potion Ritual
@@ -56,10 +56,10 @@ import java.util.Random;
 	 * @param potions Either a Potion effect or a Potion ID (will last for 2 minutes)
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconPotionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, Object potion,
+	public NecronomiconPotionRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, Object potion,
 			Object...offerings) {
 		this(unlocalizedName, bookType, dimension, requiredEnergy, false, potion, offerings);
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Potion Ritual
@@ -69,23 +69,23 @@ import java.util.Random;
 	 * @param potions Either a Potion effect or a Potion ID (will last for 2 minutes)
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconPotionRitual(String unlocalizedName, int bookType, float requiredEnergy, Object potion, Object...offerings) {
-		//this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, potion, offerings);
-	}*/
+	public NecronomiconPotionRitual(String unlocalizedName, int bookType, float requiredEnergy, Object potion, Object...offerings) {
+		this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, potion, offerings);
+	}
 
 	/**
 	 * A getter for the Potion Effect
 	 * @return Either a Potion Effect or null
 	 */
-	/*public Potion getPotionEffect(){
+	public Potion getPotionEffect(){
 		if(potion instanceof Potion)
 			return (Potion) potion;
 		if(potion instanceof Integer)
 			return Potion.getPotionById((int) potion);
 		return null;
-	}*/
+	}
 
-	/*private Potion getBadEffect(Random rand){
+	private Potion getBadEffect(Random rand){
 		switch(rand.nextInt(5)){
 		case 0:
 			return MobEffects.BLINDNESS;
@@ -102,21 +102,21 @@ import java.util.Random;
 		default:
 			return getBadEffect(rand);
 		}
-	}*/
+	}
 
-	//@Override
-	/*public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
+	@Override
+	public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
 
 		return true;
-	}*/
+	}
 
-	//@Override
-	/*protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
+	@Override
+	protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
 
 		player.addPotionEffect(new PotionEffect(getPotionEffect(), 2400));
 		player.addPotionEffect(new PotionEffect(getBadEffect(world.rand), 600));
-	}*/
+	}
 
-	//@Override
-	//protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){}
-//}
+	@Override
+	protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){}
+}

@@ -13,29 +13,29 @@ package com.shinoow.abyssalcraft.api.knowledge.condition;
 
 import com.google.common.base.Predicate;
 
-//import net.minecraft.entity.Entity;
+import net.minecraft.entity.Entity;
 
-/*public class EntityPredicateCondition implements IUnlockCondition {
+public class EntityPredicateCondition implements IUnlockCondition {
 
-	//Predicate<Class<? extends Entity>> predicate;
+	Predicate<Class<? extends Entity>> predicate;
 	String hint;
 
-	/*public EntityPredicateCondition(Predicate<Class<? extends Entity>> predicate){
+	public EntityPredicateCondition(Predicate<Class<? extends Entity>> predicate){
 		this.predicate = predicate;
-	}*/
+	}
 
-	//@Override
-	/*public boolean areConditionObjectsEqual(Object stuff) {
+	@Override
+	public boolean areConditionObjectsEqual(Object stuff) {
 
 		return predicate.equals(stuff);
-	}*/
+	}
 
-	//@Override
-	/*public Object getConditionObject() {
+	@Override
+	public Object getConditionObject() {
 		return predicate;
-	}*/
+	}
 
-	/*@Override
+	@Override
 	public int getType() {
 		return 6;
 	}
@@ -52,4 +52,4 @@ import com.google.common.base.Predicate;
 		return this;
 	}
 
-}*/
+}

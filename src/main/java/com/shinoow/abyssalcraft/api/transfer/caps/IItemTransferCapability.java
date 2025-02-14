@@ -13,7 +13,7 @@ package com.shinoow.abyssalcraft.api.transfer.caps;
 
 import java.util.List;
 
-//import com.shinoow.abyssalcraft.api.transfer.ItemTransferConfiguration;
+import com.shinoow.abyssalcraft.api.transfer.ItemTransferConfiguration;
 
 /**
  * Interface for the Item Transfer Capability
@@ -27,12 +27,12 @@ public interface IItemTransferCapability {
 	 * Adds a configuration to the capability
 	 * @param config Item Transfer Configuraiton to add
 	 */
-	//void addTransferConfiguration(ItemTransferConfiguration config);
+	void addTransferConfiguration(ItemTransferConfiguration config);
 
 	/**
 	 * Returns a list of all stored configurations
 	 */
-	//List<ItemTransferConfiguration> getTransferConfigurations();
+	List<ItemTransferConfiguration> getTransferConfigurations();
 
 	/**
 	 * Clears all configurations in the capability

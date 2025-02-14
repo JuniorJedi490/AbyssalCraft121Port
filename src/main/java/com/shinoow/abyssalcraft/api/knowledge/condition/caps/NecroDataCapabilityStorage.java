@@ -12,14 +12,14 @@
 package com.shinoow.abyssalcraft.api.knowledge.condition.caps;
 
 import net.minecraft.nbt.*;
-//import net.minecraft.util.EnumFacing;
-//import net.minecraft.util.ResourceLocation;
-//import net.minecraftforge.common.DimensionManager;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.common.capabilities.Capability;
-//import net.minecraftforge.common.capabilities.Capability.IStorage;
-//import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.common.capabilities.Capability.IStorage;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-/*public class NecroDataCapabilityStorage implements IStorage<INecroDataCapability> {
+public class NecroDataCapabilityStorage implements IStorage<INecroDataCapability> {
 
 	public static IStorage<INecroDataCapability> instance = new NecroDataCapabilityStorage();
 
@@ -113,4 +113,4 @@ import net.minecraftforge.common.capabilities.Capability;
 		instance.setKnowledgePoints(properties.getInteger("knowledgePoints"));
 	}
 
-}*/
+}

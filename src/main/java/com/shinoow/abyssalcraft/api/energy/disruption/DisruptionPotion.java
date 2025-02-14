@@ -16,13 +16,13 @@ import java.util.List;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 
-//import net.minecraft.entity.EntityLivingBase;
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.potion.Potion;
-//import net.minecraft.potion.PotionEffect;
-//import net.minecraft.util.math.AxisAlignedBB;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 /**
  * A Potion Disruption Entry
@@ -30,9 +30,9 @@ import com.shinoow.abyssalcraft.api.entity.EntityUtil;
  *
  * @since 1.5
  */
-//public class DisruptionPotion extends DisruptionEntry {
+public class DisruptionPotion extends DisruptionEntry {
 
-	//private Potion potion;
+	private Potion potion;
 
 	/**
 	 * A Potion Disruption Entry
@@ -40,13 +40,13 @@ import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 	 * @param deity Deity whose image must be present for this to happen
 	 * @param potion A Potion Effect
 	 */
-	/*public DisruptionPotion(String unlocalizedName, DeityType deity, Potion potion) {
+	public DisruptionPotion(String unlocalizedName, DeityType deity, Potion potion) {
 		super(unlocalizedName, deity);
 		this.potion = potion;
-	}*/
+	}
 
-	//@Override
-	/*public void disrupt(World world, BlockPos pos, List<EntityPlayer> players) {
+	@Override
+	public void disrupt(World world, BlockPos pos, List<EntityPlayer> players) {
 
 		if(!world.isRemote){
 			List<EntityLivingBase> entities = world.getEntitiesWithinAABB(EntityLivingBase.class, new AxisAlignedBB(pos).grow(16, 16, 16));
@@ -55,5 +55,5 @@ import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 				if(!EntityUtil.isEntityImmune(entity, potion))
 					entity.addPotionEffect(new PotionEffect(potion, 600));
 		}
-	}*/
-//}
+	}
+}

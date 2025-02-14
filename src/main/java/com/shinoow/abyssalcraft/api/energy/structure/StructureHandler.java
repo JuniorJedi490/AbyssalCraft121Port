@@ -18,9 +18,9 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 /**
  * Handler for Places of Power (the "proper" way of generating PE through energy manipulators)
@@ -83,7 +83,7 @@ public class StructureHandler {
 	 * @param player Player trying to form the structure
 	 * @return True if it succeeded, otherwise false
 	 */
-	/*public boolean tryFormStructure(World world, BlockPos pos, int booktype, EntityPlayer player) {
+	public boolean tryFormStructure(World world, BlockPos pos, int booktype, EntityPlayer player) {
 
 		for(IPlaceOfPower place : structures)
 			if(booktype >= place.getBookType() && place.canConstruct(world, pos, player)) {
@@ -92,5 +92,5 @@ public class StructureHandler {
 				return true;
 			}
 		return false;
-	}*/
+	}
 }

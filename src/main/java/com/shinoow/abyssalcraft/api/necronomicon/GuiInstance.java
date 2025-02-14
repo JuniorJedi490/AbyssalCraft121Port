@@ -14,9 +14,9 @@ package com.shinoow.abyssalcraft.api.necronomicon;
 import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
 import com.shinoow.abyssalcraft.api.knowledge.ResearchItems;
 
-//import net.minecraft.client.gui.GuiScreen;
-//import net.minecraftforge.fml.relauncher.Side;
-//import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public abstract class GuiInstance implements INecroData {
 
@@ -25,7 +25,7 @@ public abstract class GuiInstance implements INecroData {
 	private IResearchItem research;
 
 	protected GuiInstance(int displayIcon, String title, String identifier){
-		//this(displayIcon, title, identifier, ResearchItems.DEFAULT);
+		this(displayIcon, title, identifier, ResearchItems.DEFAULT);
 	}
 
 	protected GuiInstance(int displayIcon, String title, String identifier, IResearchItem research){
@@ -80,6 +80,6 @@ public abstract class GuiInstance implements INecroData {
 	 * @param bookType Book type of the Necronomicon Gui invoking this
 	 * @param parent Parent Gui (always an instance of GuiNecronomicon)
 	 */
-	//@SideOnly(Side.CLIENT)
-	//public abstract GuiScreen getOpenGui(int bookType, GuiScreen parent);
+	@SideOnly(Side.CLIENT)
+	public abstract GuiScreen getOpenGui(int bookType, GuiScreen parent);
 }

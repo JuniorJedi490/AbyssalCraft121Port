@@ -13,25 +13,25 @@ package com.shinoow.abyssalcraft.api.knowledge;
 
 import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 
-//import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.ResourceLocation;
 
 public class ResearchItem implements IResearchItem {
 
 	private IUnlockCondition[] conditions;
-	//private ResourceLocation id;
+	private ResourceLocation id;
 	private String name;
 	private int level, cost;
 
-	/*public ResearchItem(String name, int level, ResourceLocation id) {
+	public ResearchItem(String name, int level, ResourceLocation id) {
 		this(name, level, id, 0);
-	}*/
+	}
 
-	/*public ResearchItem(String name, int level, ResourceLocation id, int cost) {
+	public ResearchItem(String name, int level, ResourceLocation id, int cost) {
 		this.name = name;
 		this.id = id;
 		this.level = level;
 		this.cost = cost;
-	}*/
+	}
 
 	@Override
 	public IResearchItem setUnlockConditions(IUnlockCondition... conditions) {
@@ -50,10 +50,10 @@ public class ResearchItem implements IResearchItem {
 		return "ac.research."+name;
 	}
 
-	//@Override
-	/*public ResourceLocation getID() {
+	@Override
+	public ResourceLocation getID() {
 		return id;
-	}*/
+	}
 
 	@Override
 	public int getRequiredLevel() {

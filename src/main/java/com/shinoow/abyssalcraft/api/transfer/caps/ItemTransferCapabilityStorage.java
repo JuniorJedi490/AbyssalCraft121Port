@@ -13,17 +13,17 @@ package com.shinoow.abyssalcraft.api.transfer.caps;
 
 import java.util.Iterator;
 
-//import com.shinoow.abyssalcraft.api.transfer.ItemTransferConfiguration;
+import com.shinoow.abyssalcraft.api.transfer.ItemTransferConfiguration;
 
-//import net.minecraft.nbt.NBTBase;
-//import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraft.nbt.NBTTagList;
-//import net.minecraft.util.EnumFacing;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;
-//import net.minecraftforge.common.capabilities.Capability.IStorage;
-//import net.minecraftforge.common.util.Constants.NBT;
+import net.minecraftforge.common.capabilities.Capability.IStorage;
+import net.minecraftforge.common.util.Constants.NBT;
 
-/*public class ItemTransferCapabilityStorage implements IStorage<IItemTransferCapability> {
+public class ItemTransferCapabilityStorage implements IStorage<IItemTransferCapability> {
 
 	public static IStorage<IItemTransferCapability> instance = new ItemTransferCapabilityStorage();
 
@@ -57,4 +57,4 @@ import net.minecraftforge.common.capabilities.Capability;
 		instance.setRunning(properties.getBoolean("isRunning"));
 	}
 
-}*/
+}

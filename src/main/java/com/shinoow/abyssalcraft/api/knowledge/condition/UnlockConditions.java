@@ -24,7 +24,7 @@ import com.shinoow.abyssalcraft.api.entity.IDreadEntity;
 public class UnlockConditions {
 
 	//Biome conditions
-	//public static IUnlockCondition DARKLANDS_BIOME = new BiomePredicateCondition(b -> b instanceof IDarklandsBiome);
+	public static IUnlockCondition DARKLANDS_BIOME = new BiomePredicateCondition(b -> b instanceof IDarklandsBiome);
 	public static IUnlockCondition CORALIUM_INFESTED_SWAMP;
 	public static IUnlockCondition CORALIUM_BIOMES;
 
@@ -49,9 +49,9 @@ public class UnlockConditions {
 	public static IUnlockCondition DREADED_ABYSSALNITE_GOLEM = new EntityCondition("abyssalcraft:dreadgolem");
 	public static IUnlockCondition ABYSSALNITE_GOLEM = new EntityCondition("abyssalcraft:abygolem");
 	public static IUnlockCondition ELITE_DREAD_MOB = new MultiEntityCondition("abyssalcraft:dreadguard", "abyssalcraft:greaterdreadspawn", "abyssalcraft:lesserdreadbeast");
-	//public static IUnlockCondition DREAD_MOB = new EntityPredicateCondition(e -> IDreadEntity.class.isAssignableFrom(e));
+	public static IUnlockCondition DREAD_MOB = new EntityPredicateCondition(e -> IDreadEntity.class.isAssignableFrom(e));
 	public static IUnlockCondition KILLED_ALL_BOSSES = new MandatoryMultiEntityCondition("abyssalcraft:dragonboss", "abyssalcraft:chagaroth", "abyssalcraft:jzahar", "abyssalcraft:shadowboss");
-	//public static IUnlockCondition ANTI_MOB = new EntityPredicateCondition(e -> IAntiEntity.class.isAssignableFrom(e));
+	public static IUnlockCondition ANTI_MOB = new EntityPredicateCondition(e -> IAntiEntity.class.isAssignableFrom(e));
 	public static IUnlockCondition EVIL_ANIMAL;
 	public static IUnlockCondition SHOGGOTH;
 	public static IUnlockCondition SHUB_OFFSPRING = new EntityCondition("abyssalcraft:shuboffspring");

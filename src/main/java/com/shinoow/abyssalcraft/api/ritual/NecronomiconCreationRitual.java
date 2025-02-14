@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.api.ritual;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 
-//import net.minecraft.entity.effect.EntityLightningBolt;
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.item.ItemStack;
-//import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraft.tileentity.TileEntity;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
-//import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * A Necronomicon Creation Ritual
@@ -28,9 +28,9 @@ import com.shinoow.abyssalcraft.api.APIUtils;
  *
  * @since 1.4
  */
-/*public class NecronomiconCreationRitual extends NecronomiconRitual {
+public class NecronomiconCreationRitual extends NecronomiconRitual {
 
-	//private ItemStack item;
+	private ItemStack item;
 
 	/**
 	 * A Necronomicon Creation Ritual
@@ -42,12 +42,12 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 	 * @param item The Item given from the ritual
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconCreationRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice, ItemStack item, Object...offerings) {
+	public NecronomiconCreationRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice, ItemStack item, Object...offerings) {
 		super(unlocalizedName, bookType, dimension, requiredEnergy, requiresSacrifice, offerings);
-		//this.item = item;
+		this.item = item;
 		if(item.getCount() > 1)
 			item.setCount(1);
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Creation Ritual
@@ -58,9 +58,9 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 	 * @param item The Item given from the ritual
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconCreationRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, ItemStack item, Object...offerings) {
+	public NecronomiconCreationRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, ItemStack item, Object...offerings) {
 		this(unlocalizedName, bookType, dimension, requiredEnergy, false, item, offerings);
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Creation Ritual
@@ -70,44 +70,44 @@ import com.shinoow.abyssalcraft.api.APIUtils;
 	 * @param item The Item given from the ritual
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconCreationRitual(String unlocalizedName, int bookType, float requiredEnergy, ItemStack item, Object...offerings) {
+	public NecronomiconCreationRitual(String unlocalizedName, int bookType, float requiredEnergy, ItemStack item, Object...offerings) {
 		this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, item, offerings);
-	}*/
+	}
 
 	/**
 	 * Getter for the item
 	 * @return A ItemStack representing the ritual "reward"
 	 */
-	/*public ItemStack getItem(){
+	public ItemStack getItem(){
 		return item;
-	}*/
+	}
 
-	//@Override
-	/*public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
+	@Override
+	public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
 
 		return true;
-	}*/
+	}
 
-	//@Override
-	/*protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
+	@Override
+	protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
 
-		//world.addWeatherEffect(new EntityLightningBolt(world, pos.getX(), pos.getY() + 1, pos.getZ(), false));
+		world.addWeatherEffect(new EntityLightningBolt(world, pos.getX(), pos.getY() + 1, pos.getZ(), false));
 
-		//TileEntity altar = world.getTileEntity(pos);
+		TileEntity altar = world.getTileEntity(pos);
 
-		//NBTTagCompound compound = new NBTTagCompound();
-		//NBTTagCompound newItem = new NBTTagCompound();
-		//altar.writeToNBT(compound);
-		//NBTTagCompound nbtItem = compound.getCompoundTag("Item");
-		//ItemStack stack = new ItemStack(nbtItem);
+		NBTTagCompound compound = new NBTTagCompound();
+		NBTTagCompound newItem = new NBTTagCompound();
+		altar.writeToNBT(compound);
+		NBTTagCompound nbtItem = compound.getCompoundTag("Item");
+		ItemStack stack = new ItemStack(nbtItem);
 
-		/*if(!APIUtils.areStacksEqual(stack, item, true)){
+		if(!APIUtils.areStacksEqual(stack, item, true)){
 			item.writeToNBT(newItem);
 			compound.setTag("Item", newItem);
-		}*/
-		//altar.readFromNBT(compound);
-	//}
+		}
+		altar.readFromNBT(compound);
+	}
 
-	//@Override
-	//protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){}
-//}
+	@Override
+	protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){}
+}

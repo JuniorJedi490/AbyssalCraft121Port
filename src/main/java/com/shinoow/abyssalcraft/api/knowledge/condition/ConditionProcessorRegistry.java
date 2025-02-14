@@ -56,7 +56,7 @@ public class ConditionProcessorRegistry {
 	 * @param type Integer representing the processor type
 	 * @return A IConditionProcessor or an empty one if none were found
 	 */
-	/*public IConditionProcessor getProcessor(int type) {
+	public IConditionProcessor getProcessor(int type) {
 		return processors.getOrDefault(type, (condition, cap, player) -> false);
-	}*/
+	}
 }

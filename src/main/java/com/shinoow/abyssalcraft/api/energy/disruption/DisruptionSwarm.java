@@ -16,13 +16,13 @@ import java.util.List;
 
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 
-//import net.minecraft.entity.EntityLiving;
-//import net.minecraft.entity.EntityLivingBase;
-//import net.minecraft.entity.IEntityLivingData;
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
-//import net.minecraft.world.WorldEntitySpawner;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.IEntityLivingData;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldEntitySpawner;
 
 /**
  * A Swarm Disruption Entry
@@ -30,9 +30,9 @@ import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
  *
  * @since 1.5
  */
-/*public class DisruptionSwarm extends DisruptionEntry {
+public class DisruptionSwarm extends DisruptionEntry {
 
-	//private Class<? extends EntityLivingBase>[] entities;
+	private Class<? extends EntityLivingBase>[] entities;
 
 	/**
 	 * A Spawning Disruption Entry
@@ -40,13 +40,13 @@ import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 	 * @param deity Deity whose image must be present for this to happen
 	 * @param entities An array of entities to spawn
 	 */
-	/*public DisruptionSwarm(String unlocalizedName, DeityType deity, Class<? extends EntityLivingBase>...entities) {
+	public DisruptionSwarm(String unlocalizedName, DeityType deity, Class<? extends EntityLivingBase>...entities) {
 		super(unlocalizedName, deity);
 		this.entities = entities;
-	}*/
+	}
 
-	//@Override
-	/*public void disrupt(World world, BlockPos pos, List<EntityPlayer> players) {
+	@Override
+	public void disrupt(World world, BlockPos pos, List<EntityPlayer> players) {
 
 		if(!world.isRemote)
 			for(Class<? extends EntityLivingBase> clazz : entities)
@@ -101,4 +101,4 @@ import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 						e.printStackTrace();
 					}
 	}
-}*/
+}

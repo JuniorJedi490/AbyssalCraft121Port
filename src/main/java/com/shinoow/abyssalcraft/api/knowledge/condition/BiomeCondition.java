@@ -11,15 +11,15 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.knowledge.condition;
 
-//import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biome;
 
 public class BiomeCondition implements IUnlockCondition {
 
 	String name, hint;
 
-	/*public BiomeCondition(Biome biome){
+	public BiomeCondition(Biome biome){
 		name = biome.getRegistryName().toString();
-	}*/
+	}
 
 	@Override
 	public boolean areConditionObjectsEqual(Object stuff) {

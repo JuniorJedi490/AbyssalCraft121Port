@@ -14,16 +14,16 @@ package com.shinoow.abyssalcraft.api.ritual;
 import java.lang.reflect.InvocationTargetException;
 
 import net.minecraft.advancements.CriteriaTriggers;
-//import net.minecraft.entity.EntityLiving;
-//import net.minecraft.entity.EntityLivingBase;
-//import net.minecraft.entity.IEntityLivingData;
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.entity.player.EntityPlayerMP;
-//import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.util.text.TextComponentString;
-//import net.minecraft.world.World;
-//import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.IEntityLivingData;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.World;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * A Necronomicon Summoning Ritual
@@ -31,10 +31,10 @@ import net.minecraft.advancements.CriteriaTriggers;
  *
  * @since 1.4
  */
-/*public class NecronomiconSummonRitual extends NecronomiconRitual {
+public class NecronomiconSummonRitual extends NecronomiconRitual {
 
-	//private Class<? extends EntityLivingBase> entity;
-	//private NBTTagCompound customNBT;
+	private Class<? extends EntityLivingBase> entity;
+	private NBTTagCompound customNBT;
 
 	/**
 	 * A Necronomicon Ritual
@@ -46,11 +46,11 @@ import net.minecraft.advancements.CriteriaTriggers;
 	 * @param entity Class representing the entity this ritual summons
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconSummonRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice, Class<? extends EntityLivingBase> entity, Object...offerings) {
+	public NecronomiconSummonRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, boolean requiresSacrifice, Class<? extends EntityLivingBase> entity, Object...offerings) {
 		super(unlocalizedName, bookType, dimension, requiredEnergy, requiresSacrifice, offerings);
-		//this.entity = entity;
+		this.entity = entity;
 		setRitualParticle(EnumRitualParticle.SMOKE_PILLARS);
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Ritual
@@ -61,9 +61,9 @@ import net.minecraft.advancements.CriteriaTriggers;
 	 * @param entity Class representing the entity this ritual summons
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconSummonRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, Class<? extends EntityLivingBase> entity, Object...offerings) {
+	public NecronomiconSummonRitual(String unlocalizedName, int bookType, int dimension, float requiredEnergy, Class<? extends EntityLivingBase> entity, Object...offerings) {
 		this(unlocalizedName, bookType, dimension, requiredEnergy, false, entity, offerings);
-	}*/
+	}
 
 	/**
 	 * A Necronomicon Ritual
@@ -73,35 +73,35 @@ import net.minecraft.advancements.CriteriaTriggers;
 	 * @param entity Class representing the entity this ritual summons
 	 * @param offerings Components used to perform the ritual, are consumed afterwards
 	 */
-	/*public NecronomiconSummonRitual(String unlocalizedName, int bookType, float requiredEnergy, Class<? extends EntityLivingBase> entity, Object...offerings) {
+	public NecronomiconSummonRitual(String unlocalizedName, int bookType, float requiredEnergy, Class<? extends EntityLivingBase> entity, Object...offerings) {
 		this(unlocalizedName, bookType, OreDictionary.WILDCARD_VALUE, requiredEnergy, entity, offerings);
-	}*/
+	}
 
 	/**
 	 * Getter for the entity
 	 * @return A Class that represents the entity this ritual summons
 	 */
-	/*public Class<? extends EntityLivingBase> getEntity(){
+	public Class<? extends EntityLivingBase> getEntity(){
 		return entity;
-	}*/
+	}
 
 	/**
 	 * Sets custom NBT data that will be attached to the summoned entity
 	 * <br>(all child tags of this tag compound will be added to the summoned entity)
 	 */
-	/*public NecronomiconSummonRitual setCustomNBT(NBTTagCompound customNBT) {
+	public NecronomiconSummonRitual setCustomNBT(NBTTagCompound customNBT) {
 		this.customNBT = customNBT;
 		return this;
-	}*/
+	}
 
-	//@Override
-	/*public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
+	@Override
+	public boolean canCompleteRitual(World world, BlockPos pos, EntityPlayer player) {
 
 		return true;
-	}*/
+	}
 
-	//@Override
-	/*protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
+	@Override
+	protected void completeRitualServer(World world, BlockPos pos, EntityPlayer player){
 
 		EntityLivingBase entityliving = null;
 		try {
@@ -125,10 +125,10 @@ import net.minecraft.advancements.CriteriaTriggers;
 			world.spawnEntity(entityliving);
 			entityliving.timeUntilPortal = entityliving.getPortalCooldown();
 		}
-	}*/
+	}
 
-	//@Override
-	/*protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){
+	@Override
+	protected void completeRitualClient(World world, BlockPos pos, EntityPlayer player){
 		EntityLivingBase entityliving = null;
 		try {
 			entityliving = entity.getConstructor(World.class).newInstance(world);
@@ -139,5 +139,5 @@ import net.minecraft.advancements.CriteriaTriggers;
 		}
 		if(entityliving == null) player.sendMessage(new TextComponentString("The Entity could not be summoned."));
 
-	}*/
-//}
+	}
+}

@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 
-//import net.minecraft.item.ItemStack;
-//import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraft.nbt.NBTTagList;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 
 public class MaterializerRecipes {
 
@@ -33,10 +33,10 @@ public class MaterializerRecipes {
 
 	private MaterializerRecipes(){}
 
-	/*public void materialize(ItemStack[] input, ItemStack output){
+	public void materialize(ItemStack[] input, ItemStack output){
 
 		materialize(new Materialization(input, output));
-	}*/
+	}
 
 	public void materialize(Materialization materialization){
 		materializationList.add(materialization);
@@ -47,7 +47,7 @@ public class MaterializerRecipes {
 	 * @param stack Crystal Bag to check for crystals
 	 * @return A list of ItemStacks containing what can be materialized
 	 */
-	/*public List<ItemStack> getMaterializationResult(ItemStack stack){
+	public List<ItemStack> getMaterializationResult(ItemStack stack){
 
 		ItemStack[] inventory = extractItemsFromBag(stack);
 
@@ -56,14 +56,14 @@ public class MaterializerRecipes {
 		List<ItemStack> displayList = materializationList.stream().filter(m -> arrayContainsOtherArray(inventory, m.input)).map(m -> m.output.copy()).collect(Collectors.toList());
 
 		return displayList;
-	}*/
+	}
 
 	/**
 	 * Attempts to materialize an ItemStack
 	 * @param output ItemStack to materialize
 	 * @param bag Crystal Bag to use crystals from
 	 */
-	/*public void processMaterialization(ItemStack output, ItemStack bag){
+	public void processMaterialization(ItemStack output, ItemStack bag){
 
 		ItemStack[] inventory = extractItemsFromBag(bag);
 
@@ -83,7 +83,7 @@ public class MaterializerRecipes {
 
 		if(num == 1 || count == num)
 			replaceBagContents(bag, inventory);
-	}*/
+	}
 
 	/**
 	 * Helper method for consuming crystals from the inventory of a Crystal Bag
@@ -91,7 +91,7 @@ public class MaterializerRecipes {
 	 * @param recipe List of things to be consumed from the inventory
 	 * @return True if the consumption was successful, otherwise false
 	 */
-	/*public boolean consumeCrystals(ItemStack[] inventory, ItemStack[] input) {
+	public boolean consumeCrystals(ItemStack[] inventory, ItemStack[] input) {
 
 		ItemStack[] invTemp = inventory.clone();
 		List<ItemStack> recipe = makeNonWriteThroughList(input);
@@ -118,23 +118,23 @@ public class MaterializerRecipes {
 		}
 
 		return recipe.isEmpty();
-	}*/
+	}
 
 	/**
 	 * Fetches the materialization recipe for a specific ItemStack
 	 * @param output Recipe output to find a recipe for
 	 * @return A materialization recipe if one exists, otherwise null
 	 */
-	/*public Materialization getMaterializationFor(ItemStack output){
+	public Materialization getMaterializationFor(ItemStack output){
 		return materializationList.stream().filter(m -> APIUtils.areStacksEqual(output, m.output)).findFirst().orElse(null);
-	}*/
+	}
 
 	/**
 	 * Helper method for fetching the stored content of a Crystal Bag
 	 * @param bag Crystal Bag to extract crystals from
 	 * @return An array of ItemStacks (provided the bag has an inventory, and it's contents are only crystals), otherwise null
 	 */
-	/*public ItemStack[] extractItemsFromBag(ItemStack bag){
+	public ItemStack[] extractItemsFromBag(ItemStack bag){
 
 		ItemStack[] inventory = null;
 
@@ -159,14 +159,14 @@ public class MaterializerRecipes {
 			if(!APIUtils.isCrystal(item)) return null;
 
 		return inventory;
-	}*/
+	}
 
 	/**
 	 * Updates the contents of the Crystal Bag (after consuming crystals to materialize stuff)
 	 * @param bag Crystal Bag ItemStack
 	 * @param inventory New inventory content to replace the old
 	 */
-	/*private void replaceBagContents(ItemStack bag, ItemStack[] inventory){
+	private void replaceBagContents(ItemStack bag, ItemStack[] inventory){
 		if(!bag.hasTagCompound())
 			bag.setTagCompound(new NBTTagCompound());
 
@@ -182,7 +182,7 @@ public class MaterializerRecipes {
 			}
 
 		bag.getTagCompound().setTag("ItemInventory", items);
-	}*/
+	}
 
 	/**
 	 * Compares two arrays, checking if the first one contains the contents of the second
@@ -190,7 +190,7 @@ public class MaterializerRecipes {
 	 * @param array2 Second array
 	 * @return True if the first array contains the contents of the second, otherwise false
 	 */
-	/*private boolean arrayContainsOtherArray(ItemStack[] array1, ItemStack[] array2){
+	private boolean arrayContainsOtherArray(ItemStack[] array1, ItemStack[] array2){
 		List<ItemStack> inventory = makeNonWriteThroughList(array1);
 		List<ItemStack> recipe = makeNonWriteThroughList(array2);
 
@@ -210,23 +210,23 @@ public class MaterializerRecipes {
 						}
 
 		return recipe.isEmpty();
-	}*/
+	}
 
-	/*private List<ItemStack> makeNonWriteThroughList(ItemStack[] array){
+	private List<ItemStack> makeNonWriteThroughList(ItemStack[] array){
 		ItemStack[] inputTmp = new ItemStack[array.length];
 		for(int i = 0; i < array.length; i++)
 			inputTmp[i] = array[i].copy();
 
 		return new ArrayList<>(Arrays.asList(inputTmp));
-	}*/
+	}
 
 	/**
 	 * Removes Materialization(s) based on the output
 	 * @param output ItemStack to check for
 	 */
-	/*public void removeMaterialization(ItemStack output) {
+	public void removeMaterialization(ItemStack output) {
 		materializationList.removeIf(e -> APIUtils.areStacksEqual(output, e.output));
-	}*/
+	}
 
 	public List<Materialization> getMaterializationList()
 	{

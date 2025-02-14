@@ -16,8 +16,8 @@ import java.util.Set;
 
 import javax.annotation.Nullable;
 
-//import net.minecraft.entity.EntityLiving;
-//import net.minecraft.util.ResourceLocation;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.util.ResourceLocation;
 
 /**
  * Class holding dimension-related data for portals
@@ -30,8 +30,8 @@ public class DimensionData {
 	private int r, g, b;
 	private int id, gatewayKey;
 	private Set<Integer> connectedDimensions;
-	//private Class<? extends EntityLiving> mobClass;
-	//private ResourceLocation overlay;
+	private Class<? extends EntityLiving> mobClass;
+	private ResourceLocation overlay;
 
 	public DimensionData() {}
 
@@ -42,8 +42,8 @@ public class DimensionData {
 		b = builder.b;
 		gatewayKey = builder.gatewayKey;
 		connectedDimensions = builder.connectedDimensions;
-		//mobClass = builder.mobClass;
-		//overlay = builder.overlay;
+		mobClass = builder.mobClass;
+		overlay = builder.overlay;
 	}
 
 	/**
@@ -125,31 +125,31 @@ public class DimensionData {
 	 * Returns the class of the mob the portal can spawn at times
 	 */
 	@Nullable
-	/*public Class<? extends EntityLiving> getMobClass() {
+	public Class<? extends EntityLiving> getMobClass() {
 		return mobClass;
-	}*/
+	}
 
 	/**
 	 * Changes which mob the portal can spawn at times
 	 */
-	/*public void setMobClass(Class<? extends EntityLiving> clazz) {
+	public void setMobClass(Class<? extends EntityLiving> clazz) {
 		mobClass = clazz;
-	}*/
+	}
 
 	/**
 	 * Returns the overlay texture for the portal, if any
 	 */
-	//@Nullable
-	/*public ResourceLocation getOverlay() {
+	@Nullable
+	public ResourceLocation getOverlay() {
 		return overlay;
-	}*/
+	}
 
 	/**
 	 * Changes the overlay textures for the portal
 	 */
-	/*public void setOverlay(ResourceLocation rl) {
+	public void setOverlay(ResourceLocation rl) {
 		overlay = rl;
-	}*/
+	}
 
 	public static class Builder {
 
@@ -157,8 +157,8 @@ public class DimensionData {
 
 		private int id, gatewayKey;
 		private Set<Integer> connectedDimensions = new HashSet<>();
-		//private Class<? extends EntityLiving> mobClass;
-		//private ResourceLocation overlay;
+		private Class<? extends EntityLiving> mobClass;
+		private ResourceLocation overlay;
 
 		public Builder(int id) {
 			this.id = id;
@@ -210,19 +210,19 @@ public class DimensionData {
 		 * Sets the mob the portal for this dimension can spawn at times
 		 * @param mobClass Class of the mob
 		 */
-		/*public Builder setMob(Class<? extends EntityLiving> mobClass) {
+		public Builder setMob(Class<? extends EntityLiving> mobClass) {
 			this.mobClass = mobClass;
 			return this;
-		}*/
+		}
 
 		/**
 		 * Sets an overlay texture for the portal
 		 * @param overlay Resource Location pointing to the texture
 		 */
-		/*public Builder setOverlay(ResourceLocation overlay) {
+		public Builder setOverlay(ResourceLocation overlay) {
 			this.overlay = overlay;
 			return this;
-		}*/
+		}
 
 		/**
 		 * Builds the Dimension Data

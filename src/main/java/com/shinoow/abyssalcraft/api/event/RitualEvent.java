@@ -14,12 +14,12 @@ package com.shinoow.abyssalcraft.api.event;
 import com.shinoow.abyssalcraft.api.energy.disruption.DisruptionEntry;
 import com.shinoow.abyssalcraft.api.ritual.NecronomiconRitual;
 
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.util.math.BlockPos;
-//import net.minecraft.world.World;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerEvent;
-//import net.minecraftforge.fml.common.eventhandler.Cancelable;
+import net.minecraftforge.fml.common.eventhandler.Cancelable;
 
 /**
  * RitualEvent is fired when Necronomicon Rituals are performed. <br>
@@ -43,55 +43,55 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
  *
  * @since 1.4
  */
-/*public class RitualEvent extends PlayerEvent {
+public class RitualEvent extends PlayerEvent {
 	private final NecronomiconRitual ritual;
-	//private final World world;
-	//private final BlockPos pos;
+	private final World world;
+	private final BlockPos pos;
 
-	/*public RitualEvent(EntityPlayer player, NecronomiconRitual ritual, World world, BlockPos pos){
+	public RitualEvent(EntityPlayer player, NecronomiconRitual ritual, World world, BlockPos pos){
 		super(player);
 		this.ritual = ritual;
 		this.world = world;
 		this.pos = pos;
-	}*/
+	}
 
-	/*public NecronomiconRitual getRitual(){
+	public NecronomiconRitual getRitual(){
 		return ritual;
 	}
 
-	/*public World getWorld(){
+	public World getWorld(){
 		return world;
-	}*/
+	}
 
-	/*public BlockPos getPos(){
+	public BlockPos getPos(){
 		return pos;
-	}*/
+	}
 
-	//@Cancelable
-	/*public static class Pre extends RitualEvent {
+	@Cancelable
+	public static class Pre extends RitualEvent {
 
-		/*public Pre(EntityPlayer player, NecronomiconRitual ritual, World world, BlockPos pos) {
+		public Pre(EntityPlayer player, NecronomiconRitual ritual, World world, BlockPos pos) {
 			super(player, ritual, world, pos);
-		}*/
-	/*}
+		}
+	}
 
-	//@Cancelable
+	@Cancelable
 	public static class Post extends RitualEvent {
 
-		/*public Post(EntityPlayer player, NecronomiconRitual ritual, World world, BlockPos pos) {
+		public Post(EntityPlayer player, NecronomiconRitual ritual, World world, BlockPos pos) {
 			super(player, ritual, world, pos);
-		}*/
-	/*}
+		}
+	}
 
 	public static class Failed extends RitualEvent {
 
 		private DisruptionEntry disruption;
-		/*public Failed(EntityPlayer player, NecronomiconRitual ritual, DisruptionEntry disruption, World world, BlockPos pos) {
+		public Failed(EntityPlayer player, NecronomiconRitual ritual, DisruptionEntry disruption, World world, BlockPos pos) {
 			super(player, ritual, world, pos);
 			this.disruption = disruption;
-		}*/
+		}
 
-		/*public DisruptionEntry getDisruption() {
+		public DisruptionEntry getDisruption() {
 			return disruption;
 		}
 
@@ -99,8 +99,8 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 		 * Change the Disruption triggered when the ritual fails (has no effect if done client-side)
 		 * @param disruption Disruption to trigger
 		 */
-		/*public void setDisruption(DisruptionEntry disruption) {
+		public void setDisruption(DisruptionEntry disruption) {
 			this.disruption = disruption;
 		}
 	}
-}*/
+}

@@ -14,7 +14,7 @@ package com.shinoow.abyssalcraft.api.energy;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.AmplifierType;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 
-//import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemStack;
 
 /**
  * Interface to use on items that can amplify a {@link IEnergyManipulator} (WIP)<br>
@@ -31,11 +31,11 @@ public interface IAmplifierCharm {
 	 * Gets the amplifier associated with the item
 	 * @param stack ItemStack containing the item
 	 */
-	//AmplifierType getAmplifier(ItemStack stack);
+	AmplifierType getAmplifier(ItemStack stack);
 
 	/**
 	 * Gets the deity associated with the item (can be null)
 	 * @param stack ItemStack containing the item
 	 */
-	//DeityType getDeity(ItemStack stack);
+	DeityType getDeity(ItemStack stack);
 }

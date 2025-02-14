@@ -14,37 +14,37 @@ package com.shinoow.abyssalcraft.api.transfer.caps;
 import java.util.ArrayList;
 import java.util.List;
 
-//import com.shinoow.abyssalcraft.api.transfer.ItemTransferConfiguration;
+import com.shinoow.abyssalcraft.api.transfer.ItemTransferConfiguration;
 
-//import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntity;
 
-/*public class ItemTransferCapability implements IItemTransferCapability {
+public class ItemTransferCapability implements IItemTransferCapability {
 
-	//private List<ItemTransferConfiguration> configurations = new ArrayList<>();
+	private List<ItemTransferConfiguration> configurations = new ArrayList<>();
 	private boolean isRunning;
 
-	/*public static IItemTransferCapability getCap(TileEntity tile) {
+	public static IItemTransferCapability getCap(TileEntity tile) {
 		return tile.getCapability(ItemTransferCapabilityProvider.ITEM_TRANSFER_CAP, null);
-	}*/
+	}
 
-	//@Override
-	/*public void addTransferConfiguration(ItemTransferConfiguration config) {
+	@Override
+	public void addTransferConfiguration(ItemTransferConfiguration config) {
 		if(!configurations.stream().anyMatch(c -> c.equals(config)))
 			configurations.add(config);
-	}*/
+	}
 
-	//@Override
-	/*public List<ItemTransferConfiguration> getTransferConfigurations() {
+	@Override
+	public List<ItemTransferConfiguration> getTransferConfigurations() {
 
 		return configurations;
-	}*/
+	}
 
-	//@Override
-	/*public void clearConfigurations() {
+	@Override
+	public void clearConfigurations() {
 		configurations.clear();
-	}*/
+	}
 
-	/*@Override
+	@Override
 	public void setRunning(boolean state) {
 		isRunning = state;
 	}
@@ -55,9 +55,9 @@ import java.util.List;
 		return isRunning;
 	}
 
-	//@Override
-	/*public void copy(IItemTransferCapability cap) {
+	@Override
+	public void copy(IItemTransferCapability cap) {
 		configurations = cap.getTransferConfigurations();
-	}*/
+	}
 
-//}
+}

@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.energy;
 
-//import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemStack;
 
 /**
  * Interface to use on items that can transport Potential Energy externally
@@ -27,16 +27,16 @@ public interface IEnergyTransporterItem extends IEnergyContainerItem {
 	 * (eg. a PE manipulator that transfers PE to a player's held item)
 	 * @param stack ItemStack containing the item
 	 */
-	/*default boolean canAcceptPEExternally(ItemStack stack) {
+	default boolean canAcceptPEExternally(ItemStack stack) {
 		return getContainedEnergy(stack) < getMaxEnergy(stack);
-	}*/
+	}
 
 	/**
 	 * Returns whether or not the item can transfer Potential Energy externally<br>
 	 * (eg. a Ritual Altar draining PE from a Necronomicon during a ritual)
 	 * @param stack ItemStack containing the item
 	 */
-	/*default boolean canTransferPEExternally(ItemStack stack) {
+	default boolean canTransferPEExternally(ItemStack stack) {
 		return getContainedEnergy(stack) > 0;
-	}*/
+	}
 }

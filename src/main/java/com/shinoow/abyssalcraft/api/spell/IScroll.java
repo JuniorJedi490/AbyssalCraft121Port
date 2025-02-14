@@ -13,9 +13,9 @@ package com.shinoow.abyssalcraft.api.spell;
 
 import com.shinoow.abyssalcraft.api.spell.SpellEnum.ScrollType;
 
-//import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemStack;
 
 public interface IScroll {
 
-	//ScrollType getScrollType(ItemStack stack);
+	ScrollType getScrollType(ItemStack stack);
 }
