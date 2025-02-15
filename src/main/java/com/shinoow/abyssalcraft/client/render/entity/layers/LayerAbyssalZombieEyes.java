@@ -11,15 +11,15 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.render.entity.RenderAbyssalZombie;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderAbyssalZombie;
 import com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerAbyssalZombieEyes extends LayerEyes<EntityAbyssalZombie> {
+//@SideOnly(Side.CLIENT)
+/*public class LayerAbyssalZombieEyes extends LayerEyes<EntityAbyssalZombie> {
 
 	private static final ResourceLocation EYES = new ResourceLocation("abyssalcraft:textures/model/abyssal_zombie_eyes.png");
 	private static final ResourceLocation EYES_ALT = new ResourceLocation("abyssalcraft:textures/model/abyssal_zombie_old_eyes.png");
@@ -35,4 +35,4 @@ public class LayerAbyssalZombieEyes extends LayerEyes<EntityAbyssalZombie> {
 	{
 		return entity.getName().equalsIgnoreCase("shinoow") ? EYES_ALT : EYES;
 	}
-}
+}*/

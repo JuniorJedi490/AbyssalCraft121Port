@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.render.entity.RenderDragonBoss;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderDragonBoss;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonBoss;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.OpenGlHelper;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerAsorahEyes implements LayerRenderer<EntityDragonBoss>
+//@SideOnly(Side.CLIENT)
+/*public class LayerAsorahEyes implements LayerRenderer<EntityDragonBoss>
 {
 	private static final ResourceLocation TEXTURE = new ResourceLocation("abyssalcraft:textures/model/boss/dragonboss_eyes.png");
 	private final RenderDragonBoss dragonRenderer;
@@ -59,4 +59,4 @@ public class LayerAsorahEyes implements LayerRenderer<EntityDragonBoss>
 	{
 		return false;
 	}
-}
+}*/

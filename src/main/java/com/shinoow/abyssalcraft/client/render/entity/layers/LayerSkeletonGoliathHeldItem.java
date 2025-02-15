@@ -11,22 +11,22 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelSkeletonGoliath;
-import com.shinoow.abyssalcraft.client.render.entity.RenderSkeletonGoliath;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelSkeletonGoliath;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderSkeletonGoliath;
 import com.shinoow.abyssalcraft.common.entity.EntitySkeletonGoliath;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumHandSide;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.EnumHandSide;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerSkeletonGoliathHeldItem implements LayerRenderer<EntitySkeletonGoliath> {
+//@SideOnly(Side.CLIENT)
+/*public class LayerSkeletonGoliathHeldItem implements LayerRenderer<EntitySkeletonGoliath> {
 	protected final RenderSkeletonGoliath livingEntityRenderer;
 
 	public LayerSkeletonGoliathHeldItem(RenderSkeletonGoliath render)
@@ -73,4 +73,4 @@ public class LayerSkeletonGoliathHeldItem implements LayerRenderer<EntitySkeleto
 	{
 		return false;
 	}
-}
+}*/

@@ -15,17 +15,17 @@ import com.shinoow.abyssalcraft.common.blocks.BlockResearchTable;
 import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityResearchTable;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+//import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+//import net.minecraft.init.Items;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class TileEntityResearchTableRenderer extends TileEntitySpecialRenderer<TileEntityResearchTable> {
+//@SideOnly(Side.CLIENT)
+/*public class TileEntityResearchTableRenderer extends TileEntitySpecialRenderer<TileEntityResearchTable> {
 
 	private final ItemStack FEATHER = new ItemStack(Items.FEATHER);
 
@@ -78,4 +78,4 @@ public class TileEntityResearchTableRenderer extends TileEntitySpecialRenderer<T
 		GlStateManager.popMatrix();
 		GlStateManager.popMatrix();
 	}
-}
+}*/

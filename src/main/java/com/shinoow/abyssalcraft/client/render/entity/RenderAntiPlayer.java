@@ -13,16 +13,16 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiPlayer;
 
-import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.renderer.entity.RenderBiped;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelBiped;
+//import net.minecraft.client.renderer.entity.RenderBiped;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiPlayer extends RenderBiped<EntityAntiPlayer>
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiPlayer extends RenderBiped<EntityAntiPlayer>
 {
 	private static final ResourceLocation playerTexture = new ResourceLocation("abyssalcraft:textures/model/anti/steve.png");
 
@@ -37,4 +37,4 @@ public class RenderAntiPlayer extends RenderBiped<EntityAntiPlayer>
 	{
 		return playerTexture;
 	}
-}
+}*/

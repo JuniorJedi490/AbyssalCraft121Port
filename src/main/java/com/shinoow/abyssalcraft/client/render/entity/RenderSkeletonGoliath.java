@@ -11,21 +11,21 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelSkeletonGoliath;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerSkeletonGoliathArmor;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerSkeletonGoliathHeldItem;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelSkeletonGoliath;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerSkeletonGoliathArmor;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerSkeletonGoliathHeldItem;
 import com.shinoow.abyssalcraft.common.entity.EntitySkeletonGoliath;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderSkeletonGoliath extends RenderLiving<EntitySkeletonGoliath> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderSkeletonGoliath extends RenderLiving<EntitySkeletonGoliath> {
 
 	private float scale = 1.5F;
 
@@ -60,4 +60,4 @@ public class RenderSkeletonGoliath extends RenderLiving<EntitySkeletonGoliath> {
 	{
 		preRenderScale(par1EntityLivingBase, par2);
 	}
-}
+}*/

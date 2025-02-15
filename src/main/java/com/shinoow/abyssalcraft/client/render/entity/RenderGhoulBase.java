@@ -3,15 +3,15 @@ package com.shinoow.abyssalcraft.client.render.entity;
 import com.shinoow.abyssalcraft.common.entity.ghoul.EntityDepthsGhoul;
 import com.shinoow.abyssalcraft.common.entity.ghoul.EntityGhoulBase;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.DestFactor;
-import net.minecraft.client.renderer.GlStateManager.SourceFactor;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.DestFactor;
+//import net.minecraft.client.renderer.GlStateManager.SourceFactor;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
 
-public abstract class RenderGhoulBase<T extends EntityGhoulBase> extends RenderLiving<T> {
+/*public abstract class RenderGhoulBase<T extends EntityGhoulBase> extends RenderLiving<T> {
 
 	public RenderGhoulBase(RenderManager rendermanagerIn, ModelBase modelbaseIn, float shadowsizeIn) {
 		super(rendermanagerIn, modelbaseIn, shadowsizeIn);
@@ -36,4 +36,4 @@ public abstract class RenderGhoulBase<T extends EntityGhoulBase> extends RenderL
 		super.renderModel(entitylivingbaseIn, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scaleFactor);
 		GlStateManager.disableBlend();
 	}
-}
+}*/

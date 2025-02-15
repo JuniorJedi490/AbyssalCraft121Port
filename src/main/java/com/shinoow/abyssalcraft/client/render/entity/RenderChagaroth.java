@@ -11,17 +11,17 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelChagaroth;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelChagaroth;
 import com.shinoow.abyssalcraft.common.entity.EntityChagaroth;
 
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderChagaroth extends RenderLiving<EntityChagaroth> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderChagaroth extends RenderLiving<EntityChagaroth> {
 
 	private static final ResourceLocation mobTexture = new ResourceLocation("abyssalcraft:textures/model/boss/chagaroth.png");
 
@@ -35,4 +35,4 @@ public class RenderChagaroth extends RenderLiving<EntityChagaroth> {
 
 		return mobTexture;
 	}
-}
+}*/

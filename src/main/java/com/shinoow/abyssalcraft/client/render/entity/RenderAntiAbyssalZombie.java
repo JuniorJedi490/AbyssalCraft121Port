@@ -13,16 +13,16 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiAbyssalZombie;
 
-import net.minecraft.client.model.ModelZombie;
-import net.minecraft.client.renderer.entity.RenderBiped;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelZombie;
+//import net.minecraft.client.renderer.entity.RenderBiped;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiAbyssalZombie extends RenderBiped<EntityAntiAbyssalZombie> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiAbyssalZombie extends RenderBiped<EntityAntiAbyssalZombie> {
 
 	private static final ResourceLocation zombieTexture = new ResourceLocation("abyssalcraft:textures/model/anti/abyssal_zombie.png");
 	private static final ResourceLocation zombieTextureAlt = new ResourceLocation("abyssalcraft:textures/model/anti/abyssal_zombie_old.png");
@@ -46,4 +46,4 @@ public class RenderAntiAbyssalZombie extends RenderBiped<EntityAntiAbyssalZombie
 	{
 		return par1EntityLiving.getName().equalsIgnoreCase("woonihs") ? zombieTextureAlt : zombieTexture;
 	}
-}
+}*/

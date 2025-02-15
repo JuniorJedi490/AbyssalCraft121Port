@@ -13,30 +13,30 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import org.lwjgl.opengl.GL11;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDragonMinion;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerSpectralDragonEyes;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDragonMinion;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerSpectralDragonEyes;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonMinion;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.DestFactor;
-import net.minecraft.client.renderer.GlStateManager.SourceFactor;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.DestFactor;
+//import net.minecraft.client.renderer.GlStateManager.SourceFactor;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderDragonMinion extends RenderLiving<EntityDragonMinion> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderDragonMinion extends RenderLiving<EntityDragonMinion> {
 
 	/** Scale of the model to use */
-	private float scale = 0.5F;
+	/*private float scale = 0.5F;
 
 	private static final ResourceLocation field_110844_k = new ResourceLocation("abyssalcraft:textures/model/elite/dragonminion.png");
 
 	/** An instance of the dragon model in RenderDragon */
-	protected ModelDragonMinion modelDragon;
+	/*protected ModelDragonMinion modelDragon;
 
 	public RenderDragonMinion(RenderManager manager)
 	{
@@ -48,7 +48,7 @@ public class RenderDragonMinion extends RenderLiving<EntityDragonMinion> {
 	/**
 	 * Applies the scale to the transform matrix
 	 */
-	protected void preRenderScale(EntityDragonMinion par1EntityDragonMinion, float par2)
+	/*protected void preRenderScale(EntityDragonMinion par1EntityDragonMinion, float par2)
 	{
 		GlStateManager.scale(scale, scale, scale);
 	}
@@ -106,7 +106,7 @@ public class RenderDragonMinion extends RenderLiving<EntityDragonMinion> {
 	 * Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args:
 	 * entityLiving, partialTickTime
 	 */
-	@Override
+	/*@Override
 	protected void preRenderCallback(EntityDragonMinion par1EntityLivingBase, float par2)
 	{
 		preRenderScale(par1EntityLivingBase, par2);
@@ -117,4 +117,4 @@ public class RenderDragonMinion extends RenderLiving<EntityDragonMinion> {
 	{
 		return func_110841_a(par1Entity);
 	}
-}
+}*/

@@ -11,20 +11,20 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDemonSheep1;
-import com.shinoow.abyssalcraft.client.render.entity.RenderDemonSheep;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDemonSheep1;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderDemonSheep;
 import com.shinoow.abyssalcraft.common.entity.demon.EntityDemonSheep;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.passive.EntitySheep;
-import net.minecraft.item.EnumDyeColor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.entity.passive.EntitySheep;
+//import net.minecraft.item.EnumDyeColor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerDemonSheepWool implements LayerRenderer<EntityDemonSheep>
+//@SideOnly(Side.CLIENT)
+/*public class LayerDemonSheepWool implements LayerRenderer<EntityDemonSheep>
 {
 	private static final ResourceLocation TEXTURE = new ResourceLocation("abyssalcraft:textures/model/demon_sheep_fur.png");
 	private final RenderDemonSheep sheepRenderer;
@@ -67,4 +67,4 @@ public class LayerDemonSheepWool implements LayerRenderer<EntityDemonSheep>
 	{
 		return true;
 	}
-}
+}*/

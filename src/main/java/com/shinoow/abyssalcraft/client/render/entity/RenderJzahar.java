@@ -11,20 +11,20 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelJzahar;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerJzaharDeath;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelJzahar;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerJzaharDeath;
 import com.shinoow.abyssalcraft.common.entity.EntityJzahar;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderJzahar extends RenderLiving<EntityJzahar> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderJzahar extends RenderLiving<EntityJzahar> {
 
 	private static final ResourceLocation mobTexture = new ResourceLocation("abyssalcraft:textures/model/boss/j'zahar.png");
 
@@ -45,4 +45,4 @@ public class RenderJzahar extends RenderLiving<EntityJzahar> {
 	public void preRenderCallback(EntityJzahar entity, float par2){
 		GlStateManager.scale(1.5F, 1.5F, 1.5F);
 	}
-}
+}*/

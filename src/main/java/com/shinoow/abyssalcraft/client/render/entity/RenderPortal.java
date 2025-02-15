@@ -16,18 +16,18 @@ import org.lwjgl.opengl.GL11;
 import com.shinoow.abyssalcraft.api.dimension.DimensionData;
 import com.shinoow.abyssalcraft.common.entity.EntityPortal;
 
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.BufferBuilder;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.Tessellator;
+//import net.minecraft.client.renderer.entity.Render;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderPortal extends Render<EntityPortal> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderPortal extends Render<EntityPortal> {
 
 	private static final ResourceLocation texture = new ResourceLocation("abyssalcraft", "textures/model/black_hole.png");
 
@@ -107,4 +107,4 @@ public class RenderPortal extends Render<EntityPortal> {
 
 		return texture;
 	}
-}
+}*/

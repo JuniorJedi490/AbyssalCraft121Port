@@ -11,21 +11,21 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelGhoul;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulArmor;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulHeldItem;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelGhoul;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulArmor;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulHeldItem;
 import com.shinoow.abyssalcraft.common.entity.ghoul.EntityDepthsGhoul;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderDepthsGhoul extends RenderGhoulBase<EntityDepthsGhoul> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderDepthsGhoul extends RenderGhoulBase<EntityDepthsGhoul> {
 
 	private static final ResourceLocation peteResource = new ResourceLocation("abyssalcraft:textures/model/ghoul/depths_ghoul_pete.png");
 	private static final ResourceLocation wilsonResource = new ResourceLocation("abyssalcraft:textures/model/ghoul/depths_ghoul_wilson.png");
@@ -68,4 +68,4 @@ public class RenderDepthsGhoul extends RenderGhoulBase<EntityDepthsGhoul> {
 			return ghoulResource;
 		}
 	}
-}
+}*/

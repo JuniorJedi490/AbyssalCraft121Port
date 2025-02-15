@@ -13,18 +13,18 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import com.shinoow.abyssalcraft.common.entity.EntityDreadedCharge;
 
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.BufferBuilder;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.Tessellator;
+//import net.minecraft.client.renderer.entity.Render;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderDreadedCharge extends Render<EntityDreadedCharge>
+//@SideOnly(Side.CLIENT)
+/*public class RenderDreadedCharge extends Render<EntityDreadedCharge>
 {
 	private static final ResourceLocation DRAGON_FIREBALL_TEXTURE = new ResourceLocation("abyssalcraft", "textures/model/dreaded_fireball.png");
 
@@ -36,7 +36,7 @@ public class RenderDreadedCharge extends Render<EntityDreadedCharge>
 	/**
 	 * Renders the desired {@code T} type Entity.
 	 */
-	@Override
+	/*@Override
 	public void doRender(EntityDreadedCharge entity, double x, double y, double z, float entityYaw, float partialTicks)
 	{
 		GlStateManager.pushMatrix();
@@ -76,9 +76,9 @@ public class RenderDreadedCharge extends Render<EntityDreadedCharge>
 	/**
 	 * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	 */
-	@Override
+	/*@Override
 	protected ResourceLocation getEntityTexture(EntityDreadedCharge entity)
 	{
 		return DRAGON_FIREBALL_TEXTURE;
 	}
-}
+}*/

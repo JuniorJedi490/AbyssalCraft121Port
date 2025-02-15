@@ -12,21 +12,21 @@
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
 import com.shinoow.abyssalcraft.api.item.ACItems;
-import com.shinoow.abyssalcraft.client.model.entity.ModelSacthoth;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelSacthoth;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
-import net.minecraft.client.renderer.entity.RenderLivingBase;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumHandSide;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+//import net.minecraft.client.renderer.entity.RenderLivingBase;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.EnumHandSide;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerSacthothHeldItem implements LayerRenderer<EntityLivingBase> {
+//@SideOnly(Side.CLIENT)
+/*public class LayerSacthothHeldItem implements LayerRenderer<EntityLivingBase> {
 	protected final RenderLivingBase<?> livingEntityRenderer;
 	private final ItemStack STACK = new ItemStack(ACItems.sacthoths_soul_harvesting_blade);
 
@@ -65,4 +65,4 @@ public class LayerSacthothHeldItem implements LayerRenderer<EntityLivingBase> {
 	{
 		return false;
 	}
-}
+}*/

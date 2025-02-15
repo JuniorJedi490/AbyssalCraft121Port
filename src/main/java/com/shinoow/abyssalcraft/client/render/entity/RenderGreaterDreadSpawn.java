@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDreadSpawn;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDreadSpawn;
 import com.shinoow.abyssalcraft.common.entity.EntityGreaterDreadSpawn;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderGreaterDreadSpawn extends RenderLiving<EntityGreaterDreadSpawn> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderGreaterDreadSpawn extends RenderLiving<EntityGreaterDreadSpawn> {
 
 	private float scale = 2.0F;
 
@@ -36,7 +36,7 @@ public class RenderGreaterDreadSpawn extends RenderLiving<EntityGreaterDreadSpaw
 	/**
 	 * Applies the scale to the transform matrix
 	 */
-	protected void preRenderScale(EntityGreaterDreadSpawn par1EntityGreaterDreadSpawn, float par2)
+	/*protected void preRenderScale(EntityGreaterDreadSpawn par1EntityGreaterDreadSpawn, float par2)
 	{
 		GlStateManager.scale(scale, scale, scale);
 	}
@@ -52,4 +52,4 @@ public class RenderGreaterDreadSpawn extends RenderLiving<EntityGreaterDreadSpaw
 
 		return mobTexture;
 	}
-}
+}*/

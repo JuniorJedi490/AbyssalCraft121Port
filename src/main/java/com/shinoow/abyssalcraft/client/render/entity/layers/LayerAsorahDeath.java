@@ -17,13 +17,13 @@ import com.shinoow.abyssalcraft.common.entity.EntityDragonBoss;
 import com.shinoow.abyssalcraft.lib.ACClientVars;
 
 import net.minecraft.client.renderer.*;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerAsorahDeath implements LayerRenderer<EntityDragonBoss>
+//@SideOnly(Side.CLIENT)
+/*public class LayerAsorahDeath implements LayerRenderer<EntityDragonBoss>
 {
 	@Override
 	public void doRenderLayer(EntityDragonBoss entitylivingbaseIn, float p_177141_2_, float p_177141_3_, float partialTicks, float p_177141_5_, float p_177141_6_, float p_177141_7_, float scale)
@@ -86,4 +86,4 @@ public class LayerAsorahDeath implements LayerRenderer<EntityDragonBoss>
 	{
 		return false;
 	}
-}
+}*/

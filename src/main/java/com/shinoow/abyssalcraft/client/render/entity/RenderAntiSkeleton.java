@@ -11,20 +11,20 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelAntiSkeleton;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelAntiSkeleton;
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiSkeleton;
 
-import net.minecraft.client.model.ModelSkeleton;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderBiped;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelSkeleton;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderBiped;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiSkeleton extends RenderBiped<EntityAntiSkeleton>
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiSkeleton extends RenderBiped<EntityAntiSkeleton>
 {
 	private static final ResourceLocation skeletonTextures = new ResourceLocation("abyssalcraft:textures/model/anti/skeleton.png");
 
@@ -53,4 +53,4 @@ public class RenderAntiSkeleton extends RenderBiped<EntityAntiSkeleton>
 	{
 		return skeletonTextures;
 	}
-}
+}*/

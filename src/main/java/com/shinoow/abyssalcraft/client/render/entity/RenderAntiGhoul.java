@@ -11,20 +11,20 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelGhoul;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulArmor;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulHeldItem;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelGhoul;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulArmor;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerGhoulHeldItem;
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiGhoul;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiGhoul extends RenderGhoulBase<EntityAntiGhoul> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiGhoul extends RenderGhoulBase<EntityAntiGhoul> {
 
 	private static final ResourceLocation ghoulResource = new ResourceLocation("abyssalcraft:textures/model/anti/depths_ghoul.png");
 
@@ -51,4 +51,4 @@ public class RenderAntiGhoul extends RenderGhoulBase<EntityAntiGhoul> {
 
 		return ghoulResource;
 	}
-}
+}*/

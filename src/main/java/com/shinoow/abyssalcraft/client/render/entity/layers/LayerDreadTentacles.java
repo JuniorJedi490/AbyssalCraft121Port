@@ -12,17 +12,17 @@
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
-import com.shinoow.abyssalcraft.client.model.entity.ModelDreadTentacles;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDreadTentacles;
 import com.shinoow.abyssalcraft.common.entity.ghoul.EntityGhoulBase;
 
-import net.minecraft.client.model.ModelBox;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.model.ModelBox;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.util.ResourceLocation;
 
-public class LayerDreadTentacles<E extends EntityLiving> implements LayerRenderer<E> {
+/*public class LayerDreadTentacles<E extends EntityLiving> implements LayerRenderer<E> {
 
 	private ModelDreadTentacles model = new ModelDreadTentacles();
 	private boolean foundPart;
@@ -75,4 +75,4 @@ public class LayerDreadTentacles<E extends EntityLiving> implements LayerRendere
 		
 		model.base.setRotationPoint(part.rotationPointX, part.rotationPointY + y, part.rotationPointZ);
 	}
-}
+}*/

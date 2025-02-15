@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.render.entity.RenderShoggoth;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderShoggoth;
 import com.shinoow.abyssalcraft.common.entity.EntityShoggothBase;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerShoggothEyes extends LayerEyes<EntityShoggothBase>
+//@SideOnly(Side.CLIENT)
+/*public class LayerShoggothEyes extends LayerEyes<EntityShoggothBase>
 {
 	private static final ResourceLocation SHOGGOTH_EYES = new ResourceLocation("abyssalcraft:textures/model/shoggoth/lessershoggoth_eyes.png");
 	private static final ResourceLocation ABYSSAL_EYES = new ResourceLocation("abyssalcraft:textures/model/shoggoth/abyssalshoggoth_eyes.png");
@@ -60,4 +60,4 @@ public class LayerShoggothEyes extends LayerEyes<EntityShoggothBase>
 			return SHOGGOTH_EYES;
 		}
 	}
-}
+}*/

@@ -13,17 +13,17 @@ package com.shinoow.abyssalcraft.client.render.entity.layers;
 
 import java.util.function.Function;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.OpenGlHelper;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerEyes<E extends EntityLiving> implements LayerRenderer<E>
+//@SideOnly(Side.CLIENT)
+/*public class LayerEyes<E extends EntityLiving> implements LayerRenderer<E>
 {
 	private final ResourceLocation EYES;
 	private final RenderLiving<E> renderer;
@@ -75,4 +75,4 @@ public class LayerEyes<E extends EntityLiving> implements LayerRenderer<E>
 	{
 		return false;
 	}
-}
+}*/

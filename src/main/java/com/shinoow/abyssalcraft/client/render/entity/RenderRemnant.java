@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelRemnant;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelRemnant;
 import com.shinoow.abyssalcraft.common.entity.EntityRemnant;
 
-import net.minecraft.client.renderer.entity.RenderLiving;
+/*import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.SideOnly;*/
 
-@SideOnly(Side.CLIENT)
-public class RenderRemnant extends RenderLiving<EntityRemnant> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderRemnant extends RenderLiving<EntityRemnant> {
 
 	private static ResourceLocation defaultTexture = new ResourceLocation("abyssalcraft:textures/model/remnant/remnant.png");
 	private static final ResourceLocation remnantTexture = new ResourceLocation("abyssalcraft:textures/model/remnant/remnant.png");
@@ -73,4 +73,4 @@ public class RenderRemnant extends RenderLiving<EntityRemnant> {
 
 		return defaultTexture;
 	}
-}
+}*/

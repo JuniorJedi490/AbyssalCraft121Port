@@ -15,18 +15,18 @@ import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.common.entity.EntityODBcPrimed;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.BlockRendererDispatcher;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.texture.TextureMap;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.BlockRendererDispatcher;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.Render;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.texture.TextureMap;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderODBc extends Render<EntityODBcPrimed> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderODBc extends Render<EntityODBcPrimed> {
 
 	public RenderODBc(RenderManager manager) {
 		super(manager);
@@ -82,4 +82,4 @@ public class RenderODBc extends Render<EntityODBcPrimed> {
 	{
 		return TextureMap.LOCATION_BLOCKS_TEXTURE;
 	}
-}
+}*/

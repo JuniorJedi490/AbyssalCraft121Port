@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.render.entity.RenderShubOffspring;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderShubOffspring;
 import com.shinoow.abyssalcraft.common.entity.EntityShubOffspring;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.OpenGlHelper;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerShubOffspringEyes implements LayerRenderer<EntityShubOffspring>
+//@SideOnly(Side.CLIENT)
+/*public class LayerShubOffspringEyes implements LayerRenderer<EntityShubOffspring>
 {
 	private static final ResourceLocation OFFSPRING_EYES = new ResourceLocation("abyssalcraft:textures/model/shub_offspring_eyes.png");
 	private final RenderShubOffspring shubOffspringRenderer;
@@ -65,4 +65,4 @@ public class LayerShubOffspringEyes implements LayerRenderer<EntityShubOffspring
 	{
 		return false;
 	}
-}
+}*/

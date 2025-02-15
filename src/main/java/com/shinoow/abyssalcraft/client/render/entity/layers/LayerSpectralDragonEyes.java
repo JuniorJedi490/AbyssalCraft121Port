@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
-import com.shinoow.abyssalcraft.client.render.entity.RenderDragonMinion;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderDragonMinion;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonMinion;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.OpenGlHelper;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerSpectralDragonEyes implements LayerRenderer<EntityDragonMinion>
+//@SideOnly(Side.CLIENT)
+/*public class LayerSpectralDragonEyes implements LayerRenderer<EntityDragonMinion>
 {
 	private static final ResourceLocation TEXTURE = new ResourceLocation("abyssalcraft:textures/model/elite/dragonminion_eyes.png");
 	private final RenderDragonMinion dragonRenderer;
@@ -59,4 +59,4 @@ public class LayerSpectralDragonEyes implements LayerRenderer<EntityDragonMinion
 	{
 		return false;
 	}
-}
+}*/

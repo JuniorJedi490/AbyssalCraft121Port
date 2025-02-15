@@ -11,19 +11,19 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelGatekeeperMinion;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelGatekeeperMinion;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
 import com.shinoow.abyssalcraft.common.entity.EntityGatekeeperMinion;
 
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderGatekeeperMinion extends RenderLiving<EntityGatekeeperMinion> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderGatekeeperMinion extends RenderLiving<EntityGatekeeperMinion> {
 
 	private static ResourceLocation texture = new ResourceLocation("abyssalcraft:textures/model/elite/gatekeeperminion.png");
 
@@ -44,4 +44,4 @@ public class RenderGatekeeperMinion extends RenderLiving<EntityGatekeeperMinion>
 
 		return texture;
 	}
-}
+}*/

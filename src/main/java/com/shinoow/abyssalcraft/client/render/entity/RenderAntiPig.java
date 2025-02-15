@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import net.minecraft.client.model.ModelPig;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelPig;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiPig extends RenderLiving {
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiPig extends RenderLiving {
 
 	private static final ResourceLocation mobTexture = new ResourceLocation("abyssalcraft:textures/model/anti/pig.png");
 
@@ -34,4 +34,4 @@ public class RenderAntiPig extends RenderLiving {
 
 		return mobTexture;
 	}
-}
+}*/
