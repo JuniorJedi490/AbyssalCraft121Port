@@ -15,12 +15,12 @@ import java.util.List;
 
 import com.shinoow.abyssalcraft.lib.util.TranslationUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.client.util.ITooltipFlag;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.world.World;
 
-public class ItemDecorativeStatueBlock extends ItemBlockAC {
+/*public class ItemDecorativeStatueBlock extends ItemBlockAC {
 
 	public ItemDecorativeStatueBlock(Block block) {
 		super(block);
@@ -37,4 +37,4 @@ public class ItemDecorativeStatueBlock extends ItemBlockAC {
 
 		return TranslationUtil.toLocalFormatted("decorativestatue.prefix", super.getItemStackDisplayName(par1ItemStack));
 	}
-}
+}*/

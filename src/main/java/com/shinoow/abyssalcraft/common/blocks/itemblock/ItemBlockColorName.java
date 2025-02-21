@@ -11,14 +11,14 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks.itemblock;
 
-import com.shinoow.abyssalcraft.common.blocks.IngotBlock;
+//import com.shinoow.abyssalcraft.common.blocks.IngotBlock;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.TextFormatting;
+//import net.minecraft.block.Block;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.text.TextFormatting;
 
 /**Shin = lazy. Deal with it.*/
-public class ItemBlockColorName extends ItemBlockAC {
+/*public class ItemBlockColorName extends ItemBlockAC {
 
 	public ItemBlockColorName(Block block) {
 		super(block);
@@ -37,4 +37,4 @@ public class ItemBlockColorName extends ItemBlockAC {
 			return TextFormatting.BLUE + super.getItemStackDisplayName(par1ItemStack);
 		return super.getItemStackDisplayName(par1ItemStack);
 	}
-}
+}*/

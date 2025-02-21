@@ -15,14 +15,14 @@ import com.shinoow.abyssalcraft.api.energy.IEnergyCollector;
 import com.shinoow.abyssalcraft.api.energy.PEUtils;
 import com.shinoow.abyssalcraft.lib.util.blocks.ISingletonInventory;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ITickable;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ITickable;
 
-public class TileEntityEnergyPedestal extends TileEntity implements IEnergyCollector, ISingletonInventory, ITickable {
+/*public class TileEntityEnergyPedestal extends TileEntity implements IEnergyCollector, ISingletonInventory, ITickable {
 
 	private ItemStack item = ItemStack.EMPTY;
 	private float energy;
@@ -113,4 +113,4 @@ public class TileEntityEnergyPedestal extends TileEntity implements IEnergyColle
 
 		this.energy = energy;
 	}
-}
+}*/

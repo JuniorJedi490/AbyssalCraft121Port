@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockGlass;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.BlockGlass;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.util.BlockRenderLayer;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockAbyssalSandGlass extends BlockGlass {
+/*public class BlockAbyssalSandGlass extends BlockGlass {
 
 	public BlockAbyssalSandGlass() {
 		super(Material.GLASS, false);
@@ -36,4 +36,4 @@ public class BlockAbyssalSandGlass extends BlockGlass {
 	{
 		return BlockRenderLayer.TRANSLUCENT;
 	}
-}
+}*/

@@ -18,30 +18,30 @@ import com.shinoow.abyssalcraft.api.AbyssalCraftAPI.FuelType;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.api.item.ACItems;
 import com.shinoow.abyssalcraft.api.recipe.CrystallizerRecipes;
-import com.shinoow.abyssalcraft.common.blocks.BlockCrystallizer;
+//import com.shinoow.abyssalcraft.common.blocks.BlockCrystallizer;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.Items;
+//import net.minecraft.inventory.ISidedInventory;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.text.ITextComponent;
+//import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.items.CapabilityItemHandler;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
-public class TileEntityCrystallizer extends TileEntity implements ISidedInventory, ITickable {
+/*public class TileEntityCrystallizer extends TileEntity implements ISidedInventory, ITickable {
 
 	private static final int[] slotsTop = new int[] {0};
 	private static final int[] slotsBottom = new int[] {2, 1, 3};
@@ -49,15 +49,15 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * The ItemStacks that hold the items currently being used in the crystallizer
 	 */
-	private NonNullList<ItemStack> crystallizerItemStacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
+	/*private NonNullList<ItemStack> crystallizerItemStacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 	/** The number of ticks that the crystallizer will keep doing it's thing */
-	public int crystallizerShapeTime;
+	/*public int crystallizerShapeTime;
 	/**
 	 * The number of ticks that a fresh copy of the currently-thingy item would keep the crystalizer stuffing for
 	 */
-	public int currentItemShapingTime;
+	/*public int currentItemShapingTime;
 	/** The number of ticks that the current item has been cooking for */
-	public int crystallizerFormTime;
+	/*public int crystallizerFormTime;
 	private String containerName;
 	private ItemStack[] processingStacks = {ItemStack.EMPTY, ItemStack.EMPTY};
 	private boolean recheck;
@@ -65,7 +65,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns the number of slots in the inventory.
 	 */
-	@Override
+	/*@Override
 	public int getSizeInventory()
 	{
 		return crystallizerItemStacks.size();
@@ -74,7 +74,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns the stack in slot i
 	 */
-	@Override
+	/*@Override
 	public ItemStack getStackInSlot(int par1)
 	{
 		return crystallizerItemStacks.get(par1);
@@ -84,7 +84,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Removes from an inventory slot (first arg) up to a specified number (second arg) of items and returns them in a
 	 * new stack.
 	 */
-	@Override
+	/*@Override
 	public ItemStack decrStackSize(int par1, int par2)
 	{
 		if(par1 == 2 || par1 == 3)
@@ -104,7 +104,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * When some containers are closed they call this on each slot, then drop whatever it returns as an EntityItem -
 	 * like when you close a workbench GUI.
 	 */
-	@Override
+	/*@Override
 	public ItemStack removeStackFromSlot(int par1)
 	{
 		return ItemStackHelper.getAndRemove(crystallizerItemStacks, par1);
@@ -113,7 +113,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Sets the given item stack to the specified slot in the inventory (can be crafting or armor sections).
 	 */
-	@Override
+	/*@Override
 	public void setInventorySlotContents(int par1, ItemStack par2ItemStack)
 	{
 		crystallizerItemStacks.set(par1, par2ItemStack);
@@ -146,7 +146,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns the name of the inventory
 	 */
-	@Override
+	/*@Override
 	public String getName()
 	{
 		return hasCustomName() ? containerName : "container.abyssalcraft.crystallizer";
@@ -155,7 +155,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns if the inventory is named
 	 */
-	@Override
+	/*@Override
 	public boolean hasCustomName()
 	{
 		return containerName != null && containerName.length() > 0;
@@ -211,7 +211,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns the maximum stack size for a inventory slot.
 	 */
-	@Override
+	/*@Override
 	public int getInventoryStackLimit()
 	{
 		return 64;
@@ -221,7 +221,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Returns an integer between 0 and the passed value representing how close the current item is to being completely
 	 * cooked
 	 */
-	@SideOnly(Side.CLIENT)
+	/*@SideOnly(Side.CLIENT)
 	public int getFormProgressScaled(int par1)
 	{
 		return crystallizerFormTime * par1 / 200;
@@ -231,7 +231,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Returns an integer between 0 and the passed value representing how much burn time is left on the current fuel
 	 * item, where 0 means that the item is exhausted and the passed value means that the item is fresh
 	 */
-	@SideOnly(Side.CLIENT)
+	/*@SideOnly(Side.CLIENT)
 	public int getShapeTimeRemainingScaled(int par1)
 	{
 		if (currentItemShapingTime == 0)
@@ -243,7 +243,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Furnace isBurning
 	 */
-	public boolean isCrystallizing()
+	/*public boolean isCrystallizing()
 	{
 		return crystallizerShapeTime > 0;
 	}
@@ -306,7 +306,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns true if the crystallizer can crystallize an item, i.e. has a source item, destination stack isn't full, etc.
 	 */
-	private boolean canCrystallize()
+	/*private boolean canCrystallize()
 	{
 		if (processingStacks[0].isEmpty())
 			return false;
@@ -354,7 +354,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Turn one item from the crystallizer source stack into the appropriate crystallized item in the crystallizer result stack
 	 */
-	public void crystalizeItem()
+	/*public void crystalizeItem()
 	{
 		if (canCrystallize())
 		{
@@ -391,7 +391,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
 	 * fuel
 	 */
-	public static int getCrystallizationTime(ItemStack par1ItemStack)
+	/*public static int getCrystallizationTime(ItemStack par1ItemStack)
 	{
 		if (par1ItemStack.isEmpty())
 			return 0;
@@ -421,13 +421,13 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 		 * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
 		 * fuel
 		 */
-		return getCrystallizationTime(par1ItemStack) > 0;
+		/*return getCrystallizationTime(par1ItemStack) > 0;
 	}
 
 	/**
 	 * Do not make give this method the name canInteractWith because it clashes with Container
 	 */
-	@Override
+	/*@Override
 	public boolean isUsableByPlayer(EntityPlayer par1EntityPlayer)
 	{
 		return world.getTileEntity(pos) != this ? false : par1EntityPlayer.getDistanceSq(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D) <= 64.0D;
@@ -442,7 +442,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	/**
 	 * Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	 */
-	@Override
+	/*@Override
 	public boolean isItemValidForSlot(int par1, ItemStack par2ItemStack)
 	{
 		return par1 == 2 ? false : par1 == 1 ? isItemFuel(par2ItemStack) : true;
@@ -452,7 +452,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Returns an array containing the indices of the slots that can be accessed by automation on the given side of this
 	 * block.
 	 */
-	@Override
+	/*@Override
 	public int[] getSlotsForFace(EnumFacing face)
 	{
 		return face == EnumFacing.DOWN ? slotsBottom : face == EnumFacing.UP ? slotsTop : slotsSides;
@@ -462,7 +462,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Returns true if automation can insert the given item in the given slot from the given side. Args: Slot, item,
 	 * side
 	 */
-	@Override
+	/*@Override
 	public boolean canInsertItem(int par1, ItemStack par2ItemStack, EnumFacing face)
 	{
 		return isItemValidForSlot(par1, par2ItemStack);
@@ -472,7 +472,7 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	 * Returns true if automation can extract the given item in the given slot from the given side. Args: Slot, item,
 	 * side
 	 */
-	@Override
+	/*@Override
 	public boolean canExtractItem(int par1, ItemStack par2ItemStack, EnumFacing face)
 	{
 		if (face == EnumFacing.DOWN && par1 == 1)
@@ -546,4 +546,4 @@ public class TileEntityCrystallizer extends TileEntity implements ISidedInventor
 	{
 		return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY && facing != null || super.hasCapability(capability, facing);
 	}
-}
+}*/

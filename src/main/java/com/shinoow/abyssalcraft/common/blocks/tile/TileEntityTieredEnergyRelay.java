@@ -11,13 +11,13 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks.tile;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyRelay;
+//import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyRelay;
 
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityTieredEnergyRelay extends TileEntityEnergyRelay {
+/*public class TileEntityTieredEnergyRelay extends TileEntityEnergyRelay {
 
 	@Override
 	public void onDataPacket(NetworkManager net, SPacketUpdateTileEntity packet)
@@ -62,4 +62,4 @@ public class TileEntityTieredEnergyRelay extends TileEntityEnergyRelay {
 
 		return base + 10 * ((BlockTieredEnergyRelay)getBlockType()).TYPE.getMeta();
 	}
-}
+}*/

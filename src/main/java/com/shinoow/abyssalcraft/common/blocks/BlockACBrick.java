@@ -14,20 +14,20 @@ package com.shinoow.abyssalcraft.common.blocks;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.projectile.EntityWitherSkull;
-import net.minecraft.util.IStringSerializable;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.boss.EntityDragon;
+//import net.minecraft.entity.boss.EntityWither;
+//import net.minecraft.entity.projectile.EntityWitherSkull;
+//import net.minecraft.util.IStringSerializable;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockACBrick extends BlockACBasic {
+/*public class BlockACBrick extends BlockACBasic {
 
 	//	public static final PropertyEnum<EnumBrickType> TYPE = PropertyEnum.create("type", BlockACBrick.EnumBrickType.class);
 
@@ -106,4 +106,4 @@ public class BlockACBrick extends BlockACBasic {
 				META_LOOKUP[type.getMeta()] = type;
 		}
 	}
-}
+}*/

@@ -14,10 +14,10 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 import com.shinoow.abyssalcraft.common.entity.EntityGatekeeperMinion;
 import com.shinoow.abyssalcraft.lib.tileentity.TileEntitySingleMobSpawner;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.world.World;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.world.World;
 
-public class TileEntityGatekeeperMinionSpawner extends TileEntitySingleMobSpawner {
+/*public class TileEntityGatekeeperMinionSpawner extends TileEntitySingleMobSpawner {
 
 	@Override
 	public int getActivationRange() {
@@ -28,4 +28,4 @@ public class TileEntityGatekeeperMinionSpawner extends TileEntitySingleMobSpawne
 	public EntityLiving getMob(World world) {
 		return new EntityGatekeeperMinion(world);
 	}
-}
+}*/

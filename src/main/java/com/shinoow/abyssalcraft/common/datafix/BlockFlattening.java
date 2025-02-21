@@ -22,18 +22,18 @@ import com.shinoow.abyssalcraft.common.util.ACLogger;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
-import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.util.ObjectIntIdentityMap;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.datafix.IFixableData;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.ChunkPos;
-import net.minecraft.world.chunk.NibbleArray;
-import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.nbt.NBTTagList;
+//import net.minecraft.util.ObjectIntIdentityMap;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.datafix.IFixableData;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.math.ChunkPos;
+//import net.minecraft.world.chunk.NibbleArray;
+//import net.minecraftforge.common.util.Constants;
+//import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.registries.ForgeRegistry;
 import net.minecraftforge.registries.GameData;
 
@@ -42,7 +42,7 @@ import net.minecraftforge.registries.GameData;
  *
  * @author Choonster
  */
-public class BlockFlattening implements IFixableData {
+/*public class BlockFlattening implements IFixableData {
 	//	private static final Marker LOG_MARKER = MarkerManager.getMarker("BlockFlattening").addParents(Logger.MOD_MARKER);
 
 	private final List<FlatteningDefinition> flatteningDefinitions;
@@ -232,4 +232,4 @@ public class BlockFlattening implements IFixableData {
 		KEEP,
 		REMOVE,
 	}
-}
+}*/

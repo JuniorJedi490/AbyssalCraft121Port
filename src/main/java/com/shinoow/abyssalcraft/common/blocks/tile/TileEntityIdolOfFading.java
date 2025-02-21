@@ -16,12 +16,12 @@ import com.shinoow.abyssalcraft.common.entity.EntityShadowCreature;
 import com.shinoow.abyssalcraft.common.entity.EntityShadowMonster;
 import com.shinoow.abyssalcraft.lib.tileentity.TileEntityIdolBase;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.IEntityLivingData;
-import net.minecraft.world.EnumDifficulty;
-import net.minecraft.world.World;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.IEntityLivingData;
+//import net.minecraft.world.EnumDifficulty;
+//import net.minecraft.world.World;
 
-public class TileEntityIdolOfFading extends TileEntityIdolBase {
+/*public class TileEntityIdolOfFading extends TileEntityIdolBase {
 
 	@Override
 	protected boolean isValidState() {
@@ -89,4 +89,4 @@ public class TileEntityIdolOfFading extends TileEntityIdolBase {
 			return 25F;
 		}
 	}
-}
+}*/

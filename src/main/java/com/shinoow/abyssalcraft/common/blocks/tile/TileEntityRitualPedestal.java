@@ -17,17 +17,17 @@ import com.shinoow.abyssalcraft.lib.util.blocks.IRitualAltar;
 import com.shinoow.abyssalcraft.lib.util.blocks.IRitualPedestal;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.math.BlockPos;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumParticleTypes;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.math.BlockPos;
 
-public class TileEntityRitualPedestal extends TileEntity implements ITickable, IRitualPedestal {
+/*public class TileEntityRitualPedestal extends TileEntity implements ITickable, IRitualPedestal {
 
 	private ItemStack item = ItemStack.EMPTY;
 	private int itemID, itemMeta;
@@ -232,4 +232,4 @@ public class TileEntityRitualPedestal extends TileEntity implements ITickable, I
 			isDirty = true;
 		}
 	}
-}
+}*/

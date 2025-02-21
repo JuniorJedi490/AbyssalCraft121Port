@@ -11,37 +11,37 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks;
 
-import static com.shinoow.abyssalcraft.common.blocks.BlockEnergyRelay.FACING;
+//import static com.shinoow.abyssalcraft.common.blocks.BlockEnergyRelay.FACING;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.shinoow.abyssalcraft.api.energy.IEnergyRelayBlock;
-import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyPedestal.EnumDimType;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTieredEnergyRelay;
+//import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyPedestal.EnumDimType;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTieredEnergyRelay;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.util.blocks.BlockUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumBlockRenderType;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockTieredEnergyRelay extends BlockContainer implements IEnergyRelayBlock {
+/*public class BlockTieredEnergyRelay extends BlockContainer implements IEnergyRelayBlock {
 
 	public static final Map<EnumDimType, Block> VARIANTS = new HashMap<>();
 
@@ -143,7 +143,7 @@ public class BlockTieredEnergyRelay extends BlockContainer implements IEnergyRel
 	/**
 	 * Convert the given metadata into a BlockState for this Block
 	 */
-	@Override
+	/*@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
 		EnumFacing enumfacing = EnumFacing.byIndex(meta);
@@ -154,7 +154,7 @@ public class BlockTieredEnergyRelay extends BlockContainer implements IEnergyRel
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
-	@Override
+	/*@Override
 	public int getMetaFromState(IBlockState state)
 	{
 		return state.getValue(FACING).getIndex();
@@ -187,4 +187,4 @@ public class BlockTieredEnergyRelay extends BlockContainer implements IEnergyRel
 
 		return base + 2 * TYPE.getMeta();
 	}
-}
+}*/

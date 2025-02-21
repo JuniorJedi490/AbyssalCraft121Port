@@ -13,25 +13,25 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import java.util.Random;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityShoggothBiomass;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityShoggothBiomass;
 import com.shinoow.abyssalcraft.common.entity.EntityShoggothBase;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumBlockRenderType;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockShoggothBiomass extends BlockContainer {
+/*public class BlockShoggothBiomass extends BlockContainer {
 
 	public BlockShoggothBiomass(){
 		super(Material.GROUND, MapColor.GREEN);
@@ -82,4 +82,4 @@ public class BlockShoggothBiomass extends BlockContainer {
 			entity.motionZ *= 0.4D;
 		}
 	}
-}
+}*/

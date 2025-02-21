@@ -15,27 +15,27 @@ import java.util.List;
 import java.util.Random;
 
 import com.shinoow.abyssalcraft.api.energy.IEnergyBlock;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntitySacrificialAltar;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntitySacrificialAltar;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.util.blocks.SingletonInventoryUtil;
 
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.item.EntityItem;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockSacrificialAltar extends BlockContainer implements IEnergyBlock {
+/*public class BlockSacrificialAltar extends BlockContainer implements IEnergyBlock {
 
 	public BlockSacrificialAltar(){
 		super(Material.ROCK);
@@ -170,4 +170,4 @@ public class BlockSacrificialAltar extends BlockContainer implements IEnergyBloc
 	public boolean canAcceptPE() {
 		return false;
 	}
-}
+}*/

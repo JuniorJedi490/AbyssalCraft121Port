@@ -14,19 +14,19 @@ package com.shinoow.abyssalcraft.common.blocks;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockFence;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.projectile.EntityWitherSkull;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.BlockFence;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.boss.EntityDragon;
+//import net.minecraft.entity.boss.EntityWither;
+//import net.minecraft.entity.projectile.EntityWitherSkull;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockACFence extends BlockFence {
+/*public class BlockACFence extends BlockFence {
 
 	public BlockACFence(Material par3Material, String par4, int par5, SoundType stepSound, MapColor mapColor) {
 		super(par3Material, mapColor);
@@ -53,4 +53,4 @@ public class BlockACFence extends BlockFence {
 	public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess world, BlockPos pos) {
 		return true;
 	}
-}
+}*/

@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.common.blocks.itemblock;
 
 import java.util.List;
 
-import net.minecraft.block.Block;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.client.util.ITooltipFlag;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.text.TextFormatting;
+//import net.minecraft.world.World;
 
-public class ItemODB extends ItemBlockAC {
+/*public class ItemODB extends ItemBlockAC {
 
 	public ItemODB(Block p_i45328_1_)
 	{
@@ -38,4 +38,4 @@ public class ItemODB extends ItemBlockAC {
 
 		return TextFormatting.DARK_RED + super.getItemStackDisplayName(par1ItemStack);
 	}
-}
+}*/

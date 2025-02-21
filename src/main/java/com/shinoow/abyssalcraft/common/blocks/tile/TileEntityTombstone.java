@@ -14,19 +14,19 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.common.entity.ghoul.*;
 
-import net.minecraft.block.Block;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.IEntityLivingData;
-import net.minecraft.init.MobEffects;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.EnumDifficulty;
+//import net.minecraft.block.Block;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.IEntityLivingData;
+//import net.minecraft.init.MobEffects;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.potion.PotionEffect;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.EnumDifficulty;
 
-public class TileEntityTombstone extends TileEntity implements ITickable {
+/*public class TileEntityTombstone extends TileEntity implements ITickable {
 
 	private int timer;
 	private int timerMax = 200;
@@ -134,3 +134,4 @@ public class TileEntityTombstone extends TileEntity implements ITickable {
 		return new EntityGhoul(world);
 	}
 }
+*/

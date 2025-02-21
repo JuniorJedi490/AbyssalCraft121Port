@@ -15,46 +15,46 @@ import java.util.Arrays;
 
 import javax.annotation.Nullable;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockSequentialBrewingStand;
+//import com.shinoow.abyssalcraft.common.blocks.BlockSequentialBrewingStand;
 import com.shinoow.abyssalcraft.common.inventory.ContainerSequentialBrewingStand;
 
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.*;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityLockable;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.init.Items;
+//import net.minecraft.inventory.*;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.tileentity.TileEntityLockable;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.event.ForgeEventFactory;
-import net.minecraftforge.items.CapabilityItemHandler;
+//import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
-public class TileEntitySequentialBrewingStand extends TileEntityLockable implements ITickable, ISidedInventory
+/*public class TileEntitySequentialBrewingStand extends TileEntityLockable implements ITickable, ISidedInventory
 {
 	/** an array of the input slot indices */
-	private static final int[] SLOTS_FOR_UP = {3};
+	/*private static final int[] SLOTS_FOR_UP = {3};
 	private static final int[] SLOTS_FOR_DOWN = {5, 6, 7};
 	/** an array of the output slot indices */
-	private static final int[] OUTPUT_SLOTS = {0, 1, 2, 4};
+	//private static final int[] OUTPUT_SLOTS = {0, 1, 2, 4};
 	/** The ItemStacks currently placed in the slots of the brewing stand */
-	private NonNullList<ItemStack> brewingItemStacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
+	/*private NonNullList<ItemStack> brewingItemStacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
 	private int brewTime;
 	/** an integer with each bit specifying whether that slot of the stand contains a potion */
-	private boolean[] filledSlots;
+	//private boolean[] filledSlots;
 	/** used to check if the current ingredient has been removed from the brewing stand during brewing */
-	private Item ingredientID;
+	/*private Item ingredientID;
 	private String customName;
 	private int fuel;
 	private EnumFacing direction;
@@ -62,7 +62,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Get the name of this object. For players this returns their username
 	 */
-	@Override
+	/*@Override
 	public String getName()
 	{
 		return hasCustomName() ? customName : "container.abyssalcraft.sequential_brewing";
@@ -71,7 +71,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Returns true if this thing is named
 	 */
-	@Override
+	/*@Override
 	public boolean hasCustomName()
 	{
 		return customName != null && !customName.isEmpty();
@@ -85,7 +85,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Returns the number of slots in the inventory.
 	 */
-	@Override
+	/*@Override
 	public int getSizeInventory()
 	{
 		return brewingItemStacks.size();
@@ -104,7 +104,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Like the old updateEntity(), except more generic.
 	 */
-	@Override
+	/*@Override
 	public void update()
 	{
 		ItemStack itemstack = brewingItemStacks.get(4);
@@ -178,7 +178,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	 * Creates an array of boolean values, each value represents a potion input slot, value is true if the slot is not
 	 * null.
 	 */
-	public boolean[] createFilledSlotsArray()
+	/*public boolean[] createFilledSlotsArray()
 	{
 		boolean[] aboolean = new boolean[3];
 
@@ -277,7 +277,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Returns the stack in the given slot.
 	 */
-	@Override
+	/*@Override
 	public ItemStack getStackInSlot(int index)
 	{
 		return index >= 0 && index < brewingItemStacks.size() ? (ItemStack)brewingItemStacks.get(index) : ItemStack.EMPTY;
@@ -286,7 +286,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Removes up to a specified number of items from an inventory slot and returns them in a new stack.
 	 */
-	@Override
+	/*@Override
 	public ItemStack decrStackSize(int index, int count)
 	{
 		return ItemStackHelper.getAndSplit(brewingItemStacks, index, count);
@@ -295,7 +295,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Removes a stack from the given slot and returns it.
 	 */
-	@Override
+	/*@Override
 	public ItemStack removeStackFromSlot(int index)
 	{
 		return ItemStackHelper.getAndRemove(brewingItemStacks, index);
@@ -304,7 +304,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Sets the given item stack to the specified slot in the inventory (can be crafting or armor sections).
 	 */
-	@Override
+	/*@Override
 	public void setInventorySlotContents(int index, ItemStack stack)
 	{
 		if (index >= 0 && index < brewingItemStacks.size())
@@ -329,7 +329,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Returns the maximum stack size for a inventory slot. Seems to always be 64, possibly will be extended.
 	 */
-	@Override
+	/*@Override
 	public int getInventoryStackLimit()
 	{
 		return 64;
@@ -338,7 +338,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Don't rename this method to canInteractWith due to conflicts with Container
 	 */
-	@Override
+	/*@Override
 	public boolean isUsableByPlayer(EntityPlayer player)
 	{
 		if (world.getTileEntity(pos) != this)
@@ -361,7 +361,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	 * Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot. For
 	 * guis use Slot.isItemValid
 	 */
-	@Override
+	/*@Override
 	public boolean isItemValidForSlot(int index, ItemStack stack)
 	{
 		if (index == 3)
@@ -389,7 +389,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Returns true if automation can insert the given item in the given slot from the given side.
 	 */
-	@Override
+	/*@Override
 	public boolean canInsertItem(int index, ItemStack itemStackIn, EnumFacing direction)
 	{
 		return isItemValidForSlot(index, itemStackIn);
@@ -398,7 +398,7 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	/**
 	 * Returns true if automation can extract the given item in the given slot from the given side.
 	 */
-	@Override
+	/*@Override
 	public boolean canExtractItem(int index, ItemStack stack, EnumFacing direction)
 	{
 		if (index == 3)
@@ -475,4 +475,4 @@ public class TileEntitySequentialBrewingStand extends TileEntityLockable impleme
 	{
 		brewingItemStacks.clear();
 	}
-}
+}*/

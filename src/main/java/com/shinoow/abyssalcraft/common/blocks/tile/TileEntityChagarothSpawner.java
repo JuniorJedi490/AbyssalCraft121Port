@@ -14,10 +14,10 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 import com.shinoow.abyssalcraft.common.entity.EntityChagaroth;
 import com.shinoow.abyssalcraft.lib.tileentity.TileEntitySingleMobSpawner;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.world.World;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.world.World;
 
-public class TileEntityChagarothSpawner extends TileEntitySingleMobSpawner {
+/*public class TileEntityChagarothSpawner extends TileEntitySingleMobSpawner {
 
 	@Override
 	public int getActivationRange() {
@@ -28,4 +28,4 @@ public class TileEntityChagarothSpawner extends TileEntitySingleMobSpawner {
 	public EntityLiving getMob(World world) {
 		return new EntityChagaroth(world);
 	}
-}
+}*/

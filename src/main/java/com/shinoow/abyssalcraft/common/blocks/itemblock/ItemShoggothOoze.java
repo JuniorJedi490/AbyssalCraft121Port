@@ -12,19 +12,19 @@
 package com.shinoow.abyssalcraft.common.blocks.itemblock;
 
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
-import com.shinoow.abyssalcraft.common.blocks.BlockShoggothOoze;
+//import com.shinoow.abyssalcraft.common.blocks.BlockShoggothOoze;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class ItemShoggothOoze extends ItemBlockAC
+/*public class ItemShoggothOoze extends ItemBlockAC
 {
 	public ItemShoggothOoze(Block block)
 	{
@@ -36,7 +36,7 @@ public class ItemShoggothOoze extends ItemBlockAC
 	/**
 	 * Called when a Block is right-clicked with this Item
 	 */
-	@Override
+	/*@Override
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
 		ItemStack stack = player.getHeldItem(hand);
@@ -82,7 +82,7 @@ public class ItemShoggothOoze extends ItemBlockAC
 	 * Converts the given ItemStack damage value into a metadata value to be placed in the world when this Item is
 	 * placed as a Block (mostly used with ItemBlocks).
 	 */
-	@Override
+	/*@Override
 	public int getMetadata(int damage)
 	{
 		return damage;
@@ -94,4 +94,4 @@ public class ItemShoggothOoze extends ItemBlockAC
 		IBlockState state = world.getBlockState(pos);
 		return state.getBlock() != ACBlocks.shoggoth_ooze || state.getValue(BlockShoggothOoze.LAYERS) > 7 ? super.canPlaceBlockOnSide(world, pos, side, player, stack) : true;
 	}
-}
+}*/

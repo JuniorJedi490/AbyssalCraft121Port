@@ -18,16 +18,16 @@ import com.shinoow.abyssalcraft.api.energy.IEnergyBlock;
 import com.shinoow.abyssalcraft.api.energy.IEnergyContainerItem;
 import com.shinoow.abyssalcraft.api.energy.IEnergyRelayBlock;
 
-import net.minecraft.block.Block;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.Block;
+//import net.minecraft.client.util.ITooltipFlag;
+//import net.minecraft.creativetab.CreativeTabs;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemPEContainerBlock extends ItemBlockAC implements IEnergyContainerItem {
+/*public class ItemPEContainerBlock extends ItemBlockAC implements IEnergyContainerItem {
 
 	public ItemPEContainerBlock(Block block) {
 		super(block);
@@ -74,4 +74,4 @@ public class ItemPEContainerBlock extends ItemBlockAC implements IEnergyContaine
 		Block block = Block.getBlockFromItem(stack.getItem());
 		return block instanceof IEnergyBlock && ((IEnergyBlock) block).canTransferPE() && getContainedEnergy(stack) > 0;
 	}
-}
+}*/

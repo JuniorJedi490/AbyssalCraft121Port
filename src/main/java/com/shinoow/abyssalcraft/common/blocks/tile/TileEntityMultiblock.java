@@ -16,13 +16,13 @@ import com.shinoow.abyssalcraft.api.energy.structure.IPlaceOfPower;
 import com.shinoow.abyssalcraft.api.energy.structure.IStructureBase;
 import com.shinoow.abyssalcraft.api.energy.structure.StructureHandler;
 
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ITickable;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ITickable;
 
-public class TileEntityMultiblock extends TileEntity implements ITickable, IStructureBase {
+/*public class TileEntityMultiblock extends TileEntity implements ITickable, IStructureBase {
 
 	private int ticksExisted;
 	private IPlaceOfPower place;
@@ -94,4 +94,4 @@ public class TileEntityMultiblock extends TileEntity implements ITickable, IStru
 			return place.getAmplifier(type);
 		return 0;
 	}
-}
+}*/

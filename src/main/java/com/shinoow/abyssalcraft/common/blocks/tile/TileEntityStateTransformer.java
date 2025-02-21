@@ -13,29 +13,29 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 
 import javax.annotation.Nullable;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockStateTransformer;
+//import com.shinoow.abyssalcraft.common.blocks.BlockStateTransformer;
 import com.shinoow.abyssalcraft.common.items.ItemStoneTablet;
 
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.ISidedInventory;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.nbt.NBTTagList;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.items.CapabilityItemHandler;
+//import net.minecraftforge.common.util.Constants;
+//import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
-public class TileEntityStateTransformer extends TileEntity implements ITickable, ISidedInventory {
+/*public class TileEntityStateTransformer extends TileEntity implements ITickable, ISidedInventory {
 
 	public int processingTime;
 	private NonNullList<ItemStack> containerItemStacks = NonNullList.withSize(50, ItemStack.EMPTY);
@@ -368,4 +368,4 @@ public class TileEntityStateTransformer extends TileEntity implements ITickable,
 	{
 		return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY && facing != null || super.hasCapability(capability, facing);
 	}
-}
+}*/

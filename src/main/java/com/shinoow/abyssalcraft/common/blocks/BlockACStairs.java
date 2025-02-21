@@ -14,18 +14,18 @@ package com.shinoow.abyssalcraft.common.blocks;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockStairs;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.projectile.EntityWitherSkull;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockStairs;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.boss.EntityDragon;
+//import net.minecraft.entity.boss.EntityWither;
+//import net.minecraft.entity.projectile.EntityWitherSkull;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockACStairs extends BlockStairs {
+/*public class BlockACStairs extends BlockStairs {
 
 	public BlockACStairs(Block par1Block, String tooltype, int harvestlevel){
 		super(par1Block.getDefaultState());
@@ -54,4 +54,4 @@ public class BlockACStairs extends BlockStairs {
 			return state.getBlock() != ACBlocks.ethaxium_brick_stairs && state.getBlock() != ACBlocks.dark_ethaxium_brick_stairs;
 		return super.canEntityDestroy(state, world, pos, entity);
 	}
-}
+}*/

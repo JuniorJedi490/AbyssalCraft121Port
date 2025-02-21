@@ -16,20 +16,20 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.*;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.common.EnumPlantType;
+//import net.minecraft.block.*;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.item.Item;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class BlockDreadGrass extends BlockGrass {
+/*public class BlockDreadGrass extends BlockGrass {
 
 	public BlockDreadGrass() {
 		setCreativeTab(ACTabs.tabBlock);
@@ -117,4 +117,4 @@ public class BlockDreadGrass extends BlockGrass {
 			}
 		}
 	}
-}
+}*/

@@ -11,11 +11,11 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks.tile;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyPedestal;
+//import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyPedestal;
 
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityTieredEnergyPedestal extends TileEntityEnergyPedestal {
+/*public class TileEntityTieredEnergyPedestal extends TileEntityEnergyPedestal {
 
 	@Override
 	public int getMaxEnergy() {
@@ -29,4 +29,4 @@ public class TileEntityTieredEnergyPedestal extends TileEntityEnergyPedestal {
 
 		return this;
 	}
-}
+}*/

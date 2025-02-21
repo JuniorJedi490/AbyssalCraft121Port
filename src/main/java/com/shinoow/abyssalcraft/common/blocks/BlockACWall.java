@@ -13,17 +13,17 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockWall;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockWall;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.creativetab.CreativeTabs;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockACWall extends BlockWall{
+/*public class BlockACWall extends BlockWall{
 
 	private MapColor mapColor;
 
@@ -63,4 +63,4 @@ public class BlockACWall extends BlockWall{
 	public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess world, BlockPos pos) {
 		return true;
 	}
-}
+}*/

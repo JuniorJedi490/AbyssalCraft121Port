@@ -11,11 +11,11 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks.tile;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyContainer;
+//import com.shinoow.abyssalcraft.common.blocks.BlockTieredEnergyContainer;
 
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityTieredEnergyContainer extends TileEntityEnergyContainer {
+/*public class TileEntityTieredEnergyContainer extends TileEntityEnergyContainer {
 
 	@Override
 	public int getMaxEnergy() {
@@ -46,4 +46,4 @@ public class TileEntityTieredEnergyContainer extends TileEntityEnergyContainer {
 
 		return "container.abyssalcraft.tieredenergycontainer";
 	}
-}
+}*/

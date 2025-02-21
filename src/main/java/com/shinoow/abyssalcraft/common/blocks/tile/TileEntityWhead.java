@@ -13,4 +13,4 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 
 import com.shinoow.abyssalcraft.lib.tileentity.TEDirectional;
 
-public class TileEntityWhead extends TEDirectional {}
+//public class TileEntityWhead extends TEDirectional {}
