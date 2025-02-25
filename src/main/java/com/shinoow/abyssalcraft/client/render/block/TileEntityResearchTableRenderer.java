@@ -11,8 +11,8 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.block;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockResearchTable;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityResearchTable;
+//import com.shinoow.abyssalcraft.common.blocks.BlockResearchTable;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityResearchTable;
 
 import net.minecraft.client.Minecraft;
 //import net.minecraft.client.renderer.GlStateManager;

@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityRendingPedestal;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityRendingPedestal;
 import com.shinoow.abyssalcraft.common.inventory.ContainerRendingPedestal;
 
 //import net.minecraft.client.gui.inventory.GuiContainer;

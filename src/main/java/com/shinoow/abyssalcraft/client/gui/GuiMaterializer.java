@@ -16,7 +16,7 @@ import java.io.IOException;
 //import org.lwjgl.input.Mouse;
 
 import com.shinoow.abyssalcraft.api.recipe.MaterializerRecipes;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityMaterializer;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityMaterializer;
 import com.shinoow.abyssalcraft.common.inventory.ContainerMaterializer;
 
 //import net.minecraft.client.gui.inventory.GuiContainer;

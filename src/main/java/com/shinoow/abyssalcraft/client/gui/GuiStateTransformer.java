@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityStateTransformer;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityStateTransformer;
 import com.shinoow.abyssalcraft.common.inventory.ContainerStateTransformer;
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.server.UpdateModeMessage;

@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTransmutator;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTransmutator;
 import com.shinoow.abyssalcraft.common.inventory.ContainerTransmutator;
 
 //import net.minecraft.client.gui.inventory.GuiContainer;

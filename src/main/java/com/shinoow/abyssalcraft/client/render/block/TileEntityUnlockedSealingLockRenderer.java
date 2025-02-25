@@ -12,7 +12,7 @@
 package com.shinoow.abyssalcraft.client.render.block;
 
 import com.shinoow.abyssalcraft.api.item.ACItems;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityUnlockedSealingLock;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityUnlockedSealingLock;
 
 import net.minecraft.client.Minecraft;
 //import net.minecraft.client.renderer.GlStateManager;

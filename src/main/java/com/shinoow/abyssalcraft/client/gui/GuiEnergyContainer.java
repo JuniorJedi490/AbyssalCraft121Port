@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityEnergyContainer;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityEnergyContainer;
 import com.shinoow.abyssalcraft.common.inventory.ContainerEnergyContainer;
 
 //import net.minecraft.client.gui.inventory.GuiContainer;
