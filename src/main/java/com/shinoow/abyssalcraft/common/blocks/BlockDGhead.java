@@ -16,25 +16,25 @@ import com.shinoow.abyssalcraft.common.blocks.tile.*;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.tileentity.TEDirectional;
 
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.common.Optional.Interface;
-import net.minecraftforge.fml.common.Optional.Method;
-import thaumcraft.api.crafting.IInfusionStabiliserExt;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumBlockRenderType;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.common.Optional.Interface;
+//import net.minecraftforge.fml.common.Optional.Method;
+//import thaumcraft.api.crafting.IInfusionStabiliserExt;
 
-@Interface(modid = "thaumcraft", iface = "thaumcraft.api.crafting.IInfusionStabiliserExt", striprefs = true)
-public class BlockDGhead extends BlockContainer implements IInfusionStabiliserExt {
+//@Interface(modid = "thaumcraft", iface = "thaumcraft.api.crafting.IInfusionStabiliserExt", striprefs = true)
+/*public class BlockDGhead extends BlockContainer implements IInfusionStabiliserExt {
 
 	public BlockDGhead() {
 		super(Material.CLOTH);
@@ -103,4 +103,4 @@ public class BlockDGhead extends BlockContainer implements IInfusionStabiliserEx
 
 		return 0.1f;
 	}
-}
+}*/

@@ -11,17 +11,17 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDreadSpawn;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDreadSpawn;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadSpawn;
 
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderDreadSpawn extends RenderLiving<EntityDreadSpawn> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderDreadSpawn extends RenderLiving<EntityDreadSpawn> {
 
 	private static final ResourceLocation mobTexture = new ResourceLocation("abyssalcraft:textures/model/dread_spawn.png");
 
@@ -35,4 +35,4 @@ public class RenderDreadSpawn extends RenderLiving<EntityDreadSpawn> {
 
 		return mobTexture;
 	}
-}
+}*/

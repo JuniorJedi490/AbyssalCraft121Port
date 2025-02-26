@@ -24,26 +24,26 @@ import com.shinoow.abyssalcraft.lib.ACLib;
 import com.shinoow.abyssalcraft.lib.util.blocks.ISingletonInventory;
 import com.shinoow.abyssalcraft.lib.util.items.IStaffOfRending;
 
-import net.minecraft.entity.*;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
+//import net.minecraft.entity.*;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.ISidedInventory;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.*;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.text.ITextComponent;
+//import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraftforge.common.capabilities.Capability;
+//import net.minecraftforge.items.CapabilityItemHandler;
+//import net.minecraftforge.items.IItemHandler;
+//import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
-public class TileEntityRendingPedestal extends TileEntity implements IEnergyContainer, ITickable, ISidedInventory, ISingletonInventory {
+/*public class TileEntityRendingPedestal extends TileEntity implements IEnergyContainer, ITickable, ISidedInventory, ISingletonInventory {
 
 	private float energy;
 	private NonNullList<ItemStack> containerItemStacks = NonNullList.withSize(6, ItemStack.EMPTY);
@@ -425,4 +425,4 @@ public class TileEntityRendingPedestal extends TileEntity implements IEnergyCont
 
 		this.energy = energy;
 	}
-}
+}*/

@@ -17,7 +17,7 @@ import com.google.common.collect.ImmutableList;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.common.blocks.*;
 
-import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumFacing;
 
 /**
  * Manages the flattening definitions for the {@link BlockFlattening} DataFixer.
@@ -30,31 +30,31 @@ public class BlockFlatteningDefinitions {
 	 *
 	 * @return The BlockFlattening instance
 	 */
-	public static BlockFlattening createBlockFlattening() {
+	/*public static BlockFlattening createBlockFlattening() {
 		final ImmutableList.Builder<BlockFlattening.FlatteningDefinition> flatteningDefinitions = new ImmutableList.Builder<>();
 
-		BlockACCobblestone.VARIANTS.forEach((type, variant) -> {
+		/*BlockACCobblestone.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("cobblestone",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
-		BlockACStone.VARIANTS.forEach((type, variant) -> {
+		});*/
+		/*BlockACStone.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("stone",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
-		IngotBlock.VARIANTS.forEach((type, variant) -> {
+		});*/
+		/*IngotBlock.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("ingotblock",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
-		BlockStatue.VARIANTS.forEach((type, variant) -> {
+		});*/
+		/*BlockStatue.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("statue",
 					type.getMeta(),
 					variant,
@@ -67,8 +67,8 @@ public class BlockFlatteningDefinitions {
 						tileEntityNBT.removeTag("Facing");
 						return BlockFlattening.TileEntityAction.KEEP;
 					}));
-		});
-		BlockDecorativeStatue.VARIANTS.forEach((type, variant) -> {
+		});*/
+		/*BlockDecorativeStatue.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("decorativestatue",
 					type.getMeta(),
 					variant,
@@ -78,8 +78,8 @@ public class BlockFlatteningDefinitions {
 						return block.getDefaultState().withProperty(BlockDecorativeStatue.FACING, facing);
 					},
 					tileEntityNBT -> BlockFlattening.TileEntityAction.REMOVE));
-		});
-		BlockACBrick.VARIANTS.forEach((name, variants) -> {
+		});*/
+		/*BlockACBrick.VARIANTS.forEach((name, variants) -> {
 			variants.forEach((type, variant) -> {
 				flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition(name,
 						type.getMeta(),
@@ -87,51 +87,51 @@ public class BlockFlatteningDefinitions {
 						(block, tileEntityNBT) -> block.getDefaultState(),
 						null));
 			});
-		});
+		});*/
 
 		//version 3 definitions
 
-		BlockRitualAltar.VARIANTS.forEach((type, variant) -> {
+		/*BlockRitualAltar.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("ritualaltar",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
-		BlockRitualPedestal.VARIANTS.forEach((type, variant) -> {
+		/*BlockRitualPedestal.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("ritualpedestal",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
-		BlockTieredEnergyPedestal.VARIANTS.forEach((type, variant) -> {
+		/*BlockTieredEnergyPedestal.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("tieredenergypedestal",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
-		BlockTieredSacrificialAltar.VARIANTS.forEach((type, variant) -> {
+		/*BlockTieredSacrificialAltar.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("tieredsacrificialaltar",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
-		BlockTieredEnergyCollector.VARIANTS.forEach((type, variant) -> {
+		/*BlockTieredEnergyCollector.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("tieredenergycollector",
 					type.getMeta(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
-		BlockTieredEnergyRelay.VARIANTS.forEach((type, variant) -> {
+		/*BlockTieredEnergyRelay.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("tieredenergyrelay",
 					type.getMeta(),
 					variant,
@@ -144,29 +144,29 @@ public class BlockFlatteningDefinitions {
 						tileEntityNBT.removeTag("Facing");
 						return BlockFlattening.TileEntityAction.KEEP;
 					}));
-		});
+		});*/
 
 		//version 4 definitions TBD
 
-		BlockCrystalCluster.VARIANTS.forEach((type, variant) -> {
+		/*BlockCrystalCluster.VARIANTS.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("crystalcluster",
 					type.getMetadata(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
-		BlockCrystalCluster.VARIANTS_2.forEach((type, variant) -> {
+		/*BlockCrystalCluster.VARIANTS_2.forEach((type, variant) -> {
 			flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("crystalcluster2",
 					type.getMetadata(),
 					variant,
 					(block, tileEntityNBT) -> block.getDefaultState(),
 					null));
-		});
+		});*/
 
 		//version 5 definitions
 
-		flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("abydreadstone",
+		/*flatteningDefinitions.add(new BlockFlattening.FlatteningDefinition("abydreadstone",
 				0,
 				ACBlocks.elysian_stone,
 				(block, tileEntityNBT) -> block.getDefaultState(),
@@ -206,5 +206,5 @@ public class BlockFlatteningDefinitions {
 				null));
 
 		return new BlockFlattening(flatteningDefinitions.build());
-	}
+	}*/
 }

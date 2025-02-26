@@ -13,13 +13,13 @@ package com.shinoow.abyssalcraft.api.necronomicon;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.item.crafting.ShapedRecipes;
-import net.minecraft.item.crafting.ShapelessRecipes;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.item.crafting.IRecipe;
+//import net.minecraft.item.crafting.ShapedRecipes;
+//import net.minecraft.item.crafting.ShapelessRecipes;
+//import net.minecraftforge.fml.common.registry.ForgeRegistries;
+//import net.minecraftforge.oredict.ShapedOreRecipe;
+//import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 /**
  * Simple collection of ItemStacks used for displaying crafting recipes in the Necronomicon
@@ -29,7 +29,7 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
  */
 public class CraftingStack {
 
-	private ItemStack output;
+	//private ItemStack output;
 	private Object[] recipe = new Object[9];
 
 	/**
@@ -41,7 +41,7 @@ public class CraftingStack {
 		if(output != null){
 			if(recipe != null){
 				if(recipe.length == 9){
-					this.output = APIUtils.convertToStack(output);
+					//this.output = APIUtils.convertToStack(output);
 					this.recipe = recipe;
 				} else throw new ArrayIndexOutOfBoundsException("The array must contain preciesly 9 elements, not "+recipe.length+"!");
 			} else throw new NullPointerException("This array can't be empty!");
@@ -58,8 +58,8 @@ public class CraftingStack {
 		if(output != null){
 			int size = 0;
 			Object[] stuff = new Object[9];
-			this.output = APIUtils.convertToStack(output);
-			for(IRecipe recipe : ForgeRegistries.RECIPES)
+			//this.output = APIUtils.convertToStack(output);
+			/*for(IRecipe recipe : ForgeRegistries.RECIPES)
 				if(recipe.getRecipeOutput() != null && recipe.getRecipeOutput().isItemEqual(this.output)){
 					if(recipe instanceof ShapedRecipes){
 						for(int i = 0; i < recipe.getIngredients().size(); i++)
@@ -85,7 +85,7 @@ public class CraftingStack {
 						}
 					}
 					this.output.setCount(recipe.getRecipeOutput().getCount());
-				}
+				}*/
 			recipe = stuff;
 		}
 	}
@@ -94,9 +94,9 @@ public class CraftingStack {
 	 * Getter for the output ItemStack
 	 * @return A ItemStack representing the output
 	 */
-	public ItemStack getOutput(){
+	/*public ItemStack getOutput(){
 		return output;
-	}
+	}*/
 
 	/**
 	 * Getter for the Object array containing the recipe
@@ -106,8 +106,8 @@ public class CraftingStack {
 		return recipe;
 	}
 
-	@Override
-	public String toString(){
+	//@Override
+	/*public String toString(){
 		return "CraftingStack{Output: "+ output.toString()+ ", Recipe: "+ recipe.toString() +"}";
-	}
+	}*/
 }

@@ -13,8 +13,8 @@ package com.shinoow.abyssalcraft.api.rending;
 
 import java.util.function.Predicate;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.item.ItemStack;
 
 /**
  * A Staff of Rending target, with its corresponding energy type and output
@@ -25,10 +25,10 @@ import net.minecraft.item.ItemStack;
  */
 public class Rending {
 
-	private final String name, jeiDescription;
-	private final int maxEnergy, dimension;
-	private final ItemStack output;
-	private final Predicate<EntityLiving> rendingPredicate;
+	//private final String name, jeiDescription;
+	//private final int maxEnergy, dimension;
+	//private final ItemStack output;
+	//private final Predicate<EntityLiving> rendingPredicate;
 
 	/**
 	 * A Staff of Rending target
@@ -40,70 +40,70 @@ public class Rending {
 	 * @param jeiDescription Description for JEI
 	 * @param dimension Dimension for JEI (set to OreDictionary.WILDCARD_VALUE if your Rending isn't dimension-specific)
 	 */
-	public Rending(String name, int maxEnergy, ItemStack output, Predicate<EntityLiving> rendingPredicate, String jeiDescription, int dimension) {
+	/*public Rending(String name, int maxEnergy, ItemStack output, Predicate<EntityLiving> rendingPredicate, String jeiDescription, int dimension) {
 		this.name = name;
 		this.maxEnergy = maxEnergy;
 		this.output = output;
 		this.rendingPredicate = rendingPredicate;
 		this.jeiDescription = jeiDescription;
 		this.dimension = dimension;
-	}
+	}*/
 
 	/**
 	 * Returns the Rending name (used for NBT storage)
 	 */
-	public String getName() {
+	/*public String getName() {
 		return name;
-	}
+	}*/
 
 	/**
 	 * Returns the tooltip (energy name in lowercase prefixed by "tooltip.drainstaff.energy.")
 	 */
-	public String getTooltip() {
+	/*public String getTooltip() {
 		return String.format("tooltip.drainstaff.energy.%s", name.toLowerCase());
-	}
+	}*/
 
 	/**
 	 * Returns the Rending description used in JEI
 	 */
-	public String getJeiDescription() {
+	/*public String getJeiDescription() {
 		return jeiDescription;
-	}
+	}*/
 
 	/**
 	 * Returns the amount of energy that needs to be collected to create the output
 	 */
-	public int getMaxEnergy() {
+	/*public int getMaxEnergy() {
 		return maxEnergy;
-	}
+	}*/
 
 	/**
 	 * Returns the dimension displayed in JEI
 	 */
-	public int getDimension() {
+	/*public int getDimension() {
 		return dimension;
-	}
+	}*/
 
 	/**
 	 * Returns the Rending output
 	 */
-	public ItemStack getOutput() {
+	/*public ItemStack getOutput() {
 		return output.copy();
-	}
+	}*/
 
 	/**
 	 * Return the predicate used to determine if a target can be drained
 	 */
-	public Predicate<EntityLiving> getRendingFunction() {
+	/*public Predicate<EntityLiving> getRendingFunction() {
 		return rendingPredicate;
-	}
+	}*/
 
 	/**
 	 * Determines if the target can be drained
 	 * @param entity The target Entity
 	 * @return True if the target can be drained, otherwise false
 	 */
-	public boolean isApplicable(EntityLiving entity) {
+	/*public boolean isApplicable(EntityLiving entity) {
 		return rendingPredicate.test(entity);
-	}
+	}*/
 }

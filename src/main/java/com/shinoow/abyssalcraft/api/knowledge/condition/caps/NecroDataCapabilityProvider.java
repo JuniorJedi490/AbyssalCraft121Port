@@ -11,14 +11,14 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.knowledge.condition.caps;
 
-import net.minecraft.nbt.NBTBase;
-import net.minecraft.util.EnumFacing;
+//import net.minecraft.nbt.NBTBase;
+//import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.CapabilityInject;
+//import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.util.INBTSerializable;
 
-public class NecroDataCapabilityProvider implements ICapabilityProvider, INBTSerializable<NBTBase>{
+/*public class NecroDataCapabilityProvider implements ICapabilityProvider, INBTSerializable<NBTBase>{
 
 	@CapabilityInject(INecroDataCapability.class)
 	public static final Capability<INecroDataCapability> NECRO_DATA_CAP = null;
@@ -53,4 +53,4 @@ public class NecroDataCapabilityProvider implements ICapabilityProvider, INBTSer
 	public void deserializeNBT(NBTBase nbt) {
 		NecroDataCapabilityStorage.instance.readNBT(NECRO_DATA_CAP, capability, null, nbt);
 	}
-}
+}*/

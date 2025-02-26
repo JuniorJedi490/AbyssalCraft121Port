@@ -18,12 +18,12 @@ import com.shinoow.abyssalcraft.api.spell.Spell;
 import com.shinoow.abyssalcraft.common.inventory.ContainerSpellbook;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextFormatting;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.text.TextFormatting;
 
-public class GuiSpellbook extends GuiContainer {
+/*public class GuiSpellbook extends GuiContainer {
 
 	private static final ResourceLocation iconLocation = new ResourceLocation("abyssalcraft:textures/gui/container/spellcraft_test.png");
 
@@ -80,4 +80,4 @@ public class GuiSpellbook extends GuiContainer {
 		drawTexturedModalRect(k, l, 0, 0, xSize, ySize);
 		//		drawTexturedModalRect(k, l + invRows * 18 + 17, 0, 160, xSize, 96);
 	}
-}
+}*/

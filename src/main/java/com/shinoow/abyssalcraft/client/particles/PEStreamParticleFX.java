@@ -16,12 +16,12 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.AbyssalCraft;
 
 import net.minecraft.client.particle.Particle;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.World;
+//import net.minecraft.client.renderer.BufferBuilder;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraft.world.World;
 
-public class PEStreamParticleFX extends Particle {
+/*public class PEStreamParticleFX extends Particle {
 
 	Random random = new Random();
 	public double colorR = 0;
@@ -86,4 +86,4 @@ public class PEStreamParticleFX extends Particle {
 		AbyssalCraft.proxy.decrementParticleCount();
 		super.setExpired();
 	}
-}
+}*/

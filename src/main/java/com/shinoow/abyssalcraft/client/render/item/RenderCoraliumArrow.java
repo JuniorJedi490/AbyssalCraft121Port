@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.client.render.item;
 
 import com.shinoow.abyssalcraft.common.entity.EntityCoraliumArrow;
 
-import net.minecraft.client.renderer.entity.RenderArrow;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.RenderArrow;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderCoraliumArrow extends RenderArrow<EntityCoraliumArrow>
+//@SideOnly(Side.CLIENT)
+/*public class RenderCoraliumArrow extends RenderArrow<EntityCoraliumArrow>
 {
 	private static final ResourceLocation arrowTextures = new ResourceLocation("abyssalcraft:textures/model/corarrow.png");
 
@@ -33,4 +33,4 @@ public class RenderCoraliumArrow extends RenderArrow<EntityCoraliumArrow>
 	{
 		return arrowTextures;
 	}
-}
+}*/

@@ -14,10 +14,10 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 import com.shinoow.abyssalcraft.common.entity.EntityDreadguard;
 import com.shinoow.abyssalcraft.lib.tileentity.TileEntitySingleMobSpawner;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.world.World;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.world.World;
 
-public class TileEntityDreadguardSpawner extends TileEntitySingleMobSpawner {
+/*public class TileEntityDreadguardSpawner extends TileEntitySingleMobSpawner {
 
 	@Override
 	public int getActivationRange() {
@@ -28,4 +28,4 @@ public class TileEntityDreadguardSpawner extends TileEntitySingleMobSpawner {
 	public EntityLiving getMob(World world) {
 		return new EntityDreadguard(world);
 	}
-}
+}*/

@@ -22,8 +22,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.util.Tuple;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Registry class for Dimension Data and other dimension-related stuff
@@ -71,11 +71,11 @@ public class DimensionDataRegistry {
 	 * @param dim The Dimension ID
 	 * @param name A String representing the name
 	 */
-	public void addDimensionToName(int dim, String name){
+	/*public void addDimensionToName(int dim, String name){
 		if(dim != OreDictionary.WILDCARD_VALUE)
 			dimToName.put(dim, name);
 		else logger.log(Level.ERROR, "You're not allowed to register that Dimension ID: {}", dim);
-	}
+	}*/
 
 	/**
 	 * Attempts to fetch Dimension Data tied to a dimension ID, if present
@@ -117,14 +117,14 @@ public class DimensionDataRegistry {
 	 * @param dim1 First dimension to connect
 	 * @param dim2 Second dimension to connect
 	 */
-	public void addGatewayKeyOverride(int key, int dim1, int dim2){
+	/*public void addGatewayKeyOverride(int key, int dim1, int dim2){
 
 		int key1 = MathHelper.clamp(key, 0, 3);
 
 		gateway_key_overrides.putIfAbsent(key1, new HashSet<>());
 
 		gateway_key_overrides.get(key1).add(new Tuple<>(dim1, dim2));
-	}
+	}*/
 
 	/**
 	 * Fetches all Gateway Key Overrides for the specified key type
@@ -136,7 +136,7 @@ public class DimensionDataRegistry {
 	 * <li>3 = The Silver Key</li>
 	 * </ul>
 	 */
-	public Stream<Tuple<Integer, Integer>> getGatewayKeyOverrides(int key){
+	/*public Stream<Tuple<Integer, Integer>> getGatewayKeyOverrides(int key){
 
 		int key1 = MathHelper.clamp(key, 0, 3);
 
@@ -145,7 +145,7 @@ public class DimensionDataRegistry {
 		return gateway_key_overrides.entrySet().stream()
 				.filter(e -> e.getKey() <= key1)
 				.flatMap(e -> e.getValue().stream());
-	}
+	}*/
 
 	/**
 	 * Checks whether or not a portal can be created between the two dimension using the
@@ -160,7 +160,7 @@ public class DimensionDataRegistry {
 	 * <li>3 = The Silver Key</li>
 	 * </ul>
 	 */
-	public boolean areDimensionsConnected(int dim1, int dim2, int key) {
+	/*public boolean areDimensionsConnected(int dim1, int dim2, int key) {
 
 		DimensionData data1 = getDataForDim(dim1);
 		DimensionData data2 = getDataForDim(dim2);
@@ -181,7 +181,7 @@ public class DimensionDataRegistry {
 
 		return getGatewayKeyOverrides(key)
 				.anyMatch(t -> t.getFirst() == dim1 && t.getSecond() == dim2 || t.getFirst() == dim2 && t.getSecond() == dim1);
-	}
+	}*/
 
 	/**
 	 * Removes Dimension Data related to the ID presented
@@ -193,7 +193,7 @@ public class DimensionDataRegistry {
 			.filter(d -> d.getConnectedDimensions().contains(id))
 			.forEach(d -> d.getConnectedDimensions().remove(id));
 			for(Entry<Integer, Set<Tuple<Integer, Integer>>> e : gateway_key_overrides.entrySet())
-				e.getValue().removeIf(t -> t.getFirst() == id || t.getSecond() == id);
+				//e.getValue().removeIf(t -> t.getFirst() == id || t.getSecond() == id);
 			logger.log(Level.INFO, "Dimension Data for dimension {} was removed", id);
 		}
 

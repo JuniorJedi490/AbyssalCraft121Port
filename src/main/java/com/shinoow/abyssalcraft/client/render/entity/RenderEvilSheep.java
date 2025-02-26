@@ -11,15 +11,15 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelEvilSheep2;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEvilSheepWool;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelEvilSheep2;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEvilSheepWool;
 import com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep;
 
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
 
-public class RenderEvilSheep extends RenderLiving<EntityEvilSheep> {
+/*public class RenderEvilSheep extends RenderLiving<EntityEvilSheep> {
 
 	private static final ResourceLocation shearedSheepTextures = new ResourceLocation("textures/entity/sheep/sheep.png");
 
@@ -33,4 +33,4 @@ public class RenderEvilSheep extends RenderLiving<EntityEvilSheep> {
 
 		return shearedSheepTextures;
 	}
-}
+}*/

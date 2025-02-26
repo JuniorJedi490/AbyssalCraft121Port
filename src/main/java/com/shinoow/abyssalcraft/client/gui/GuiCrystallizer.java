@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityCrystallizer;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityCrystallizer;
 import com.shinoow.abyssalcraft.common.inventory.ContainerCrystallizer;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiCrystallizer extends GuiContainer {
+/*public class GuiCrystallizer extends GuiContainer {
 
 	private static final ResourceLocation crystallizerGuiTextures = new ResourceLocation("abyssalcraft:textures/gui/container/crystallizer.png");
 	private TileEntityCrystallizer tileCrystallizer;
@@ -66,4 +66,4 @@ public class GuiCrystallizer extends GuiContainer {
 		i1 = tileCrystallizer.getFormProgressScaled(24);
 		drawTexturedModalRect(k + 79, l + 34, 176, 14, i1 + 1, 16);
 	}
-}
+}*/

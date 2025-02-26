@@ -25,19 +25,19 @@ import com.shinoow.abyssalcraft.common.handlers.InternalNecroDataHandler;
 import com.shinoow.abyssalcraft.lib.ACLib;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 
-import net.minecraft.client.model.ModelBiped;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.IThreadListener;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
+//import net.minecraft.client.model.ModelBiped;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.IThreadListener;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.RayTraceResult;
+//import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 public class CommonProxy {
 
 	public void preInit() {
 		initUnlockConditions();
 		initResearchItems();
-		AbyssalCraftAPI.setInternalNDHandler(new InternalNecroDataHandler());
+		//AbyssalCraftAPI.setInternalNDHandler(new InternalNecroDataHandler());
 	}
 
 	public void init() {
@@ -51,21 +51,21 @@ public class CommonProxy {
 	public void postInit() {}
 
 	protected void initUnlockConditions() {
-		UnlockConditions.CORALIUM_INFESTED_SWAMP = new BiomeCondition(ACBiomes.coralium_infested_swamp);
-		UnlockConditions.CORALIUM_BIOMES = new BiomePredicateCondition(b -> b instanceof IAbyssalWastelandBiome || b == ACBiomes.coralium_infested_swamp);
+		//UnlockConditions.CORALIUM_INFESTED_SWAMP = new BiomeCondition(ACBiomes.coralium_infested_swamp);
+		//UnlockConditions.CORALIUM_BIOMES = new BiomePredicateCondition(b -> b instanceof IAbyssalWastelandBiome || b == ACBiomes.coralium_infested_swamp);
 
 		UnlockConditions.ABYSSAL_WASTELAND = new DimensionCondition(ACLib.abyssal_wasteland_id);
 		UnlockConditions.DREADLANDS = new DimensionCondition(ACLib.dreadlands_id);
 		UnlockConditions.OMOTHOL = new DimensionCondition(ACLib.omothol_id);
 		UnlockConditions.DARK_REALM = new DimensionCondition(ACLib.dark_realm_id);
 
-		UnlockConditions.EVIL_ANIMAL = new EntityPredicateCondition(e -> EntityEvilAnimal.class.isAssignableFrom(e));
+		/*UnlockConditions.EVIL_ANIMAL = new EntityPredicateCondition(e -> EntityEvilAnimal.class.isAssignableFrom(e));
 		UnlockConditions.SHOGGOTH = new EntityPredicateCondition(e -> EntityShoggothBase.class.isAssignableFrom(e));
-		UnlockConditions.DEMON_ANIMAL = new EntityPredicateCondition(e -> EntityDemonAnimal.class.isAssignableFrom(e));
+		UnlockConditions.DEMON_ANIMAL = new EntityPredicateCondition(e -> EntityDemonAnimal.class.isAssignableFrom(e));*/
 	}
 
 	protected void initResearchItems() {
-		ResearchItems.DARKLANDS_BIOME = new ResearchItem("darklands", 0, rl("darklands")).setUnlockConditions(UnlockConditions.DARKLANDS_BIOME);
+		/*ResearchItems.DARKLANDS_BIOME = new ResearchItem("darklands", 0, rl("darklands")).setUnlockConditions(UnlockConditions.DARKLANDS_BIOME);
 		ResearchItems.CORALIUM_INFESTED_SWAMP = new ResearchItem("coralium_infused_swamp", 0, rl("coralium_infused_swamp")).setUnlockConditions(UnlockConditions.CORALIUM_INFESTED_SWAMP);
 		ResearchItems.CORALIUM_BIOMES = new ResearchItem("coralium_biomes", 0, rl("coralium_biomes")).setUnlockConditions(UnlockConditions.CORALIUM_BIOMES);
 		ResearchItems.ABYSSAL_WASTELAND = new ResearchItem("abyssal_wasteland", 0, rl("abyssal_wasteland")).setUnlockConditions(UnlockConditions.ABYSSAL_WASTELAND);
@@ -105,31 +105,31 @@ public class CommonProxy {
 		ResearchItems.ABYSSAL_WASTELAND_NECRO = new ResearchItem("abyssal_wasteland_necro", 0, rl("abyssal_wasteland_necro")).setUnlockConditions(UnlockConditions.ABYSSAL_WASTELAND_NECRO);
 		ResearchItems.DREADLANDS_NECRO = new ResearchItem("dreadlands_necro", 0, rl("dreadlands_necro")).setUnlockConditions(UnlockConditions.DREADLANDS_NECRO);
 		ResearchItems.OMOTHOL_NECRO = new ResearchItem("omothol_necro", 0, rl("omothol_necro")).setUnlockConditions(UnlockConditions.OMOTHOL_NECRO);
-		ResearchItems.ABYSSALNOMICON = new ResearchItem("abyssalnomicon", 0, rl("abyssalnomicon")).setUnlockConditions(UnlockConditions.ABYSSALNOMICON);
+		ResearchItems.ABYSSALNOMICON = new ResearchItem("abyssalnomicon", 0, rl("abyssalnomicon")).setUnlockConditions(UnlockConditions.ABYSSALNOMICON);*/
 	}
 
-	private ResourceLocation rl(String str) {
+	/*private ResourceLocation rl(String str) {
 		return new ResourceLocation("abyssalcraft", str);
-	}
+	}*/
 
-	public ModelBiped getArmorModel(int id){
+	/*public ModelBiped getArmorModel(int id){
 		return null;
-	}
+	}*/
 
 	/**
 	 * Returns a side-appropriate EntityPlayer for use during message handling
 	 */
-	public EntityPlayer getPlayerEntity(MessageContext ctx) {
+	/*public EntityPlayer getPlayerEntity(MessageContext ctx) {
 		return ctx.getServerHandler().player;
-	}
+	}*/
 
 	/**
 	 * Returns the current thread based on side during message handling,
 	 * used for ensuring that the message is being handled by the main thread
 	 */
-	public IThreadListener getThreadFromContext(MessageContext ctx) {
+	/*public IThreadListener getThreadFromContext(MessageContext ctx) {
 		return ctx.getServerHandler().player.getServer();
-	}
+	}*/
 
 	public void spawnParticle(String particleName, double posX, double posY, double posZ, double velX, double velY, double velZ) {}
 
@@ -145,7 +145,7 @@ public class CommonProxy {
 
 	public void resetParticleCount() {}
 
-	public RayTraceResult rayTraceEntity(float dist) {
+	/*public RayTraceResult rayTraceEntity(float dist) {
 		return null;
-	}
+	}*/
 }

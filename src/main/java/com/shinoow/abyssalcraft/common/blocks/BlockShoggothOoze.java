@@ -21,29 +21,29 @@ import com.shinoow.abyssalcraft.common.entity.EntityShoggothBase;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACLib;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyInteger;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyInteger;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.inventory.EntityEquipmentSlot;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockShoggothOoze extends BlockACBasic {
+/*public class BlockShoggothOoze extends BlockACBasic {
 
 	public static final PropertyInteger LAYERS = PropertyInteger.create("layers", 1, 8);
 	protected static final AxisAlignedBB[] OOZE_AABB = new AxisAlignedBB[] {new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.25D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.375D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.625D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.75D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.875D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};
@@ -225,4 +225,4 @@ public class BlockShoggothOoze extends BlockACBasic {
 	{
 		return new BlockStateContainer.Builder(this).add(LAYERS).build();
 	}
-}
+}*/

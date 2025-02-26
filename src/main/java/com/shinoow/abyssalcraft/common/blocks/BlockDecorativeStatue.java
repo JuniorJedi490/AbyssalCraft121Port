@@ -14,25 +14,25 @@ package com.shinoow.abyssalcraft.common.blocks;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockStatue.EnumDeityType;
+//import com.shinoow.abyssalcraft.common.blocks.BlockStatue.EnumDeityType;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.client.model.obj.OBJModel;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyDirection;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.client.model.obj.OBJModel;
 
-public class BlockDecorativeStatue extends Block {
+/*public class BlockDecorativeStatue extends Block {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing");
 	public static final Map<EnumDeityType, Block> VARIANTS = new HashMap<>();
@@ -131,4 +131,4 @@ public class BlockDecorativeStatue extends Block {
 	{
 		return new BlockStateContainer.Builder(this).add(FACING).add(OBJModel.OBJProperty.INSTANCE).build();
 	}
-}
+}*/

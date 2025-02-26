@@ -15,16 +15,16 @@ import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.energy.IEnergyContainer;
 import com.shinoow.abyssalcraft.api.energy.IEnergyTransporter;
 import com.shinoow.abyssalcraft.api.energy.PEUtils;
-import com.shinoow.abyssalcraft.common.blocks.BlockEnergyRelay;
+//import com.shinoow.abyssalcraft.common.blocks.BlockEnergyRelay;
 
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.ITickable;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.ITickable;
 
-public class TileEntityEnergyRelay extends TileEntity implements IEnergyTransporter, ITickable {
+/*public class TileEntityEnergyRelay extends TileEntity implements IEnergyTransporter, ITickable {
 
 	private float energy;
 	private int ticksExisted;
@@ -135,4 +135,4 @@ public class TileEntityEnergyRelay extends TileEntity implements IEnergyTranspor
 
 		this.energy = energy;
 	}
-}
+}*/

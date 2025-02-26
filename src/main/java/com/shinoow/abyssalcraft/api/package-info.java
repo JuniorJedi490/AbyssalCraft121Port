@@ -9,7 +9,7 @@
  * Contributors:
  *     Shinoow -  implementation
  ******************************************************************************/
-@API(apiVersion=AbyssalCraftAPI.API_VERSION,owner="abyssalcraft",provides="AbyssalCraftAPI")
+//@API(apiVersion=AbyssalCraftAPI.API_VERSION,owner="abyssalcraft",provides="AbyssalCraftAPI")
 package com.shinoow.abyssalcraft.api;
-import net.minecraftforge.fml.common.API;
+//import net.minecraftforge.fml.common.API;
 

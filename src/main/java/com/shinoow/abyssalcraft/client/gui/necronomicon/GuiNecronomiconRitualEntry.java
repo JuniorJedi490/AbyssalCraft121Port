@@ -14,25 +14,25 @@ package com.shinoow.abyssalcraft.client.gui.necronomicon;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.dimension.DimensionDataRegistry;
-import com.shinoow.abyssalcraft.api.ritual.NecronomiconCreationRitual;
+//import com.shinoow.abyssalcraft.api.ritual.NecronomiconCreationRitual;
 import com.shinoow.abyssalcraft.api.ritual.NecronomiconRitual;
 import com.shinoow.abyssalcraft.api.ritual.RitualRegistry;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonHome;
-import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonHome;
+//import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.ButtonNextPage;
 import com.shinoow.abyssalcraft.lib.NecronomiconResources;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 import com.shinoow.abyssalcraft.lib.util.IHiddenRitual;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraftforge.oredict.OreDictionary;
 
-public class GuiNecronomiconRitualEntry extends GuiNecronomicon {
+/*public class GuiNecronomiconRitualEntry extends GuiNecronomicon {
 
 	private ButtonNextPage buttonNextPage, buttonNextPageLong;
 	private ButtonNextPage buttonPreviousPage, buttonPreviousPageLong;
@@ -40,7 +40,7 @@ public class GuiNecronomiconRitualEntry extends GuiNecronomicon {
 	private ButtonHome buttonHome;
 	private GuiNecronomicon parent;
 	/** Used to separate which rituals this entry should display */
-	private int ritualnum;
+	/*private int ritualnum;
 	private List<NecronomiconRitual> rituals = new ArrayList<>();
 
 	private String ANYWHERE = localize(NecronomiconText.LABEL_ANYWHERE);
@@ -192,4 +192,4 @@ public class GuiNecronomiconRitualEntry extends GuiNecronomicon {
 				rituals.add(ritual);
 		setTurnupLimit(rituals.size());
 	}
-}
+}*/

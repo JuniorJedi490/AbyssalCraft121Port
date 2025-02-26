@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.player;
 
-import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBiped;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelStarSpawnPlayer extends ModelBiped {
+/*public class ModelStarSpawnPlayer extends ModelBiped {
 
 	public ModelRenderer tentacle1, tentacle2, tentacle3, tentacle4;
 	public ModelRenderer limb1, limb1_2, limb1_3, limb1_4;
@@ -161,4 +161,4 @@ public class ModelStarSpawnPlayer extends ModelBiped {
 		tentacle3.render(par1);
 		tentacle4.render(par1);
 	}
-}
+}*/

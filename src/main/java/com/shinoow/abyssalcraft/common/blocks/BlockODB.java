@@ -17,28 +17,28 @@ import com.shinoow.abyssalcraft.common.entity.EntityODBPrimed;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyBool;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.init.Items;
-import net.minecraft.init.SoundEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyBool;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.entity.projectile.EntityArrow;
+//import net.minecraft.init.Items;
+//import net.minecraft.init.SoundEvents;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.Explosion;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.Explosion;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockODB extends Block {
+/*public class BlockODB extends Block {
 
 	public static final PropertyBool EXPLODE = PropertyBool.create("explode");
 
@@ -177,7 +177,7 @@ public class BlockODB extends Block {
 	/**
 	 * Convert the given metadata into a BlockState for this Block
 	 */
-	@Override
+	/*@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
 		return getDefaultState().withProperty(EXPLODE, (meta & 1) > 0);
@@ -186,7 +186,7 @@ public class BlockODB extends Block {
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
-	@Override
+	/*@Override
 	public int getMetaFromState(IBlockState state)
 	{
 		return state.getValue(EXPLODE) ? 1 : 0;
@@ -197,4 +197,4 @@ public class BlockODB extends Block {
 	{
 		return new BlockStateContainer.Builder(this).add(EXPLODE).build();
 	}
-}
+}*/

@@ -13,20 +13,20 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockRotatedPillar;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.projectile.EntityWitherSkull;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.BlockRotatedPillar;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.boss.EntityDragon;
+//import net.minecraft.entity.boss.EntityWither;
+//import net.minecraft.entity.projectile.EntityWitherSkull;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockEthaxiumPillar extends BlockRotatedPillar {
+/*public class BlockEthaxiumPillar extends BlockRotatedPillar {
 
 	public BlockEthaxiumPillar(float hardness, MapColor mapColor) {
 		super(Material.ROCK, mapColor);
@@ -45,4 +45,4 @@ public class BlockEthaxiumPillar extends BlockRotatedPillar {
 			return false;
 		return super.canEntityDestroy(state, world, pos, entity);
 	}
-}
+}*/

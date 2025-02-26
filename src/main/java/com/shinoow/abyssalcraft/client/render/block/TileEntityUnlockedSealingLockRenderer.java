@@ -12,15 +12,15 @@
 package com.shinoow.abyssalcraft.client.render.block;
 
 import com.shinoow.abyssalcraft.api.item.ACItems;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityUnlockedSealingLock;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityUnlockedSealingLock;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+//import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+//import net.minecraft.item.ItemStack;
 
-public class TileEntityUnlockedSealingLockRenderer extends TileEntitySpecialRenderer<TileEntityUnlockedSealingLock> {
+/*public class TileEntityUnlockedSealingLockRenderer extends TileEntitySpecialRenderer<TileEntityUnlockedSealingLock> {
 
 	private final ItemStack KEY = new ItemStack(ACItems.sealing_key);
 
@@ -43,4 +43,4 @@ public class TileEntityUnlockedSealingLockRenderer extends TileEntitySpecialRend
 		GlStateManager.popMatrix();
 	}
 
-}
+}*/

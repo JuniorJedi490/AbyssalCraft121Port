@@ -16,24 +16,24 @@ import java.util.List;
 import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.recipe.MaterializerRecipes;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.IInventory;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.text.ITextComponent;
+//import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.util.text.TextComponentTranslation;
 
-public class TileEntityMaterializer extends TileEntity implements IInventory, ITickable {
+/*public class TileEntityMaterializer extends TileEntity implements IInventory, ITickable {
 
 	/**
 	 * The ItemStacks that hold the items currently being used in the materializer
 	 */
-	private NonNullList<ItemStack> materializerItemStacks = NonNullList.<ItemStack>withSize(550, ItemStack.EMPTY);
+	/*private NonNullList<ItemStack> materializerItemStacks = NonNullList.<ItemStack>withSize(550, ItemStack.EMPTY);
 
 	private String containerName, invName;
 
@@ -42,7 +42,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Returns the number of slots in the inventory.
 	 */
-	@Override
+	/*@Override
 	public int getSizeInventory()
 	{
 		return materializerItemStacks.size();
@@ -51,7 +51,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Returns the stack in slot i
 	 */
-	@Override
+	/*@Override
 	public ItemStack getStackInSlot(int par1)
 	{
 		return materializerItemStacks.get(par1);
@@ -61,7 +61,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	 * Removes from an inventory slot (first arg) up to a specified number (second arg) of items and returns them in a
 	 * new stack.
 	 */
-	@Override
+	/*@Override
 	public ItemStack decrStackSize(int par1, int par2)
 	{
 		isDirty = true;
@@ -104,7 +104,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	 * When some containers are closed they call this on each slot, then drop whatever it returns as an EntityItem -
 	 * like when you close a workbench GUI.
 	 */
-	@Override
+	/*@Override
 	public ItemStack removeStackFromSlot(int par1)
 	{
 		if(par1 == 0) isDirty = true;
@@ -115,7 +115,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Sets the given item stack to the specified slot in the inventory (can be crafting or armor sections).
 	 */
-	@Override
+	/*@Override
 	public void setInventorySlotContents(int par1, ItemStack par2ItemStack)
 	{
 		if(par1 == 0) isDirty = true;
@@ -159,7 +159,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Returns the name of the inventory
 	 */
-	@Override
+	/*@Override
 	public String getName()
 	{
 		return hasCustomName() ? containerName : "container.abyssalcraft.materializer";
@@ -172,7 +172,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Returns if the inventory is named
 	 */
-	@Override
+	/*@Override
 	public boolean hasCustomName()
 	{
 		return containerName != null && containerName.length() > 0;
@@ -225,7 +225,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Returns the maximum stack size for a inventory slot.
 	 */
-	@Override
+	/*@Override
 	public int getInventoryStackLimit()
 	{
 		return 64;
@@ -257,7 +257,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Do not make give this method the name canInteractWith because it clashes with Container
 	 */
-	@Override
+	/*@Override
 	public boolean isUsableByPlayer(EntityPlayer par1EntityPlayer)
 	{
 		return world.getTileEntity(pos) != this ? false : par1EntityPlayer.getDistanceSq(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D) <= 64.0D;
@@ -272,7 +272,7 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 	/**
 	 * Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	 */
-	@Override
+	/*@Override
 	public boolean isItemValidForSlot(int par1, ItemStack par2ItemStack)
 	{
 		return false;
@@ -318,4 +318,4 @@ public class TileEntityMaterializer extends TileEntity implements IInventory, IT
 
 		return false;
 	}
-}
+}*/

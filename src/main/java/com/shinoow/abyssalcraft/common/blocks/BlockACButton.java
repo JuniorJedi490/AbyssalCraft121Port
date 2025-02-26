@@ -11,14 +11,14 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks;
 
-import net.minecraft.block.BlockButton;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockButton;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.SoundEvents;
+//import net.minecraft.util.SoundCategory;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class BlockACButton extends BlockButton {
+/*public class BlockACButton extends BlockButton {
 
 	public BlockACButton(boolean par1, String tooltype, int harvestlevel, String texture) {
 		super(par1);
@@ -40,4 +40,4 @@ public class BlockACButton extends BlockButton {
 	{
 		worldIn.playSound((EntityPlayer)null, pos, SoundEvents.BLOCK_STONE_BUTTON_CLICK_OFF, SoundCategory.BLOCKS, 0.3F, 0.5F);
 	}
-}
+}*/

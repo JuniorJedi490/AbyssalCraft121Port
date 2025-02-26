@@ -13,12 +13,12 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 
 import com.shinoow.abyssalcraft.api.energy.IEnergyCollector;
 
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityEnergyCollector extends TileEntity implements IEnergyCollector {
+/*public class TileEntityEnergyCollector extends TileEntity implements IEnergyCollector {
 
 	private float energy;
 
@@ -78,4 +78,4 @@ public class TileEntityEnergyCollector extends TileEntity implements IEnergyColl
 
 		this.energy = energy;
 	}
-}
+}*/

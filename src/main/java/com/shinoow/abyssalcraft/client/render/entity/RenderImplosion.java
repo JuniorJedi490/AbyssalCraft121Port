@@ -17,15 +17,15 @@ import com.shinoow.abyssalcraft.common.entity.EntityImplosion;
 import com.shinoow.abyssalcraft.lib.ACClientVars;
 
 import net.minecraft.client.renderer.*;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.Render;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderImplosion extends Render<EntityImplosion>
+//@SideOnly(Side.CLIENT)
+/*public class RenderImplosion extends Render<EntityImplosion>
 {
 	public RenderImplosion(RenderManager renderManagerIn)
 	{
@@ -35,7 +35,7 @@ public class RenderImplosion extends Render<EntityImplosion>
 	/**
 	 * Renders the desired {@code T} type Entity.
 	 */
-	@Override
+	/*@Override
 	public void doRender(EntityImplosion entity, double x, double y, double z, float entityYaw, float partialTicks)
 	{
 		if (entity.ticksExisted > 0)
@@ -96,9 +96,9 @@ public class RenderImplosion extends Render<EntityImplosion>
 	/**
 	 * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	 */
-	@Override
+	/*@Override
 	protected ResourceLocation getEntityTexture(EntityImplosion entity)
 	{
 		return null;
 	}
-}
+}*/

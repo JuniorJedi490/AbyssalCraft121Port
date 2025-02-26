@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.common.entity.EntityChagaroth;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelChagaroth extends ModelBase {
+/*public class ModelChagaroth extends ModelBase {
 
 	private int rot = 0;
 
@@ -1005,4 +1005,4 @@ public class ModelChagaroth extends ModelBase {
 		righthead.rotateAngleY = (entitychagaroth.getHeadYRotation(1) - p_78086_1_.renderYawOffset) * 0.017453292F;
 		righthead.rotateAngleX = entitychagaroth.getHeadXRotation(1) * 0.017453292F;
 	}
-}
+}*/

@@ -13,19 +13,19 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiCreeper;
 
-import net.minecraft.client.model.ModelCreeper;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelCreeper;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiCreeper extends RenderLiving {
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiCreeper extends RenderLiving {
 
 	private static final ResourceLocation creeperTextures = new ResourceLocation("abyssalcraft:textures/model/anti/creeper.png");
 
@@ -97,4 +97,4 @@ public class RenderAntiCreeper extends RenderLiving {
 	{
 		return this.getEntityTexture((EntityAntiCreeper)par1Entity);
 	}
-}
+}*/

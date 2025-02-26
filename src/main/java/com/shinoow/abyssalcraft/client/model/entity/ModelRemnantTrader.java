@@ -13,12 +13,12 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.common.entity.EntityRemnantTrader;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelRemnantTrader extends ModelBase {
+/*public class ModelRemnantTrader extends ModelBase {
 	public ModelRenderer villagerArms0;
 	public ModelRenderer villagerArms1;
 	public ModelRenderer rightLegJoint;
@@ -190,7 +190,7 @@ public class ModelRemnantTrader extends ModelBase {
 	 * and legs, where par1 represents the time(so that arms and legs swing back and forth) and par2 represents how
 	 * "far" arms and legs can swing at most.
 	 */
-	@Override
+	/*@Override
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn)
 	{
 		int timer = 0;
@@ -297,4 +297,4 @@ public class ModelRemnantTrader extends ModelBase {
 			leftLegB4.rotateAngleY = 0.0F;
 		}
 	}
-}
+}*/

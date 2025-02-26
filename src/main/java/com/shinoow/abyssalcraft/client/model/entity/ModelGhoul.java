@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.lib.client.model.ModelArmoredBase;
 
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.util.EnumHandSide;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.inventory.EntityEquipmentSlot;
+//import net.minecraft.util.EnumHandSide;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelGhoul extends ModelArmoredBase {
+/*public class ModelGhoul extends ModelArmoredBase {
 
 	public ModelRenderer pelvis;
 	public ModelRenderer lleg;
@@ -339,7 +339,7 @@ public class ModelGhoul extends ModelArmoredBase {
 	/**
 	 * This is a helper function from Tabula to set the rotation of model parts
 	 */
-	public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+	/*public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
@@ -394,4 +394,4 @@ public class ModelGhoul extends ModelArmoredBase {
 			break;
 		}
 	}
-}
+}*/

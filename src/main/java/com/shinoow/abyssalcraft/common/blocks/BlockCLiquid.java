@@ -23,25 +23,25 @@ import com.shinoow.abyssalcraft.common.util.ACLogger;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACLib;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.common.BiomeDictionary;
-import net.minecraftforge.common.BiomeDictionary.Type;
-import net.minecraftforge.fluids.BlockFluidClassic;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.item.ItemBlock;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.potion.PotionEffect;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.common.BiomeDictionary;
+//import net.minecraftforge.common.BiomeDictionary.Type;
+//import net.minecraftforge.fluids.BlockFluidClassic;
+//import net.minecraftforge.oredict.OreDictionary;
 
-public class BlockCLiquid extends BlockFluidClassic {
+/*public class BlockCLiquid extends BlockFluidClassic {
 
 	private List<IBlockState> dusts = new ArrayList<>();
 	private List<IBlockState> metalloids = new ArrayList<>();
@@ -226,4 +226,4 @@ public class BlockCLiquid extends BlockFluidClassic {
 		cobble.add(ACBlocks.elysian_cobblestone.getDefaultState());
 		cobble.add(ACBlocks.coralium_cobblestone.getDefaultState());
 	}
-}
+}*/

@@ -16,31 +16,31 @@ import java.util.Map;
 import java.util.Random;
 import java.util.function.Supplier;
 
-import com.shinoow.abyssalcraft.common.blocks.BlockRitualAltar.EnumRitualMatType;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityRitualPedestal;
+//import com.shinoow.abyssalcraft.common.blocks.BlockRitualAltar.EnumRitualMatType;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityRitualPedestal;
 import com.shinoow.abyssalcraft.lib.util.RitualUtil;
 import com.shinoow.abyssalcraft.lib.util.blocks.BlockUtil;
 import com.shinoow.abyssalcraft.lib.util.blocks.SingletonInventoryUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.math.RayTraceResult;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockRitualPedestal extends BlockContainer {
+/*public class BlockRitualPedestal extends BlockContainer {
 
 	//	public static final PropertyEnum<EnumRitualMatType> MATERIAL = PropertyEnum.create("material", EnumRitualMatType.class);
 	public static final Map<EnumRitualMatType, Block> VARIANTS = new HashMap<>();
@@ -134,4 +134,4 @@ public class BlockRitualPedestal extends BlockContainer {
 	{
 		return BlockRenderLayer.CUTOUT;
 	}
-}
+}*/

@@ -14,18 +14,18 @@ package com.shinoow.abyssalcraft.common.blocks;
 import java.util.Random;
 
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityMultiblock;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityMultiblock;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class BlockMultiblock extends Block {
+/*public class BlockMultiblock extends Block {
 
 	public BlockMultiblock() {
 		super(Material.ROCK);
@@ -57,4 +57,4 @@ public class BlockMultiblock extends Block {
 	{
 		return new ItemStack(ACBlocks.monolith_stone);
 	}
-}
+}*/

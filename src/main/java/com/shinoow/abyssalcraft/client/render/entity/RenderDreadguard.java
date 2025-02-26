@@ -13,20 +13,20 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import com.shinoow.abyssalcraft.common.entity.EntityDreadguard;
 
-import net.minecraft.client.model.ModelZombie;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderBiped;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelZombie;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderBiped;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderDreadguard extends RenderBiped<EntityDreadguard>
+//@SideOnly(Side.CLIENT)
+/*public class RenderDreadguard extends RenderBiped<EntityDreadguard>
 {
 	/** Scale of the model to use */
-	private float scale = 1.5F;
+	/*private float scale = 1.5F;
 
 	private static final ResourceLocation texture = new ResourceLocation("abyssalcraft:textures/model/elite/dread_guard.png");
 
@@ -48,7 +48,7 @@ public class RenderDreadguard extends RenderBiped<EntityDreadguard>
 	/**
 	 * Applies the scale to the transform matrix
 	 */
-	protected void preRenderScale(EntityDreadguard par1Entitydreadguard, float par2)
+	/*protected void preRenderScale(EntityDreadguard par1Entitydreadguard, float par2)
 	{
 		GlStateManager.scale(scale, scale, scale);
 	}
@@ -63,9 +63,9 @@ public class RenderDreadguard extends RenderBiped<EntityDreadguard>
 	 * Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args:
 	 * entityLiving, partialTickTime
 	 */
-	@Override
+	/*@Override
 	protected void preRenderCallback(EntityDreadguard par1EntityLivingBase, float par2)
 	{
 		preRenderScale(par1EntityLivingBase, par2);
 	}
-}
+}*/

@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.gui;
 
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTransmutator;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTransmutator;
 import com.shinoow.abyssalcraft.common.inventory.ContainerTransmutator;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiTransmutator extends GuiContainer {
+/*public class GuiTransmutator extends GuiContainer {
 
 	private static final ResourceLocation transmutatorGuiTexture = new ResourceLocation("abyssalcraft:textures/gui/container/transmutator.png");
 	private TileEntityTransmutator tileTransmutator;
@@ -66,4 +66,4 @@ public class GuiTransmutator extends GuiContainer {
 		i1 = tileTransmutator.getProcessProgressScaled(24);
 		drawTexturedModalRect(k + 79, l + 34, 176, 14, i1 + 1, 16);
 	}
-}
+}*/

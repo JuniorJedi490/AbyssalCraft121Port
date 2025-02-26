@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDreadling;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDreadling;
 
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerCustomHead;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderDreadling extends RenderLiving {
+//@SideOnly(Side.CLIENT)
+/*public class RenderDreadling extends RenderLiving {
 
 	private static final ResourceLocation field_110865_p = new ResourceLocation("abyssalcraft:textures/model/dreadling.png");
 
@@ -41,4 +41,4 @@ public class RenderDreadling extends RenderLiving {
 
 		return field_110865_p;
 	}
-}
+}*/

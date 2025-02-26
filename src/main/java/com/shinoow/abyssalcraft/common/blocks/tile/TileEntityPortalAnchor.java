@@ -14,12 +14,12 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 import com.shinoow.abyssalcraft.api.dimension.DimensionData;
 import com.shinoow.abyssalcraft.api.dimension.DimensionDataRegistry;
 
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityPortalAnchor extends TileEntity {
+/*public class TileEntityPortalAnchor extends TileEntity {
 
 	private int destination, color;
 
@@ -72,4 +72,4 @@ public class TileEntityPortalAnchor extends TileEntity {
 	public int getColor() {
 		return color;
 	}
-}
+}*/

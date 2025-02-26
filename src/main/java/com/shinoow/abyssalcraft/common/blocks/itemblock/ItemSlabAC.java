@@ -15,18 +15,18 @@ import javax.annotation.Nullable;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
-import com.shinoow.abyssalcraft.api.knowledge.IResearchableItem;
+//import com.shinoow.abyssalcraft.api.knowledge.IResearchableItem;
 import com.shinoow.abyssalcraft.api.knowledge.ResearchItems;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
-import net.minecraft.item.ItemSlab;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockSlab;
+//import net.minecraft.item.ItemSlab;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.text.TextFormatting;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemSlabAC extends ItemSlab implements IResearchableItem {
+/*public class ItemSlabAC extends ItemSlab implements IResearchableItem {
 
 	private IResearchItem condition = ResearchItems.DEFAULT;
 
@@ -66,4 +66,4 @@ public class ItemSlabAC extends ItemSlab implements IResearchableItem {
 	{
 		return APIUtils.getFontRenderer(stack);
 	}
-}
+}*/

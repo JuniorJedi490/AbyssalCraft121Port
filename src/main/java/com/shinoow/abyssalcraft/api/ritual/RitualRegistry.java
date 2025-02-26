@@ -22,8 +22,8 @@ import org.apache.logging.log4j.Logger;
 import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.dimension.DimensionDataRegistry;
 
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraft.item.ItemStack;
+//import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Registry class for Necronomicon Rituals
@@ -56,10 +56,10 @@ public class RitualRegistry {
 	 */
 	public void addDimensionToBookType(int dim, int bookType){
 		if(bookType <= 4 && bookType >= 0)
-			if(dim != OreDictionary.WILDCARD_VALUE)
+			//if(dim != OreDictionary.WILDCARD_VALUE)
 				dimToBookType.put(dim, bookType);
 			else logger.log(Level.ERROR, "You're not allowed to register that Dimension ID: {}", dim);
-		else logger.log(Level.ERROR, "Necronomicon book type does not exist: {}", bookType);
+		//else logger.log(Level.ERROR, "Necronomicon book type does not exist: {}", bookType);
 	}
 
 
@@ -75,7 +75,7 @@ public class RitualRegistry {
 	 */
 	public void addDimensionToBookTypeAndName(int dim, int bookType, String name){
 		addDimensionToBookType(dim, bookType);
-		DimensionDataRegistry.instance().addDimensionToName(dim, name);
+		//DimensionDataRegistry.instance().addDimensionToName(dim, name);
 	}
 
 	/**
@@ -151,10 +151,10 @@ public class RitualRegistry {
 	 *
 	 * @since 1.4
 	 */
-	public NecronomiconRitual getRitual(int dimension, int bookType, ItemStack[] offerings, ItemStack sacrifice){
+	/*public NecronomiconRitual getRitual(int dimension, int bookType, ItemStack[] offerings, ItemStack sacrifice){
 
 		return rituals.stream().filter(ritual -> areRitualsSame(ritual, dimension, bookType, offerings, sacrifice)).findFirst().orElse(null);
-	}
+	}*/
 
 	/**
 	 * Used to check if a Necronomicon Ritual has the same values as the supplied values
@@ -167,7 +167,7 @@ public class RitualRegistry {
 	 *
 	 * @since 1.4
 	 */
-	private boolean areRitualsSame(NecronomiconRitual ritual, int dimension, int bookType, ItemStack[] offerings, ItemStack sacrifice){
+	/*private boolean areRitualsSame(NecronomiconRitual ritual, int dimension, int bookType, ItemStack[] offerings, ItemStack sacrifice){
 		if(ritual.getDimension() == dimension || ritual.getDimension() == OreDictionary.WILDCARD_VALUE)
 			if(ritual.getBookType() <= bookType)
 				if(ritual.getOfferings() != null && offerings != null)
@@ -176,5 +176,5 @@ public class RitualRegistry {
 						APIUtils.areObjectsEqual(sacrifice, ritual.getSacrifice(), ritual.isSacrificeNBTSensitive()))
 							return true;
 		return false;
-	}
+	}*/
 }

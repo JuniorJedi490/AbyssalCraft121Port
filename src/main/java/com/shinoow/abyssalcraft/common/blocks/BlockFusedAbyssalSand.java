@@ -15,13 +15,13 @@ import java.util.Random;
 
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.item.Item;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.item.Item;
 
-public class BlockFusedAbyssalSand extends BlockACBasic {
+/*public class BlockFusedAbyssalSand extends BlockACBasic {
 
 	public BlockFusedAbyssalSand() {
 		super(Material.SAND, 0.5F, 2.5F, SoundType.SAND, MapColor.LIME);
@@ -33,4 +33,4 @@ public class BlockFusedAbyssalSand extends BlockACBasic {
 	{
 		return Item.getItemFromBlock(ACBlocks.abyssal_sand);
 	}
-}
+}*/

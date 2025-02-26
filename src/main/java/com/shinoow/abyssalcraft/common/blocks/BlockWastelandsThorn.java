@@ -14,18 +14,18 @@ package com.shinoow.abyssalcraft.common.blocks;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockBush;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockBush;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.EntityEquipmentSlot;
+//import net.minecraft.util.DamageSource;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class BlockWastelandsThorn extends BlockBush {
+/*public class BlockWastelandsThorn extends BlockBush {
 
 	public BlockWastelandsThorn(){
 		setSoundType(SoundType.PLANT);
@@ -47,4 +47,4 @@ public class BlockWastelandsThorn extends BlockBush {
 				((EntityPlayer)entityIn).getItemStackFromSlot(EntityEquipmentSlot.LEGS) == null)
 			entityIn.attackEntityFrom(DamageSource.CACTUS, 1.0F);
 	}
-}
+}*/

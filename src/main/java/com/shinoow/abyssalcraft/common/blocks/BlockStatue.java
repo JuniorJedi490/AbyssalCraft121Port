@@ -16,29 +16,29 @@ import java.util.List;
 import java.util.Map;
 
 import com.shinoow.abyssalcraft.api.energy.PEUtils;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityStatue;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityStatue;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.util.blocks.BlockUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyDirection;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.client.model.obj.OBJModel;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.client.model.obj.OBJModel;
 
-public class BlockStatue extends BlockContainer {
+/*public class BlockStatue extends BlockContainer {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing");
 	//	public static final PropertyEnum<EnumDeityType> TYPE = PropertyEnum.create("type", EnumDeityType.class);
@@ -211,4 +211,4 @@ public class BlockStatue extends BlockContainer {
 				META_LOOKUP[type.getMeta()] = type;
 		}
 	}
-}
+}*/

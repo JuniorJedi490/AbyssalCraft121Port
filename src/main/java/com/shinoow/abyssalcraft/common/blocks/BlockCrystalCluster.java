@@ -19,17 +19,17 @@ import com.shinoow.abyssalcraft.lib.ACClientVars;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.Crystals;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.IStringSerializable;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.IStringSerializable;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockCrystalCluster extends BlockACBasic implements ICrystalBlock {
+/*public class BlockCrystalCluster extends BlockACBasic implements ICrystalBlock {
 
 	public static final Map<EnumCrystalType, Block> VARIANTS = new HashMap<>();
 
@@ -217,4 +217,4 @@ public class BlockCrystalCluster extends BlockACBasic implements ICrystalBlock {
 				META_LOOKUP[enumtype.getMetadata()] = enumtype;
 		}
 	}
-}
+}*/

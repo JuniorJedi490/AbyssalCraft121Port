@@ -22,13 +22,13 @@ import com.shinoow.abyssalcraft.api.armor.ArmorDataCollection;
 import com.shinoow.abyssalcraft.api.armor.ArmorDataRegistry;
 import com.shinoow.abyssalcraft.common.util.ACLogger;
 
-import net.minecraft.client.resources.IResource;
-import net.minecraft.client.resources.IResourceManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.resource.IResourceType;
-import net.minecraftforge.client.resource.ISelectiveResourceReloadListener;
+//import net.minecraft.client.resources.IResource;
+//import net.minecraft.client.resources.IResourceManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.client.resource.IResourceType;
+//import net.minecraftforge.client.resource.ISelectiveResourceReloadListener;
 
-public class ArmorDataReloadListener implements ISelectiveResourceReloadListener {
+/*public class ArmorDataReloadListener implements ISelectiveResourceReloadListener {
 
 	@Override
 	public void onResourceManagerReload(IResourceManager resourceManager, Predicate<IResourceType> resourcePredicate) {
@@ -61,4 +61,4 @@ public class ArmorDataReloadListener implements ISelectiveResourceReloadListener
 			IOUtils.closeQuietly(iresource);
 		}
 	}
-}
+}*/

@@ -28,29 +28,29 @@ import com.shinoow.abyssalcraft.common.util.BiomeUtil;
 import com.shinoow.abyssalcraft.init.BlockHandler;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 
-import net.minecraft.block.*;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.effect.EntityLightningBolt;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.*;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.effect.EntityLightningBolt;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.inventory.ISidedInventory;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.text.ITextComponent;
+//import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.items.CapabilityItemHandler;
+//import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
-public class TileEntityEnergyDepositioner extends TileEntity implements IEnergyManipulator, ITickable, ISidedInventory {
+/*public class TileEntityEnergyDepositioner extends TileEntity implements IEnergyManipulator, ITickable, ISidedInventory {
 
 	private AmplifierType currentAmplifier;
 	private int tolerance;
@@ -533,4 +533,4 @@ public class TileEntityEnergyDepositioner extends TileEntity implements IEnergyM
 	{
 		return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY && (facing == EnumFacing.DOWN || facing == EnumFacing.UP) || super.hasCapability(capability, facing);
 	}
-}
+}*/

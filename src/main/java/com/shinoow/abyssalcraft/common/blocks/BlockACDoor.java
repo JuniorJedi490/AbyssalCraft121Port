@@ -16,19 +16,19 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.api.item.ACItems;
 
-import net.minecraft.block.BlockDoor;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockDoor;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.init.Items;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockACDoor extends BlockDoor {
+/*public class BlockACDoor extends BlockDoor {
 
 	private MapColor mapColor;
 
@@ -65,4 +65,4 @@ public class BlockACDoor extends BlockDoor {
 			return ACItems.dreadlands_door;
 		return null;
 	}
-}
+}*/

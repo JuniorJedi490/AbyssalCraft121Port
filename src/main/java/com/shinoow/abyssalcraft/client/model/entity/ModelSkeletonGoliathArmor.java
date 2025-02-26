@@ -11,11 +11,11 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.inventory.EntityEquipmentSlot;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.inventory.EntityEquipmentSlot;
 
-public class ModelSkeletonGoliathArmor extends ModelSkeletonGoliath {
+/*public class ModelSkeletonGoliathArmor extends ModelSkeletonGoliath {
 
 	public ModelRenderer chestplate;
 
@@ -52,4 +52,4 @@ public class ModelSkeletonGoliathArmor extends ModelSkeletonGoliath {
 				slot == EntityEquipmentSlot.LEGS)
 			chestplate.showModel = true;
 	}
-}
+}*/

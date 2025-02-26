@@ -15,20 +15,20 @@ import com.shinoow.abyssalcraft.api.energy.IEnergyContainer;
 import com.shinoow.abyssalcraft.api.energy.IEnergyContainerItem;
 import com.shinoow.abyssalcraft.api.energy.PEUtils;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.IInventory;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.text.ITextComponent;
+//import net.minecraft.util.text.TextComponentTranslation;
 
-public class TileEntityEnergyContainer extends TileEntity implements IEnergyContainer, ITickable, IInventory {
+/*public class TileEntityEnergyContainer extends TileEntity implements IEnergyContainer, ITickable, IInventory {
 
 	private float energy;
 	private NonNullList<ItemStack> containerItemStacks = NonNullList.withSize(2, ItemStack.EMPTY);
@@ -218,4 +218,4 @@ public class TileEntityEnergyContainer extends TileEntity implements IEnergyCont
 
 		this.energy = energy;
 	}
-}
+}*/

@@ -21,14 +21,14 @@ import com.shinoow.abyssalcraft.common.util.ACLogger;
 import com.shinoow.abyssalcraft.lib.ACClientVars;
 import com.shinoow.abyssalcraft.lib.util.ClientVars;
 
-import net.minecraft.client.resources.IResource;
-import net.minecraft.client.resources.IResourceManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.resource.IResourceType;
-import net.minecraftforge.client.resource.ISelectiveResourceReloadListener;
-import net.minecraftforge.client.resource.VanillaResourceType;
+//import net.minecraft.client.resources.IResource;
+//import net.minecraft.client.resources.IResourceManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.client.resource.IResourceType;
+//import net.minecraftforge.client.resource.ISelectiveResourceReloadListener;
+//import net.minecraftforge.client.resource.VanillaResourceType;
 
-public class ClientVarsReloadListener implements ISelectiveResourceReloadListener {
+/*public class ClientVarsReloadListener implements ISelectiveResourceReloadListener {
 
 	@Override
 	public void onResourceManagerReload(IResourceManager resourceManager, Predicate<IResourceType> resourcePredicate) {
@@ -58,4 +58,4 @@ public class ClientVarsReloadListener implements ISelectiveResourceReloadListene
 			IOUtils.closeQuietly(iresource);
 		}
 	}
-}
+}*/

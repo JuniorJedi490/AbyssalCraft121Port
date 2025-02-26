@@ -12,15 +12,15 @@
 package com.shinoow.abyssalcraft.client.render.entity.layers;
 
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
-import com.shinoow.abyssalcraft.client.model.player.ModelStarSpawnPlayer;
+//import com.shinoow.abyssalcraft.client.model.player.ModelStarSpawnPlayer;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderPlayer;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderPlayer;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.ResourceLocation;
 
-public class LayerStarSpawnTentacles implements LayerRenderer<EntityPlayer> {
+/*public class LayerStarSpawnTentacles implements LayerRenderer<EntityPlayer> {
 
 	private ModelStarSpawnPlayer model = new ModelStarSpawnPlayer();
 	private final RenderPlayer render;
@@ -56,4 +56,4 @@ public class LayerStarSpawnTentacles implements LayerRenderer<EntityPlayer> {
 
 		return false;
 	}
-}
+}*/

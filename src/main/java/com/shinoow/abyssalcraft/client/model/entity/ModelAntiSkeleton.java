@@ -13,20 +13,20 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiSkeleton;
 
-import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumHandSide;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelBiped;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.init.Items;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.EnumHandSide;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class ModelAntiSkeleton extends ModelBiped {
+//@SideOnly(Side.CLIENT)
+/*public class ModelAntiSkeleton extends ModelBiped {
 
 	public ModelAntiSkeleton()
 	{
@@ -76,7 +76,7 @@ public class ModelAntiSkeleton extends ModelBiped {
 	 * and legs, where par1 represents the time(so that arms and legs swing back and forth) and par2 represents how
 	 * "far" arms and legs can swing at most.
 	 */
-	@Override
+	/*@Override
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn)
 	{
 		super.setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scaleFactor, entityIn);
@@ -111,4 +111,4 @@ public class ModelAntiSkeleton extends ModelBiped {
 		modelrenderer.postRender(scale);
 		modelrenderer.rotationPointX -= f;
 	}
-}
+}*/

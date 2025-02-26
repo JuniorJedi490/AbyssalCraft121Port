@@ -11,21 +11,21 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelAntiBat;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelAntiBat;
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiBat;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiBat extends RenderLiving
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiBat extends RenderLiving
 {
 	private static final ResourceLocation batTextures = new ResourceLocation("abyssalcraft:textures/model/anti/bat.png");
 	private int renderedBatSize;
@@ -97,4 +97,4 @@ public class RenderAntiBat extends RenderLiving
 	{
 		return this.getEntityTexture((EntityAntiBat)par1Entity);
 	}
-}
+}*/

@@ -18,19 +18,19 @@ import javax.annotation.Nullable;
 import com.shinoow.abyssalcraft.api.APIUtils;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
-import com.shinoow.abyssalcraft.api.knowledge.IResearchableItem;
+//import com.shinoow.abyssalcraft.api.knowledge.IResearchableItem;
 import com.shinoow.abyssalcraft.api.knowledge.ResearchItems;
 
-import net.minecraft.block.Block;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.Block;
+//import net.minecraft.client.util.ITooltipFlag;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemBlock;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemBlockAC extends ItemBlock implements IResearchableItem {
+/*public class ItemBlockAC extends ItemBlock implements IResearchableItem {
 
 	private IResearchItem condition = ResearchItems.DEFAULT;
 
@@ -64,4 +64,4 @@ public class ItemBlockAC extends ItemBlock implements IResearchableItem {
 	{
 		return APIUtils.getFontRenderer(stack);
 	}
-}
+}*/

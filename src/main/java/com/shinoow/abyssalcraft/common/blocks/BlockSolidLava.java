@@ -13,15 +13,15 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
 
-public class BlockSolidLava extends BlockACBasic {
+/*public class BlockSolidLava extends BlockACBasic {
 
 	public BlockSolidLava(String par1) {
 		super(Material.ROCK, "pickaxe", 2, 10F, 100F, SoundType.STONE, MapColor.TNT);
@@ -41,4 +41,4 @@ public class BlockSolidLava extends BlockACBasic {
 	{
 		return true;
 	}
-}
+}*/

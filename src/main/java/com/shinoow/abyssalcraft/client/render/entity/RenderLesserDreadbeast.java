@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelChagarothSpawn;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelChagarothSpawn;
 import com.shinoow.abyssalcraft.common.entity.EntityLesserDreadbeast;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderLesserDreadbeast extends RenderLiving<EntityLesserDreadbeast> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderLesserDreadbeast extends RenderLiving<EntityLesserDreadbeast> {
 
 	private float scale = 3.0F;
 
@@ -36,7 +36,7 @@ public class RenderLesserDreadbeast extends RenderLiving<EntityLesserDreadbeast>
 	/**
 	 * Applies the scale to the transform matrix
 	 */
-	protected void preRenderScale(EntityLesserDreadbeast par1EntityEntityLesserDreadbeast, float par2)
+	/*protected void preRenderScale(EntityLesserDreadbeast par1EntityEntityLesserDreadbeast, float par2)
 	{
 		GlStateManager.scale(scale, scale, scale);
 	}
@@ -52,4 +52,4 @@ public class RenderLesserDreadbeast extends RenderLiving<EntityLesserDreadbeast>
 
 		return mobTexture;
 	}
-}
+}*/

@@ -13,16 +13,16 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.common.entity.EntityDragonMinion;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.CullFace;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.CullFace;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
+/*@SideOnly(Side.CLIENT)
 public class ModelDragonMinion extends ModelBase {
 
 	private ModelRenderer head;
@@ -234,7 +234,7 @@ public class ModelDragonMinion extends ModelBase {
 	 * or subtracts 360 degrees, so that the appearance is the same, although the numbers are then simplified to range
 	 * -180 to 180
 	 */
-	private float updateRotations(double par1)
+	/*private float updateRotations(double par1)
 	{
 		while (par1 >= 180.0D)
 			par1 -= 360.0D;
@@ -244,4 +244,4 @@ public class ModelDragonMinion extends ModelBase {
 
 		return (float)par1;
 	}
-}
+}*/

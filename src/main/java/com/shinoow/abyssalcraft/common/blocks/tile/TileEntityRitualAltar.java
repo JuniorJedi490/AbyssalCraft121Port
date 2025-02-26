@@ -22,8 +22,8 @@ import com.shinoow.abyssalcraft.api.energy.PEUtils;
 import com.shinoow.abyssalcraft.api.energy.disruption.DisruptionEntry;
 import com.shinoow.abyssalcraft.api.energy.disruption.DisruptionHandler;
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
-import com.shinoow.abyssalcraft.api.event.ACEvents.DisruptionEvent;
-import com.shinoow.abyssalcraft.api.event.RitualEvent;
+//import com.shinoow.abyssalcraft.api.event.ACEvents.DisruptionEvent;
+//import com.shinoow.abyssalcraft.api.event.RitualEvent;
 import com.shinoow.abyssalcraft.api.knowledge.condition.caps.NecroDataCapability;
 import com.shinoow.abyssalcraft.api.ritual.EnumRitualParticle;
 import com.shinoow.abyssalcraft.api.ritual.NecronomiconRitual;
@@ -40,26 +40,26 @@ import com.shinoow.abyssalcraft.lib.util.Scheduler;
 import com.shinoow.abyssalcraft.lib.util.blocks.IRitualAltar;
 import com.shinoow.abyssalcraft.lib.util.blocks.IRitualPedestal;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.EnumCreatureAttribute;
-import net.minecraft.entity.effect.EntityLightningBolt;
-import net.minecraft.entity.passive.EntityVillager;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.EnumCreatureAttribute;
+//import net.minecraft.entity.effect.EntityLightningBolt;
+//import net.minecraft.entity.passive.EntityVillager;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.MobEffects;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.potion.PotionEffect;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.world.World;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 
-public class TileEntityRitualAltar extends TileEntity implements ITickable, IRitualAltar {
+/*public class TileEntityRitualAltar extends TileEntity implements ITickable, IRitualAltar {
 
 	private int ritualTimer, timerMax;
 	private NecronomiconRitual ritual;
@@ -310,7 +310,7 @@ public class TileEntityRitualAltar extends TileEntity implements ITickable, IRit
 	 * @param entity Entity to potentially sacrifice
 	 * @return True if the Entity can be sacrificed, otherwise false
 	 */
-	private boolean canBeSacrificed(EntityLiving entity){
+	/*private boolean canBeSacrificed(EntityLiving entity){
 		return (EntityUtil.isShoggothFood(entity) || entity instanceof EntityVillager) &&
 				entity.getCreatureAttribute() != EnumCreatureAttribute.UNDEAD &&
 				entity.isEntityAlive() && !entity.isChild();
@@ -365,4 +365,4 @@ public class TileEntityRitualAltar extends TileEntity implements ITickable, IRit
 	public EnumRitualParticle getRitualParticle() {
 		return ritual != null ? ritual.getRitualParticle() : EnumRitualParticle.NONE;
 	}
-}
+}*/

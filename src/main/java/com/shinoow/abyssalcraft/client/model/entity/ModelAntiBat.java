@@ -13,15 +13,15 @@ package com.shinoow.abyssalcraft.client.model.entity;
 
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiBat;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class ModelAntiBat extends ModelBase
+//@SideOnly(Side.CLIENT)
+/*public class ModelAntiBat extends ModelBase
 {
 	private ModelRenderer batHead;
 	private ModelRenderer batBody;
@@ -108,4 +108,4 @@ public class ModelAntiBat extends ModelBase
 		batHead.render(par7);
 		batBody.render(par7);
 	}
-}
+}*/

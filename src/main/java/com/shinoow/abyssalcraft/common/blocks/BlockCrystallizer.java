@@ -15,32 +15,32 @@ import java.util.Random;
 
 import com.shinoow.abyssalcraft.AbyssalCraft;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityCrystallizer;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityCrystallizer;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACLib;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.Container;
-import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyDirection;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.Container;
+//import net.minecraft.inventory.InventoryHelper;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockCrystallizer extends BlockContainer
+/*public class BlockCrystallizer extends BlockContainer
 {
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	private final boolean isLit;
@@ -94,7 +94,7 @@ public class BlockCrystallizer extends BlockContainer
 	/**
 	 * Called upon block activation (right click on the block.)
 	 */
-	@Override
+	/*@Override
 	public boolean onBlockActivated(World par1World, BlockPos pos, IBlockState state, EntityPlayer par5EntityPlayer, EnumHand hand, EnumFacing side, float par7, float par8, float par9) {
 		if(!par1World.isRemote)
 			FMLNetworkHandler.openGui(par5EntityPlayer, AbyssalCraft.instance, ACLib.crystallizerGuiID, par1World, pos.getX(), pos.getY(), pos.getZ());
@@ -124,7 +124,7 @@ public class BlockCrystallizer extends BlockContainer
 	/**
 	 * Returns a new instance of a block's tile entity class. Called on placing the block.
 	 */
-	@Override
+	/*@Override
 	public TileEntity createNewTileEntity(World par1World, int par2)
 	{
 		return new TileEntityCrystallizer();
@@ -133,7 +133,7 @@ public class BlockCrystallizer extends BlockContainer
 	/**
 	 * Called when the block is placed in the world.
 	 */
-	@Override
+	/*@Override
 	public void onBlockPlacedBy(World par1World, BlockPos pos, IBlockState state, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
 	{
 
@@ -198,7 +198,7 @@ public class BlockCrystallizer extends BlockContainer
 	 * If this returns true, then comparators facing away from this block will use the value from
 	 * getComparatorInputOverride instead of the actual redstone signal strength.
 	 */
-	@Override
+	/*@Override
 	public boolean hasComparatorInputOverride(IBlockState state)
 	{
 		return true;
@@ -208,7 +208,7 @@ public class BlockCrystallizer extends BlockContainer
 	 * If hasComparatorInputOverride returns true, the return value from this is used instead of the redstone signal
 	 * strength when this block inputs to a comparator.
 	 */
-	@Override
+	/*@Override
 	public int getComparatorInputOverride(IBlockState state, World par1World, BlockPos pos)
 	{
 		return Container.calcRedstone(par1World.getTileEntity(pos));
@@ -217,7 +217,7 @@ public class BlockCrystallizer extends BlockContainer
 	/**
 	 * Gets an item for the block being called on. Args: world, x, y, z
 	 */
-	@Override
+	/*@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack getItem(World par1World, BlockPos pos, IBlockState state)
 	{
@@ -233,7 +233,7 @@ public class BlockCrystallizer extends BlockContainer
 	/**
 	 * Convert the given metadata into a BlockState for this Block
 	 */
-	@Override
+	/*@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
 		EnumFacing enumfacing = EnumFacing.byIndex(meta);
@@ -247,7 +247,7 @@ public class BlockCrystallizer extends BlockContainer
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
-	@Override
+	/*@Override
 	public int getMetaFromState(IBlockState state)
 	{
 		return state.getValue(FACING).getIndex();
@@ -258,4 +258,4 @@ public class BlockCrystallizer extends BlockContainer
 	{
 		return new BlockStateContainer.Builder(this).add(FACING).build();
 	}
-}
+}*/

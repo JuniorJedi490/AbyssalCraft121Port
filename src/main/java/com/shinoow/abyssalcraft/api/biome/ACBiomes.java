@@ -11,7 +11,7 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.api.biome;
 
-import net.minecraft.world.biome.Biome;
+//import net.minecraft.world.biome.Biome;
 
 /**
  * Contains all biomes added in AbyssalCraft
@@ -22,32 +22,32 @@ import net.minecraft.world.biome.Biome;
 public class ACBiomes {
 
 	// Overworld biomes
-	public static Biome darklands;
-	public static Biome darklands_forest;
-	public static Biome darklands_plains;
-	public static Biome darklands_hills;
-	public static Biome darklands_mountains;
-	public static Biome coralium_infested_swamp;
+	//public static Biome darklands;
+	//public static Biome darklands_forest;
+	//public static Biome darklands_plains;
+	//public static Biome darklands_hills;
+	//public static Biome darklands_mountains;
+	//public static Biome coralium_infested_swamp;
 
 	// Abyssal Wasteland biomes
-	public static Biome abyssal_wastelands;
-	public static Biome abyssal_swamp;
-	public static Biome abyssal_desert;
-	public static Biome abyssal_plateau;
-	public static Biome coralium_lake;
+	//public static Biome abyssal_wastelands;
+	//public static Biome abyssal_swamp;
+	//public static Biome abyssal_desert;
+	//public static Biome abyssal_plateau;
+	//public static Biome coralium_lake;
 
 	// Dreadlands biomes
-	public static Biome dreadlands;
-	public static Biome dreadlands_mountains;
-	public static Biome dreadlands_forest;
-	public static Biome dreadlands_ocean;
+	//public static Biome dreadlands;
+	//public static Biome dreadlands_mountains;
+	//public static Biome dreadlands_forest;
+	//public static Biome dreadlands_ocean;
 
 	// Omothol
-	public static Biome omothol;
+	//public static Biome omothol;
 
 	// Dark Realm
-	public static Biome dark_realm;
+	//public static Biome dark_realm;
 
 	// Misc
-	public static Biome purged;
+	//public static Biome purged;
 }

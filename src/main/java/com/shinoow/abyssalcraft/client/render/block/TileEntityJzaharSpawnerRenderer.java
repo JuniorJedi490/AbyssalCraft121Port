@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.block;
 
-import com.shinoow.abyssalcraft.client.model.block.ModelJzaharSpawner;
+//import com.shinoow.abyssalcraft.client.model.block.ModelJzaharSpawner;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ResourceLocation;
 
-public class TileEntityJzaharSpawnerRenderer extends TileEntitySpecialRenderer {
+/*public class TileEntityJzaharSpawnerRenderer extends TileEntitySpecialRenderer {
 
 	ModelJzaharSpawner model = new ModelJzaharSpawner();
 	private static final ResourceLocation texture = new ResourceLocation("abyssalcraft:textures/model/boss/j'zahar.png");
@@ -40,4 +40,4 @@ public class TileEntityJzaharSpawnerRenderer extends TileEntitySpecialRenderer {
 		GlStateManager.popMatrix();
 		GlStateManager.popMatrix();
 	}
-}
+}*/

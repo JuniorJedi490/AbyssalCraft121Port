@@ -12,13 +12,13 @@
 package com.shinoow.abyssalcraft.client.render.sky;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.WorldClient;
+//import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.renderer.*;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.IRenderHandler;
+//import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.client.IRenderHandler;
 
-public class ACSkyRenderer extends IRenderHandler {
+/*public class ACSkyRenderer extends IRenderHandler {
 
 	private ResourceLocation texture;
 	private int r, g, b;
@@ -76,4 +76,4 @@ public class ACSkyRenderer extends IRenderHandler {
 		GlStateManager.enableAlpha();
 	}
 
-}
+}*/

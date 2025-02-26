@@ -13,13 +13,13 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.IStringSerializable;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.util.IStringSerializable;
 
-public class BlockACBasic extends Block {
+/*public class BlockACBasic extends Block {
 
 	/**
 	 * Ultra-generic AbyssalCraft block
@@ -30,7 +30,7 @@ public class BlockACBasic extends Block {
 	 * @param resistance Block resistance
 	 * @param stepsound Block step sound
 	 */
-	public BlockACBasic(Material material, String tooltype, int harvestlevel, float hardness, float resistance, SoundType stepsound) {
+	/*public BlockACBasic(Material material, String tooltype, int harvestlevel, float hardness, float resistance, SoundType stepsound) {
 		this(material, tooltype, harvestlevel, hardness, resistance, stepsound, material.getMaterialMapColor());
 	}
 
@@ -41,7 +41,7 @@ public class BlockACBasic extends Block {
 	 * @param resistance Block resistance
 	 * @param stepsound Block step sound
 	 */
-	public BlockACBasic(Material material, float hardness, float resistance, SoundType stepsound) {
+	/*public BlockACBasic(Material material, float hardness, float resistance, SoundType stepsound) {
 		this(material, hardness, resistance, stepsound, material.getMaterialMapColor());
 	}
 
@@ -55,7 +55,7 @@ public class BlockACBasic extends Block {
 	 * @param stepsound Block step sound
 	 * @param mapColor Map Color
 	 */
-	public BlockACBasic(Material material, String tooltype, int harvestlevel, float hardness, float resistance, SoundType stepsound, MapColor mapColor) {
+	/*public BlockACBasic(Material material, String tooltype, int harvestlevel, float hardness, float resistance, SoundType stepsound, MapColor mapColor) {
 		this(material, hardness, resistance, stepsound, mapColor);
 		setHarvestLevel(tooltype, harvestlevel);
 	}
@@ -68,7 +68,7 @@ public class BlockACBasic extends Block {
 	 * @param stepsound Block step sound
 	 * @param mapColor Map Color
 	 */
-	public BlockACBasic(Material material, float hardness, float resistance, SoundType stepsound, MapColor mapColor) {
+	/*public BlockACBasic(Material material, float hardness, float resistance, SoundType stepsound, MapColor mapColor) {
 		super(material, mapColor);
 		setHardness(hardness);
 		setResistance(resistance);
@@ -146,4 +146,4 @@ public class BlockACBasic extends Block {
 				META_LOOKUP[enumtype.getMetadata()] = enumtype;
 		}
 	}
-}
+}*/

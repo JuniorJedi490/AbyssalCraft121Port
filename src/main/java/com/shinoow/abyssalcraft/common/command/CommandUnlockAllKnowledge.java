@@ -16,15 +16,15 @@ import com.shinoow.abyssalcraft.api.knowledge.condition.caps.NecroDataCapability
 import com.shinoow.abyssalcraft.common.network.PacketDispatcher;
 import com.shinoow.abyssalcraft.common.network.client.NecroDataCapMessage;
 
-import net.minecraft.command.CommandBase;
-import net.minecraft.command.CommandException;
-import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
+//import net.minecraft.command.CommandBase;
+//import net.minecraft.command.CommandException;
+//import net.minecraft.command.ICommandSender;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.util.text.TextComponentString;
 
-public class CommandUnlockAllKnowledge extends CommandBase {
+/*public class CommandUnlockAllKnowledge extends CommandBase {
 
 	@Override
 	public String getName() {
@@ -56,4 +56,4 @@ public class CommandUnlockAllKnowledge extends CommandBase {
 		}
 	}
 
-}
+}*/

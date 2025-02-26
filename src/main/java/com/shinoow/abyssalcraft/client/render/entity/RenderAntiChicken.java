@@ -13,18 +13,18 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import com.shinoow.abyssalcraft.common.entity.anti.EntityAntiChicken;
 
-import net.minecraft.client.model.ModelChicken;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelChicken;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAntiChicken extends RenderLiving
+//@SideOnly(Side.CLIENT)
+/*public class RenderAntiChicken extends RenderLiving
 {
 	private static final ResourceLocation chickenTextures = new ResourceLocation("abyssalcraft:textures/model/anti/chicken.png");
 
@@ -56,4 +56,4 @@ public class RenderAntiChicken extends RenderLiving
 	{
 		return this.getEntityTexture((EntityAntiChicken)par1Entity);
 	}
-}
+}*/

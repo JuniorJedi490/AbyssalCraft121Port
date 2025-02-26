@@ -1,12 +1,25 @@
-# Eclipse
-.project
-.classpath
-.metadata
-org.*
+# eclipse
 bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
 
-# Windows image file caches
-Thumbs.db
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
 
-# Deploy process leftovers
-*.bat
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt

@@ -14,29 +14,29 @@ package com.shinoow.abyssalcraft.common.blocks;
 import java.util.List;
 
 import com.shinoow.abyssalcraft.api.energy.IEnergyRelayBlock;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityEnergyRelay;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityEnergyRelay;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.util.blocks.BlockUtil;
 
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyDirection;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumBlockRenderType;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockEnergyRelay extends BlockContainer implements IEnergyRelayBlock {
+/*public class BlockEnergyRelay extends BlockContainer implements IEnergyRelayBlock {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing");
 
@@ -144,7 +144,7 @@ public class BlockEnergyRelay extends BlockContainer implements IEnergyRelayBloc
 	/**
 	 * Convert the given metadata into a BlockState for this Block
 	 */
-	@Override
+	/*@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
 		EnumFacing enumfacing = EnumFacing.byIndex(meta);
@@ -155,7 +155,7 @@ public class BlockEnergyRelay extends BlockContainer implements IEnergyRelayBloc
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
-	@Override
+	/*@Override
 	public int getMetaFromState(IBlockState state)
 	{
 		return state.getValue(FACING).getIndex();
@@ -176,4 +176,4 @@ public class BlockEnergyRelay extends BlockContainer implements IEnergyRelayBloc
 	public int getRange() {
 		return 4;
 	}
-}
+}*/

@@ -11,18 +11,18 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDreadTentacles;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDreadTentacles;
 import com.shinoow.abyssalcraft.common.entity.EntityCompassTentacle;
 
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.Render;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderCompassTentacle extends Render<EntityCompassTentacle> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderCompassTentacle extends Render<EntityCompassTentacle> {
 
 	private ModelDreadTentacles model = new ModelDreadTentacles();
 	private static final ResourceLocation texture = new ResourceLocation("abyssalcraft", "textures/model/compass_tentacle.png");
@@ -58,4 +58,4 @@ public class RenderCompassTentacle extends Render<EntityCompassTentacle> {
 		return texture;
 	}
 
-}
+}*/

@@ -16,14 +16,14 @@ import java.util.List;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 import com.shinoow.abyssalcraft.api.energy.disruption.DisruptionEntry;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.fml.common.eventhandler.Cancelable;
-import net.minecraftforge.fml.common.eventhandler.Event;
+//import net.minecraftforge.fml.common.eventhandler.Cancelable;
+//import net.minecraftforge.fml.common.eventhandler.Event;
 
 /**
  * A class containing events used by AbyssalCraft.<br>
@@ -50,19 +50,19 @@ public class ACEvents {
 	 *
 	 * @since 1.4
 	 */
-	public static class ItemTransmutedEvent extends PlayerEvent {
+	/*public static class ItemTransmutedEvent extends PlayerEvent {
 
-		private final ItemStack transmuted;
+		//private final ItemStack transmuted;
 
-		public ItemTransmutedEvent(EntityPlayer player, ItemStack crafting){
+		/*public ItemTransmutedEvent(EntityPlayer player, ItemStack crafting){
 			super(player);
 			transmuted = crafting;
-		}
+		}*/
 
-		public ItemStack getTransmutedStack(){
+		/*public ItemStack getTransmutedStack(){
 			return transmuted;
-		}
-	}
+		}*/
+	//}
 
 	/**
 	 * ItemCrystallizedEvent is fired when a player picks up an Item from the output slot of a Crystallizer.<br>
@@ -79,19 +79,19 @@ public class ACEvents {
 	 *
 	 * @since 1.4
 	 */
-	public static class ItemCrystallizedEvent extends PlayerEvent {
+	/*public static class ItemCrystallizedEvent extends PlayerEvent {
 
-		private final ItemStack crystallized;
+		//private final ItemStack crystallized;
 
-		public ItemCrystallizedEvent(EntityPlayer player, ItemStack crafting){
+		/*public ItemCrystallizedEvent(EntityPlayer player, ItemStack crafting){
 			super(player);
 			crystallized = crafting;
-		}
+		}*/
 
-		public ItemStack getCrystallizedStack(){
+		/*public ItemStack getCrystallizedStack(){
 			return crystallized;
-		}
-	}
+		}*/
+	//}
 
 	/**
 	 * ItemMaterializedEvent is fired when a player picks up an Item from the output slot of a Materializer.<br>
@@ -108,19 +108,19 @@ public class ACEvents {
 	 *
 	 * @since 1.4
 	 */
-	public static class ItemMaterializedEvent extends PlayerEvent {
+	/*public static class ItemMaterializedEvent extends PlayerEvent {
 
-		private final ItemStack materialized;
+		//private final ItemStack materialized;
 
-		public ItemMaterializedEvent(EntityPlayer player, ItemStack crafting){
+		/*public ItemMaterializedEvent(EntityPlayer player, ItemStack crafting){
 			super(player);
 			materialized = crafting;
-		}
+		}*/
 
-		public ItemStack getMaterializedStack(){
+		/*public ItemStack getMaterializedStack(){
 			return materialized;
-		}
-	}
+		}*/
+	//}
 
 	/**
 	 * DisruptionEvent is fired before a Disruption is triggered.<br>
@@ -143,40 +143,40 @@ public class ACEvents {
 	 *
 	 * @since 1.7.5
 	 */
-	@Cancelable
-	public static class DisruptionEvent extends Event {
+	//@Cancelable
+	/*public static class DisruptionEvent extends Event {
 		private final DeityType deity;
-		private final World world;
-		private final BlockPos pos;
-		private final List<EntityPlayer> players;
+		//private final World world;
+		//private final BlockPos pos;
+		//private final List<EntityPlayer> players;
 		private final DisruptionEntry disruption;
 
-		public DisruptionEvent(DeityType deity, World world, BlockPos pos, List<EntityPlayer> players, DisruptionEntry disruption){
+		/*public DisruptionEvent(DeityType deity, World world, BlockPos pos, List<EntityPlayer> players, DisruptionEntry disruption){
 			this.deity = deity;
 			this.world = world;
 			this.pos = pos;
 			this.players = players;
 			this.disruption = disruption;
-		}
+		}*/
 
-		public DeityType getDeityType(){
+		/*public DeityType getDeityType(){
 			return deity;
-		}
+		}*/
 
-		public World getWorld(){
+		/*public World getWorld(){
 			return world;
-		}
+		}*/
 
-		public BlockPos getPos(){
+		/*public BlockPos getPos(){
 			return pos;
-		}
+		}*/
 
-		public List<EntityPlayer> getPlayers(){
+		/*public List<EntityPlayer> getPlayers(){
 			return players;
-		}
+		}*/
 
-		public DisruptionEntry getDisruption(){
+		/*public DisruptionEntry getDisruption(){
 			return disruption;
 		}
-	}
+	}*/
 }

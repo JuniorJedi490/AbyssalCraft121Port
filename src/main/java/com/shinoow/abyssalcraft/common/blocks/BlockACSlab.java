@@ -17,27 +17,27 @@ import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.init.BlockHandler;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.projectile.EntityWitherSkull;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockSlab;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.IProperty;
+//import net.minecraft.block.properties.PropertyBool;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.boss.EntityDragon;
+//import net.minecraft.entity.boss.EntityWither;
+//import net.minecraft.entity.projectile.EntityWitherSkull;
+//import net.minecraft.item.Item;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public abstract class BlockACSlab extends BlockSlab {
+/*public abstract class BlockACSlab extends BlockSlab {
 
 	public static final PropertyBool VARIANT_PROPERTY = PropertyBool.create("variant");
 
@@ -171,4 +171,4 @@ public abstract class BlockACSlab extends BlockSlab {
 		else
 			return new BlockStateContainer.Builder(this).add(VARIANT_PROPERTY, HALF).build();
 	}
-}
+}*/

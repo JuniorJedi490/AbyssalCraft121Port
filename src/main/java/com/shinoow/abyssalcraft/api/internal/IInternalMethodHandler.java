@@ -16,12 +16,12 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 import com.shinoow.abyssalcraft.api.spell.SpellEnum.ScrollType;
 
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.world.World;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.math.RayTraceResult;
+//import net.minecraft.world.World;
 
 public interface IInternalMethodHandler {
 
@@ -35,7 +35,7 @@ public interface IInternalMethodHandler {
 	 * @param pos BlockPos
 	 * @param id Dimension ID
 	 */
-	void sendDisruption(DeityType deity, String name, BlockPos pos, int id);
+	//void sendDisruption(DeityType deity, String name, BlockPos pos, int id);
 
 	/**
 	 * Spawns a particle
@@ -48,7 +48,7 @@ public interface IInternalMethodHandler {
 	 * @param velY Y velocity
 	 * @param velZ Z velocity
 	 */
-	void spawnParticle(String particleName, World world, double posX, double posY, double posZ, double velX, double velY, double velZ);
+	//void spawnParticle(String particleName, World world, double posX, double posY, double posZ, double velX, double velY, double velZ);
 
 	/**
 	 * Spawns a PE stream between two Positions
@@ -56,7 +56,7 @@ public interface IInternalMethodHandler {
 	 * @param posTo Target position
 	 * @param dimension Dimension ID
 	 */
-	void spawnPEStream(BlockPos posFrom, BlockPos posTo, int dimension);
+	//void spawnPEStream(BlockPos posFrom, BlockPos posTo, int dimension);
 
 	/**
 	 * Spawns a PE stream between a BlockPos and a Entity
@@ -64,7 +64,7 @@ public interface IInternalMethodHandler {
 	 * @param target Target entity
 	 * @param dimension Dimension ID
 	 */
-	void spawnPEStream(BlockPos posFrom, Entity target, int dimension);
+	//void spawnPEStream(BlockPos posFrom, Entity target, int dimension);
 
 	/**
 	 * Attempts to generate a Darklands Structure.<br>
@@ -85,7 +85,7 @@ public interface IInternalMethodHandler {
 	 * is what's used for the Darklands
 	 * @param chance Percentage chance of a structure generating (default is 0.03 = 3% chance)
 	 */
-	void generateDarklandsStructure(int type, World world, Random random, BlockPos pos, float chance);
+	//void generateDarklandsStructure(int type, World world, Random random, BlockPos pos, float chance);
 
 	/**
 	 * Attempts to generate a Darklands Structure.<br>
@@ -108,7 +108,7 @@ public interface IInternalMethodHandler {
 	 * @param spawnBlock BlockState that the structures can generate on
 	 * @param extra (OPTIONAL) Additional BlockStates the structure can generate on
 	 */
-	void generateDarklandsStructure(int type, World world, Random random, BlockPos pos, float chance, IBlockState spawnBlock, IBlockState...extra);
+	//void generateDarklandsStructure(int type, World world, Random random, BlockPos pos, float chance, IBlockState spawnBlock, IBlockState...extra);
 
 	/**
 	 * Fires a message to the client on the completion of a ritual<br>
@@ -119,7 +119,7 @@ public interface IInternalMethodHandler {
 	 * @param player Player who completed the ritual
 	 * @param ritual Ritual name
 	 */
-	void completeRitualClient(BlockPos pos, EntityPlayer player, String ritual);
+	//void completeRitualClient(BlockPos pos, EntityPlayer player, String ritual);
 
 	/**
 	 * Checks the configurable immunity and carrier lists for whether or not the entity is immune or a plague carrier<br>
@@ -136,7 +136,7 @@ public interface IInternalMethodHandler {
 	 * @param dist Search distance
 	 * @return A target Entity, or null
 	 */
-	RayTraceResult rayTraceTarget(float dist);
+	//RayTraceResult rayTraceTarget(float dist);
 
 	/**
 	 * Sends a message to the server to run the logic for the spell<br>

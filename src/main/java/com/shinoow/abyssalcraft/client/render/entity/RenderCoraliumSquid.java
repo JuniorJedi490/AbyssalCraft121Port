@@ -11,19 +11,19 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerEyes;
 import com.shinoow.abyssalcraft.common.entity.EntityCoraliumSquid;
 
-import net.minecraft.client.model.ModelSquid;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelSquid;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderCoraliumSquid extends RenderLiving<EntityCoraliumSquid>
+//@SideOnly(Side.CLIENT)
+/*public class RenderCoraliumSquid extends RenderLiving<EntityCoraliumSquid>
 {
 	private static final ResourceLocation SQUID_TEXTURES = new ResourceLocation("abyssalcraft", "textures/model/coraliumsquid.png");
 
@@ -36,7 +36,7 @@ public class RenderCoraliumSquid extends RenderLiving<EntityCoraliumSquid>
 	/**
 	 * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	 */
-	@Override
+	/*@Override
 	protected ResourceLocation getEntityTexture(EntityCoraliumSquid entity)
 	{
 		return SQUID_TEXTURES;
@@ -57,9 +57,9 @@ public class RenderCoraliumSquid extends RenderLiving<EntityCoraliumSquid>
 	/**
 	 * Defines what float the third param in setRotationAngles of ModelBase is
 	 */
-	@Override
+	/*@Override
 	protected float handleRotationFloat(EntityCoraliumSquid livingBase, float partialTicks)
 	{
 		return livingBase.lastTentacleAngle + (livingBase.tentacleAngle - livingBase.lastTentacleAngle) * partialTicks;
 	}
-}
+}*/

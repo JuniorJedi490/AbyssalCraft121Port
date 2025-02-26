@@ -13,23 +13,23 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import java.util.List;
 
-import net.minecraft.block.BlockBasePressurePlate;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockBasePressurePlate;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.IProperty;
+//import net.minecraft.block.properties.PropertyBool;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.SoundEvents;
+//import net.minecraft.util.SoundCategory;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class BlockACPressureplate extends BlockBasePressurePlate
+/*public class BlockACPressureplate extends BlockBasePressurePlate
 {
 	public static final PropertyBool POWERED = PropertyBool.create("powered");
 	private BlockACPressureplate.Sensitivity sensitivity;
@@ -68,7 +68,7 @@ public class BlockACPressureplate extends BlockBasePressurePlate
 	 * Returns the current state of the pressure plate. Returns a value between 0 and 15 based on the number of items on
 	 * it.
 	 */
-	@Override
+	/*@Override
 	protected int computeRedstoneStrength(World worldIn, BlockPos pos)
 	{
 		AxisAlignedBB axisalignedbb = PRESSURE_AABB.offset(pos);
@@ -97,7 +97,7 @@ public class BlockACPressureplate extends BlockBasePressurePlate
 	/**
 	 * Convert the given metadata into a BlockState for this Block
 	 */
-	@Override
+	/*@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
 		return getDefaultState().withProperty(POWERED, meta == 1);
@@ -106,7 +106,7 @@ public class BlockACPressureplate extends BlockBasePressurePlate
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
-	@Override
+	/*@Override
 	public int getMetaFromState(IBlockState state)
 	{
 		return state.getValue(POWERED) ? 1 : 0;
@@ -141,4 +141,4 @@ public class BlockACPressureplate extends BlockBasePressurePlate
 		else
 			worldIn.playSound((EntityPlayer)null, pos, SoundEvents.BLOCK_STONE_PRESSPLATE_CLICK_OFF, SoundCategory.BLOCKS, 0.3F, 0.5F);
 	}
-}
+}*/

@@ -22,26 +22,26 @@ import com.shinoow.abyssalcraft.api.energy.PEUtils;
 import com.shinoow.abyssalcraft.api.energy.disruption.DisruptionHandler;
 import com.shinoow.abyssalcraft.api.energy.structure.IStructureComponent;
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
-import com.shinoow.abyssalcraft.common.blocks.BlockStatue;
+//import com.shinoow.abyssalcraft.common.blocks.BlockStatue;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 import com.shinoow.abyssalcraft.lib.ACLib;
 
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.effect.EntityLightningBolt;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.WorldServer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.effect.EntityLightningBolt;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.EnumParticleTypes;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.WorldServer;
 
-public class TileEntityStatue extends TileEntity implements IEnergyManipulator, ITickable, IStructureComponent {
+/*public class TileEntityStatue extends TileEntity implements IEnergyManipulator, ITickable, IStructureComponent {
 
 	private int timer;
 	private final int timerMax = 120;
@@ -284,4 +284,4 @@ public class TileEntityStatue extends TileEntity implements IEnergyManipulator, 
 	public void setBasePosition(BlockPos pos) {
 		basePos = pos;
 	}
-}
+}*/

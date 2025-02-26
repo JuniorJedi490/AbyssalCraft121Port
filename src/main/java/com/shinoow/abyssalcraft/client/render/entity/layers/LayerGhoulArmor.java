@@ -13,17 +13,17 @@ package com.shinoow.abyssalcraft.client.render.entity.layers;
 
 import com.shinoow.abyssalcraft.api.armor.ArmorData;
 import com.shinoow.abyssalcraft.api.armor.ArmorDataRegistry;
-import com.shinoow.abyssalcraft.client.model.entity.ModelGhoulArmor;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelGhoulArmor;
 import com.shinoow.abyssalcraft.lib.client.render.entity.layers.LayerACArmorBase;
 
-import net.minecraft.client.renderer.entity.RenderLivingBase;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.entity.RenderLivingBase;
+//import net.minecraft.item.ItemArmor.ArmorMaterial;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerGhoulArmor extends LayerACArmorBase<ModelGhoulArmor>
+//@SideOnly(Side.CLIENT)
+/*public class LayerGhoulArmor extends LayerACArmorBase<ModelGhoulArmor>
 {
 	private final ResourceLocation MISSING_ARMOR = new ResourceLocation("abyssalcraft:textures/armor/ghoul/base_1.png");
 
@@ -50,4 +50,4 @@ public class LayerGhoulArmor extends LayerACArmorBase<ModelGhoulArmor>
 
 		return MISSING_ARMOR;
 	}
-}
+}*/

@@ -16,20 +16,20 @@ import com.shinoow.abyssalcraft.api.dimension.IAbyssalWorldProvider;
 import com.shinoow.abyssalcraft.common.entity.*;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.IEntityLivingData;
-import net.minecraft.init.MobEffects;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.EnumDifficulty;
-import net.minecraft.world.World;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.IEntityLivingData;
+//import net.minecraft.init.MobEffects;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.potion.PotionEffect;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.EnumParticleTypes;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.EnumDifficulty;
+//import net.minecraft.world.World;
 
-public class TileEntityShoggothBiomass extends TileEntity implements ITickable {
+/*public class TileEntityShoggothBiomass extends TileEntity implements ITickable {
 
 	private int cooldown;
 	private int spawnedShoggoths;
@@ -151,4 +151,4 @@ public class TileEntityShoggothBiomass extends TileEntity implements ITickable {
 
 		return new EntityLesserShoggoth(world);
 	}
-}
+}*/

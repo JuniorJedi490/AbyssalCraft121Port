@@ -13,14 +13,14 @@ package com.shinoow.abyssalcraft.common.blocks.itemblock;
 
 import com.shinoow.abyssalcraft.api.block.ICrystalBlock;
 import com.shinoow.abyssalcraft.api.item.ICrystal;
-import com.shinoow.abyssalcraft.common.blocks.BlockCrystalCluster;
+//import com.shinoow.abyssalcraft.common.blocks.BlockCrystalCluster;
 import com.shinoow.abyssalcraft.lib.Crystals;
 import com.shinoow.abyssalcraft.lib.util.TranslationUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.block.Block;
+//import net.minecraft.item.ItemStack;
 
-public class ItemCrystalClusterBlock extends ItemBlockAC implements ICrystal {
+/*public class ItemCrystalClusterBlock extends ItemBlockAC implements ICrystal {
 
 	public ItemCrystalClusterBlock(Block block) {
 		super(block);
@@ -49,4 +49,4 @@ public class ItemCrystalClusterBlock extends ItemBlockAC implements ICrystal {
 
 		return ((ICrystalBlock) block).getFormula(stack);
 	}
-}
+}*/

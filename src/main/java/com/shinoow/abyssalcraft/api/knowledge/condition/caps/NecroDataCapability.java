@@ -18,8 +18,8 @@ import com.shinoow.abyssalcraft.api.knowledge.IResearchItem;
 import com.shinoow.abyssalcraft.api.knowledge.condition.ConditionProcessorRegistry;
 import com.shinoow.abyssalcraft.api.knowledge.condition.IUnlockCondition;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.ResourceLocation;
 
 public class NecroDataCapability implements INecroDataCapability {
 
@@ -30,7 +30,7 @@ public class NecroDataCapability implements INecroDataCapability {
 	List<String> page_triggers = new ArrayList<>();
 	List<String> whisper_triggers = new ArrayList<>();
 	List<String> misc_triggers = new ArrayList<>();
-	List<ResourceLocation> completed_researches = new ArrayList<>();
+	//List<ResourceLocation> completed_researches = new ArrayList<>();
 
 	boolean hasAllKnowledge;
 	int knowledgeLevel, knowledgePoints;
@@ -38,16 +38,16 @@ public class NecroDataCapability implements INecroDataCapability {
 	long lastSyncTime = 0;
 	int syncTimer = 0;
 
-	public static INecroDataCapability getCap(EntityPlayer player){
+	/*public static INecroDataCapability getCap(EntityPlayer player){
 		return player.getCapability(NecroDataCapabilityProvider.NECRO_DATA_CAP, null);
-	}
+	}*/
 
-	@Override
-	public boolean isUnlocked(IUnlockCondition cond, EntityPlayer player) {
+	//@Override
+	/*public boolean isUnlocked(IUnlockCondition cond, EntityPlayer player) {
 
 		if(cond.getType() == -1 || hasAllKnowledge && cond.getType() != 11) return true;
 		else return ConditionProcessorRegistry.instance().getProcessor(cond.getType()).processUnlock(cond, this, player);
-	}
+	}*/
 
 	@Override
 	public void triggerEntityUnlock(String name) {
@@ -91,11 +91,11 @@ public class NecroDataCapability implements INecroDataCapability {
 			misc_triggers.add(name);
 	}
 
-	@Override
-	public void completeResearch(ResourceLocation rel) {
+	//@Override
+	/*public void completeResearch(ResourceLocation rel) {
 		if(rel != null && !completed_researches.contains(rel))
 			completed_researches.add(rel);
-	}
+	}*/
 
 	@Override
 	public void unlockAllKnowledge(boolean unlock) {
@@ -159,11 +159,11 @@ public class NecroDataCapability implements INecroDataCapability {
 		return misc_triggers;
 	}
 
-	@Override
-	public List<ResourceLocation> getCompletedResearches() {
+	//@Override
+	/*public List<ResourceLocation> getCompletedResearches() {
 
 		return completed_researches;
-	}
+	}*/
 
 	@Override
 	public boolean hasUnlockedAllKnowledge(){
@@ -216,12 +216,12 @@ public class NecroDataCapability implements INecroDataCapability {
 		misc_triggers = cap.getMiscTriggers();
 		hasAllKnowledge = cap.hasUnlockedAllKnowledge();
 		lastSyncTime = cap.getLastSyncTime();
-		completed_researches = cap.getCompletedResearches();
+		//completed_researches = cap.getCompletedResearches();
 		knowledgeLevel = cap.getKnowledgeLevel();
 	}
 
-	@Override
-	public boolean isUnlocked(IResearchItem research, EntityPlayer player) {
+	//@Override
+	/*public boolean isUnlocked(IResearchItem research, EntityPlayer player) {
 
 		boolean unlocked = true;
 
@@ -235,5 +235,5 @@ public class NecroDataCapability implements INecroDataCapability {
 			completeResearch(research.getID());
 
 		return unlocked;
-	}
+	}*/
 }

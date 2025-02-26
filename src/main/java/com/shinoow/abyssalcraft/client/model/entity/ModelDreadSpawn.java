@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelDreadSpawn extends ModelBase {
+/*public class ModelDreadSpawn extends ModelBase {
 
 	public ModelRenderer body;
 	public ModelRenderer head;
@@ -223,4 +223,4 @@ public class ModelDreadSpawn extends ModelBase {
 		t32.rotateAngleZ = MathHelper.cos(par7Entity.ticksExisted * f18) * 4.25F * (float)Math.PI / 180.0F;
 		t33.rotateAngleZ = MathHelper.cos(par7Entity.ticksExisted * f18) * 4.25F * (float)Math.PI / 180.0F;
 	}
-}
+}*/

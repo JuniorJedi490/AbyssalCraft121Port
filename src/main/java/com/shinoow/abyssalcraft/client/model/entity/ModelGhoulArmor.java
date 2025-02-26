@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.inventory.EntityEquipmentSlot;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.inventory.EntityEquipmentSlot;
 
-public class ModelGhoulArmor extends ModelGhoul {
+/*public class ModelGhoulArmor extends ModelGhoul {
 
 	public ModelRenderer chestplate;
 
@@ -74,4 +74,4 @@ public class ModelGhoulArmor extends ModelGhoul {
 				slot == EntityEquipmentSlot.LEGS)
 			chestplate.showModel = true;
 	}
-}
+}*/

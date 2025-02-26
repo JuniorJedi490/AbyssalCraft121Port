@@ -17,15 +17,15 @@ import javax.annotation.Nonnull;
 
 import com.shinoow.abyssalcraft.api.APIUtils;
 
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.inventory.ItemStackHelper;
+//import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.*;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraftforge.common.util.Constants.NBT;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraftforge.common.util.Constants.NBT;
 import net.minecraftforge.common.util.INBTSerializable;
-import net.minecraftforge.oredict.OreDictionary;
+//import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Data item in the Item Transfer System that information for
@@ -34,7 +34,7 @@ import net.minecraftforge.oredict.OreDictionary;
  *
  * @since 1.30.0
  */
-public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompound> {
+/*public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompound> {
 
 	private BlockPos[] route;
 	private NonNullList<ItemStack> filter = NonNullList.withSize(5, ItemStack.EMPTY);
@@ -45,19 +45,19 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Constructor without parameters (only used when the capability is reading from NBT)
 	 */
-	public ItemTransferConfiguration() {}
+	//public ItemTransferConfiguration() {}
 
 	/**
 	 * Initializes an Item Transfer Configuration with a route
 	 */
-	public ItemTransferConfiguration(BlockPos[] route) {
+	/*public ItemTransferConfiguration(BlockPos[] route) {
 		this.route = route;
 	}
 
 	/**
 	 * (optional) Sets the filter for the Item Transfer Configuration
 	 */
-	public ItemTransferConfiguration setFilter(NonNullList<ItemStack> filter) {
+	/*public ItemTransferConfiguration setFilter(NonNullList<ItemStack> filter) {
 		this.filter = filter;
 		subtypeFilter = filter;
 		return this;
@@ -66,7 +66,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Sets the facing to use for accessing the inventory at the destination block
 	 */
-	public ItemTransferConfiguration setEntryFacing(EnumFacing facing) {
+	/*public ItemTransferConfiguration setEntryFacing(EnumFacing facing) {
 		entryFacing = facing;
 		return this;
 	}
@@ -74,7 +74,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Sets the facing to use for extracing items from the origin block
 	 */
-	public ItemTransferConfiguration setExitFacing(EnumFacing facing) {
+	/*public ItemTransferConfiguration setExitFacing(EnumFacing facing) {
 		exitFacing = facing;
 		return this;
 	}
@@ -84,7 +84,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	 * <br>(For example, if used with vanilla planks in the filter, all types
 	 * of vanilla planks would be valid in the filter)
 	 */
-	public ItemTransferConfiguration setFilterSubtypes(boolean filterSubtypes) {
+	/*public ItemTransferConfiguration setFilterSubtypes(boolean filterSubtypes) {
 		this.filterSubtypes = filterSubtypes;
 		return this;
 	}
@@ -92,7 +92,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Sets whether or not the filter should take NBT into account
 	 */
-	public ItemTransferConfiguration setFilterNBT(boolean filterNBT) {
+	/*public ItemTransferConfiguration setFilterNBT(boolean filterNBT) {
 		this.filterNBT = filterNBT;
 		return this;
 	}
@@ -100,7 +100,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Getter for the route
 	 */
-	@Nonnull
+	/*@Nonnull
 	public BlockPos[] getRoute() {
 		return route;
 	}
@@ -108,7 +108,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Getter for the filter
 	 */
-	@Nonnull
+	/*@Nonnull
 	public NonNullList<ItemStack> getFilter(){
 		return filterSubtypes ? subtypeFilter : filter;
 	}
@@ -116,7 +116,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Getter for the exit facing (where Items leave the origin block)
 	 */
-	@Nonnull
+	/*@Nonnull
 	public EnumFacing getExitFacing() {
 		return exitFacing;
 	}
@@ -124,7 +124,7 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Getter for the entry facing (where Items enter the desination block)
 	 */
-	@Nonnull
+	/*@Nonnull
 	public EnumFacing getEntryFacing() {
 		return entryFacing;
 	}
@@ -132,21 +132,21 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 	/**
 	 * Checks whether or not the filter should take subtypes into account
 	 */
-	public boolean filterBySubtypes() {
+	/*public boolean filterBySubtypes() {
 		return filterSubtypes;
 	}
 
 	/**
 	 * Checks whether or not the filter should take NBT into account
 	 */
-	public boolean filterByNBT() {
+	/*public boolean filterByNBT() {
 		return filterNBT;
 	}
 
 	/**
 	 * Initializes the subtype filter (if filtering by subtypes is enabled)
 	 */
-	public void setupSubtypeFilter() {
+	/*public void setupSubtypeFilter() {
 		if(filterSubtypes)
 			for(ItemStack stack : subtypeFilter)
 				if(!stack.isEmpty() && stack.getHasSubtypes())
@@ -223,4 +223,4 @@ public class ItemTransferConfiguration implements INBTSerializable<NBTTagCompoun
 		//or one has a filter while the other doesn't, equal
 		return (filtersMatch || filterDiff) && desinationMatch;
 	}
-}
+}*/

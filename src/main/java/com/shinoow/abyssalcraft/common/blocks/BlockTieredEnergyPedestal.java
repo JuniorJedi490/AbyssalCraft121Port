@@ -16,30 +16,30 @@ import java.util.List;
 import java.util.Map;
 
 import com.shinoow.abyssalcraft.api.energy.IEnergyBlock;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTieredEnergyPedestal;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntityTieredEnergyPedestal;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 import com.shinoow.abyssalcraft.lib.util.blocks.BlockUtil;
 import com.shinoow.abyssalcraft.lib.util.blocks.SingletonInventoryUtil;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockTieredEnergyPedestal extends BlockContainer implements IEnergyBlock {
+/*public class BlockTieredEnergyPedestal extends BlockContainer implements IEnergyBlock {
 
 	public static final Map<EnumDimType, Block> VARIANTS = new HashMap<>();
 
@@ -174,4 +174,4 @@ public class BlockTieredEnergyPedestal extends BlockContainer implements IEnergy
 				META_LOOKUP[type.getMeta()] = type;
 		}
 	}
-}
+}*/

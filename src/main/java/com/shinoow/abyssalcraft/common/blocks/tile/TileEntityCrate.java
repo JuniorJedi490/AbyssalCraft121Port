@@ -13,23 +13,23 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 
 import javax.annotation.Nullable;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.*;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntityLockableLoot;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.TextComponentTranslation;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.entity.player.InventoryPlayer;
+//import net.minecraft.inventory.*;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.tileentity.TileEntityLockableLoot;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.NonNullList;
+//import net.minecraft.util.text.ITextComponent;
+//import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.items.CapabilityItemHandler;
+//import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
 
-public class TileEntityCrate extends TileEntityLockableLoot implements IInventory
+/*public class TileEntityCrate extends TileEntityLockableLoot implements IInventory
 {
 	private NonNullList<ItemStack> crateContents = NonNullList.withSize(36, ItemStack.EMPTY);
 	private String customName;
@@ -172,4 +172,4 @@ public class TileEntityCrate extends TileEntityLockableLoot implements IInventor
 
 		return crateContents;
 	}
-}
+}*/

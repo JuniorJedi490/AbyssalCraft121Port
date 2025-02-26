@@ -20,7 +20,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.ResourceLocation;
 
 public class ResearchRegistry {
 
@@ -38,10 +38,10 @@ public class ResearchRegistry {
 
 	public void registerResearchItem(IResearchItem research) {
 
-		if(researches.stream().anyMatch(r -> r.getID().equals(research.getID()))) {
+		/*if(researches.stream().anyMatch(r -> r.getID().equals(research.getID()))) {
 			logger.log(Level.ERROR, "Research Item with ID already registered: {}", research.getID());
 			return;
-		}
+		}*/
 
 		researches.add(research);
 	}
@@ -50,11 +50,11 @@ public class ResearchRegistry {
 		return researches;
 	}
 
-	@Nullable
-	public IResearchItem getResearchItemById(ResourceLocation rel) {
+	//@Nullable
+	/*public IResearchItem getResearchItemById(ResourceLocation rel) {
 		return researches.stream()
 				.filter(r -> r.getID().equals(rel))
 				.findFirst()
 				.orElse(null);
-	}
+	}*/
 }

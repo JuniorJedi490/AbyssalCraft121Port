@@ -18,23 +18,23 @@ import com.google.common.collect.Iterables;
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import com.mojang.authlib.properties.Property;
-import com.shinoow.abyssalcraft.client.model.entity.ModelEvilSheep1;
-import com.shinoow.abyssalcraft.client.render.entity.RenderEvilSheep;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelEvilSheep1;
+//import com.shinoow.abyssalcraft.client.render.entity.RenderEvilSheep;
 import com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.entity.layers.LayerRenderer;
 import net.minecraft.client.resources.DefaultPlayerSkin;
-import net.minecraft.entity.passive.EntitySheep;
-import net.minecraft.item.EnumDyeColor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.entity.passive.EntitySheep;
+//import net.minecraft.item.EnumDyeColor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class LayerEvilSheepWool implements LayerRenderer<EntityEvilSheep>
+//@SideOnly(Side.CLIENT)
+/*public class LayerEvilSheepWool implements LayerRenderer<EntityEvilSheep>
 {
 	private static final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/sheep/sheep_fur.png");
 	private final RenderEvilSheep sheepRenderer;
@@ -50,7 +50,7 @@ public class LayerEvilSheepWool implements LayerRenderer<EntityEvilSheep>
 	/*
 	 * Player skin fetching code borrowed from https://github.com/CyclopsMC/EvilCraft/blob/master-1.9/src/main/java/org/cyclops/evilcraft/client/render/entity/RenderVengeanceSpirit.java
 	 */
-	@Override
+	/*@Override
 	public void doRenderLayer(EntityEvilSheep entitylivingbaseIn, float p_177141_2_, float p_177141_3_, float partialTicks, float p_177141_5_, float p_177141_6_, float p_177141_7_, float scale)
 	{
 		if (!entitylivingbaseIn.isInvisible())
@@ -151,4 +151,4 @@ public class LayerEvilSheepWool implements LayerRenderer<EntityEvilSheep>
 			sheepModel.leg4.setRotationPoint(3.0F, 12.0F, -5.0F);
 		}
 	}
-}
+}*/

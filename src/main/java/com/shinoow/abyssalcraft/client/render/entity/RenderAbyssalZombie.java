@@ -11,19 +11,19 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.render.entity;
 
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerAbyssalZombieEyes;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerAbyssalZombieEyes;
 import com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie;
 
-import net.minecraft.client.model.ModelZombie;
-import net.minecraft.client.renderer.entity.RenderBiped;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.model.ModelZombie;
+//import net.minecraft.client.renderer.entity.RenderBiped;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class RenderAbyssalZombie extends RenderBiped<EntityAbyssalZombie> {
+//@SideOnly(Side.CLIENT)
+/*public class RenderAbyssalZombie extends RenderBiped<EntityAbyssalZombie> {
 
 	private static final ResourceLocation zombieTexture = new ResourceLocation("abyssalcraft:textures/model/abyssal_zombie.png");
 	private static final ResourceLocation zombieTextureAlt = new ResourceLocation("abyssalcraft:textures/model/abyssal_zombie_old.png");
@@ -48,4 +48,4 @@ public class RenderAbyssalZombie extends RenderBiped<EntityAbyssalZombie> {
 	{
 		return par1EntityLiving.getName().equalsIgnoreCase("shinoow") ? zombieTextureAlt : zombieTexture;
 	}
-}
+}*/

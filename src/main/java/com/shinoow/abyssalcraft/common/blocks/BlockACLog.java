@@ -16,18 +16,18 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.BlockLog;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.item.Item;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.block.BlockLog;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.item.Item;
+//import net.minecraft.util.BlockRenderLayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockACLog extends BlockLog {
+/*public class BlockACLog extends BlockLog {
 
 	private MapColor mapColor;
 
@@ -111,4 +111,4 @@ public class BlockACLog extends BlockLog {
 	{
 		return new BlockStateContainer.Builder(this).add(LOG_AXIS).build();
 	}
-}
+}*/

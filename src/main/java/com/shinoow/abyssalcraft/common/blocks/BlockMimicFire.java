@@ -13,16 +13,16 @@ package com.shinoow.abyssalcraft.common.blocks;
 
 import java.util.Random;
 
-import net.minecraft.block.BlockFire;
-import net.minecraft.block.BlockTNT;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.block.BlockFire;
+//import net.minecraft.block.BlockTNT;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockMimicFire extends BlockFire {
+/*public class BlockMimicFire extends BlockFire {
 
 	@Override
 	public int tickRate(World worldIn)
@@ -171,4 +171,4 @@ public class BlockMimicFire extends BlockFire {
 			return i;
 		}
 	}
-}
+}*/

@@ -11,16 +11,16 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.common.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class BlockACDoubleSlab extends BlockACSlab {
+/*public class BlockACDoubleSlab extends BlockACSlab {
 
 	@SuppressWarnings("deprecation")
 	public BlockACDoubleSlab(Block par1SingleSlab, Material par3Material, String tooltype, int harvestlevel)
@@ -47,4 +47,4 @@ public class BlockACDoubleSlab extends BlockACSlab {
 	{
 		return getStateFromMeta(meta);
 	}
-}
+}*/

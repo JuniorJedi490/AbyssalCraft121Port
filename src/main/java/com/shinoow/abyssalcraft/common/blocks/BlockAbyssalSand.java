@@ -16,14 +16,14 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.api.biome.ACBiomes;
 import com.shinoow.abyssalcraft.api.block.ACBlocks;
 
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
 
-public class BlockAbyssalSand extends BlockACBasic {
+/*public class BlockAbyssalSand extends BlockACBasic {
 
 	public BlockAbyssalSand() {
 		super(Material.SAND, 0.5F, 2.5F, SoundType.SAND);
@@ -44,4 +44,4 @@ public class BlockAbyssalSand extends BlockACBasic {
 	{
 		return 40;
 	}
-}
+}*/

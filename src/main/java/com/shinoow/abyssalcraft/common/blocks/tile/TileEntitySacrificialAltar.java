@@ -19,21 +19,21 @@ import com.shinoow.abyssalcraft.api.energy.IEnergyCollector;
 import com.shinoow.abyssalcraft.api.energy.PEUtils;
 import com.shinoow.abyssalcraft.lib.util.blocks.ISingletonInventory;
 
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.EnumCreatureAttribute;
-import net.minecraft.entity.item.EntityArmorStand;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.EnumCreatureAttribute;
+//import net.minecraft.entity.item.EntityArmorStand;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.MobEffects;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NBTTagCompound;
+//import net.minecraft.network.NetworkManager;
+//import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+//import net.minecraft.potion.PotionEffect;
+//import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.util.ITickable;
+//import net.minecraft.util.math.AxisAlignedBB;
 
-public class TileEntitySacrificialAltar extends TileEntity implements IEnergyCollector, ISingletonInventory, ITickable {
+/*public class TileEntitySacrificialAltar extends TileEntity implements IEnergyCollector, ISingletonInventory, ITickable {
 
 	private ItemStack item = ItemStack.EMPTY;
 	private float energy;
@@ -185,4 +185,4 @@ public class TileEntitySacrificialAltar extends TileEntity implements IEnergyCol
 
 		this.energy = energy;
 	}
-}
+}*/

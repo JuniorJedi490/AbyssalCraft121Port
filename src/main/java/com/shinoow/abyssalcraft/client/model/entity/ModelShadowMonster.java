@@ -11,12 +11,12 @@
  ******************************************************************************/
 package com.shinoow.abyssalcraft.client.model.entity;
 
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+//import net.minecraft.client.model.ModelBase;
+//import net.minecraft.client.model.ModelRenderer;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.util.math.MathHelper;
 
-public class ModelShadowMonster extends ModelBase
+/*public class ModelShadowMonster extends ModelBase
 {
 
 	public ModelRenderer Head;
@@ -226,4 +226,4 @@ public class ModelShadowMonster extends ModelBase
 		Larm2.rotateAngleZ = 0.0F;
 	}
 
-}
+}*/

@@ -16,13 +16,13 @@ import java.util.Map;
 
 import com.shinoow.abyssalcraft.lib.ACTabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.IStringSerializable;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.util.IStringSerializable;
 
-public class BlockACCobblestone extends Block {
+/*public class BlockACCobblestone extends Block {
 
 	public static final Map<EnumCobblestoneType, Block> VARIANTS = new HashMap<>();
 
@@ -116,4 +116,4 @@ public class BlockACCobblestone extends Block {
 				META_LOOKUP[enumtype.getMeta()] = enumtype;
 		}
 	}
-}
+}*/

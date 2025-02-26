@@ -16,13 +16,13 @@ import java.util.List;
 
 import com.shinoow.abyssalcraft.api.energy.EnergyEnum.DeityType;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.IEntityLivingData;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldEntitySpawner;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.IEntityLivingData;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.World;
+//import net.minecraft.world.WorldEntitySpawner;
 
 /**
  * A Spawning Disruption Entry
@@ -30,9 +30,9 @@ import net.minecraft.world.WorldEntitySpawner;
  *
  * @since 1.5
  */
-public class DisruptionSpawn extends DisruptionEntry {
+//public class DisruptionSpawn extends DisruptionEntry {
 
-	private Class<? extends EntityLivingBase> entity;
+	//private Class<? extends EntityLivingBase> entity;
 
 	/**
 	 * A Spawning Disruption Entry
@@ -40,13 +40,13 @@ public class DisruptionSpawn extends DisruptionEntry {
 	 * @param deity Deity whose image must be present for this to happen
 	 * @param entity The Entity to spawn
 	 */
-	public DisruptionSpawn(String unlocalizedName, DeityType deity, Class<? extends EntityLivingBase> entity) {
+	/*public DisruptionSpawn(String unlocalizedName, DeityType deity, Class<? extends EntityLivingBase> entity) {
 		super(unlocalizedName, deity);
 		this.entity = entity;
-	}
+	}*/
 
-	@Override
-	public void disrupt(World world, BlockPos pos, List<EntityPlayer> players) {
+	//@Override
+	/*public void disrupt(World world, BlockPos pos, List<EntityPlayer> players) {
 
 		if(!world.isRemote){
 			EntityLivingBase entityliving = null;
@@ -103,4 +103,4 @@ public class DisruptionSpawn extends DisruptionEntry {
 			}
 		}
 	}
-}
+}*/

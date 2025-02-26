@@ -16,21 +16,21 @@ import com.shinoow.abyssalcraft.api.block.ACBlocks;
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.MobEffects;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fluids.BlockFluidClassic;
+//import net.minecraft.block.material.MapColor;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.item.EntityItem;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.init.MobEffects;
+//import net.minecraft.potion.PotionEffect;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fluids.BlockFluidClassic;
 
-public class BlockAntiliquid extends BlockFluidClassic {
+/*public class BlockAntiliquid extends BlockFluidClassic {
 
 	public BlockAntiliquid() {
 		super(AbyssalCraftAPI.liquid_antimatter_fluid, Material.WATER);
@@ -79,4 +79,4 @@ public class BlockAntiliquid extends BlockFluidClassic {
 		if(par5Entity instanceof EntityItem && ACConfig.antiItemDisintegration)
 			par5Entity.setDead();
 	}
-}
+}*/

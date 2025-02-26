@@ -17,36 +17,36 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import com.shinoow.abyssalcraft.AbyssalCraft;
-import com.shinoow.abyssalcraft.common.blocks.tile.TileEntitySequentialBrewingStand;
+//import com.shinoow.abyssalcraft.common.blocks.tile.TileEntitySequentialBrewingStand;
 import com.shinoow.abyssalcraft.lib.ACLib;
 import com.shinoow.abyssalcraft.lib.util.blocks.BlockUtil;
 
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyBool;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.BlockFaceShape;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.Container;
-import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.item.ItemStack;
-import net.minecraft.stats.StatList;
-import net.minecraft.tileentity.TileEntity;
+//import net.minecraft.block.BlockContainer;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.properties.PropertyBool;
+//import net.minecraft.block.properties.PropertyDirection;
+//import net.minecraft.block.state.BlockFaceShape;
+//import net.minecraft.block.state.BlockStateContainer;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.creativetab.CreativeTabs;
+//import net.minecraft.entity.Entity;
+//import net.minecraft.entity.EntityLivingBase;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.inventory.Container;
+//import net.minecraft.inventory.InventoryHelper;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.stats.StatList;
+//import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockSequentialBrewingStand extends BlockContainer
+/*public class BlockSequentialBrewingStand extends BlockContainer
 {
 	public static final PropertyBool[] HAS_BOTTLE = new PropertyBool[] {PropertyBool.create("has_bottle_0"), PropertyBool.create("has_bottle_1"), PropertyBool.create("has_bottle_2")};
 	public static final PropertyDirection EXIT_DIRECTION = PropertyDirection.create("exit_direction");
@@ -109,7 +109,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Used to determine ambient occlusion and culling when rebuilding chunks for render
 	 */
-	@Override
+	/*@Override
 	public boolean isOpaqueCube(IBlockState state)
 	{
 		return false;
@@ -119,7 +119,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	 * The type of render function called. MODEL for mixed tesr and static model, MODELBLOCK_ANIMATED for TESR-only,
 	 * LIQUID for vanilla liquids, INVISIBLE to skip all rendering
 	 */
-	@Override
+	/*@Override
 	public EnumBlockRenderType getRenderType(IBlockState state)
 	{
 		return EnumBlockRenderType.MODEL;
@@ -128,7 +128,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Returns a new instance of a block's tile entity class. Called on placing the block.
 	 */
-	@Override
+	/*@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta)
 	{
 		return new TileEntitySequentialBrewingStand();
@@ -157,7 +157,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Called when the block is right clicked by a player.
 	 */
-	@Override
+	/*@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
 		if (worldIn.isRemote)
@@ -200,7 +200,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Called by ItemBlocks after a block is set in the world, to allow post-place logic
 	 */
-	@Override
+	/*@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
 	{
 		TileEntity tileentity = worldIn.getTileEntity(pos);
@@ -219,7 +219,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	 * this method is unrelated to {@link randomTick} and {@link #needsRandomTick}, and will always be called regardless
 	 * of whether the block can receive random update ticks
 	 */
-	@Override
+	/*@Override
 	@SideOnly(Side.CLIENT)
 	public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
 	{
@@ -232,7 +232,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Called serverside after this block is replaced with another in Chunk, but before the Tile Entity is updated
 	 */
-	@Override
+	/*@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
 	{
 		if(!keepInventory) {
@@ -261,7 +261,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	 * Gets the render layer this block will render on. SOLID for solid blocks, CUTOUT or CUTOUT_MIPPED for on-off
 	 * transparency (glass, reeds), TRANSLUCENT for fully blended transparency (stained glass)
 	 */
-	@Override
+	/*@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getRenderLayer()
 	{
@@ -271,7 +271,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Convert the given metadata into a BlockState for this Block
 	 */
-	@Override
+	/*@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
 		IBlockState iblockstate = getDefaultState();
@@ -285,7 +285,7 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
-	@Override
+	/*@Override
 	public int getMetaFromState(IBlockState state)
 	{
 		int i = 0;
@@ -312,9 +312,9 @@ public class BlockSequentialBrewingStand extends BlockContainer
 	 *
 	 * @return an approximation of the form of the given face
 	 */
-	@Override
+	/*@Override
 	public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
 	{
 		return BlockFaceShape.UNDEFINED;
 	}
-}
+}*/

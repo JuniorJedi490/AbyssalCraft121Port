@@ -14,12 +14,12 @@ package com.shinoow.abyssalcraft.client.gui;
 import com.shinoow.abyssalcraft.common.inventory.ContainerCrystalBag;
 import com.shinoow.abyssalcraft.common.inventory.InventoryCrystalBag;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.gui.inventory.GuiContainer;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiCrystalBag extends GuiContainer
+/*public class GuiCrystalBag extends GuiContainer
 {
 
 	private static final ResourceLocation iconLocation = new ResourceLocation("abyssalcraft:textures/gui/container/crystalbag.png");
@@ -64,4 +64,4 @@ public class GuiCrystalBag extends GuiContainer
 		drawTexturedModalRect(k, l, 0, 0, xSize, invRows * 18 + 17);
 		drawTexturedModalRect(k, l + invRows * 18 + 17, 0, 160, xSize, 96);
 	}
-}
+}*/

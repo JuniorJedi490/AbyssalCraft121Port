@@ -13,35 +13,35 @@ package com.shinoow.abyssalcraft.client.render.entity;
 
 import org.lwjgl.opengl.GL11;
 
-import com.shinoow.abyssalcraft.client.model.entity.ModelDragonBoss;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerAsorahDeath;
-import com.shinoow.abyssalcraft.client.render.entity.layers.LayerAsorahEyes;
+//import com.shinoow.abyssalcraft.client.model.entity.ModelDragonBoss;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerAsorahDeath;
+//import com.shinoow.abyssalcraft.client.render.entity.layers.LayerAsorahEyes;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonBoss;
 import com.shinoow.abyssalcraft.common.entity.EntityDragonMinion;
 
 import net.minecraft.client.renderer.*;
-import net.minecraft.client.renderer.GlStateManager.DestFactor;
-import net.minecraft.client.renderer.GlStateManager.SourceFactor;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+//import net.minecraft.client.renderer.GlStateManager.DestFactor;
+//import net.minecraft.client.renderer.GlStateManager.SourceFactor;
+//import net.minecraft.client.renderer.entity.RenderLiving;
+//import net.minecraft.client.renderer.entity.RenderManager;
+//import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+//import net.minecraft.util.ResourceLocation;
+//import net.minecraft.util.math.MathHelper;
+//import net.minecraftforge.fml.relauncher.Side;
+//import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
+/*@SideOnly(Side.CLIENT)
 public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 
 	/** Scale of the model to use */
-	private float scale = 1.5F;
+	/*private float scale = 1.5F;
 
 	private static final ResourceLocation field_110842_f = new ResourceLocation("abyssalcraft:textures/model/boss/dragonboss_exploding.png");
 	private static final ResourceLocation field_110843_g = new ResourceLocation("textures/entity/endercrystal/endercrystal_beam.png");
 	private static final ResourceLocation field_110844_k = new ResourceLocation("abyssalcraft:textures/model/boss/dragonboss.png");
 
 	/** An instance of the dragon model in RenderDragon */
-	protected ModelDragonBoss modelDragon;
+	/*protected ModelDragonBoss modelDragon;
 
 	public RenderDragonBoss(RenderManager manager)
 	{
@@ -54,7 +54,7 @@ public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 	/**
 	 * Applies the scale to the transform matrix
 	 */
-	protected void preRenderScale(EntityDragonBoss par1EntityDragonMinion, float par2)
+	/*protected void preRenderScale(EntityDragonBoss par1EntityDragonMinion, float par2)
 	{
 		GlStateManager.scale(scale, scale, scale);
 	}
@@ -62,7 +62,7 @@ public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 	/**
 	 * Used to rotate the dragon as a whole in RenderDragon. It's called in the rotateCorpse method.
 	 */
-	@Override
+	/*@Override
 	protected void applyRotations(EntityDragonBoss par1entitydragonboss, float par2, float par3, float par4)
 	{
 		float f3 = (float)par1entitydragonboss.getMovementOffsets(7, par4)[0];
@@ -86,7 +86,7 @@ public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 	/**
 	 * Renders the dragon model. Called by renderModel.
 	 */
-	@Override
+	/*@Override
 	protected void renderModel(EntityDragonBoss par1EntityDragonBoss, float par2, float par3, float par4, float par5, float par6, float par7)
 	{
 		if (par1EntityDragonBoss.deathTicks > 0)
@@ -121,7 +121,7 @@ public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 	/**
 	 * Renders the dragon, along with its dying animation
 	 */
-	@Override
+	/*@Override
 	public void doRender(EntityDragonBoss dragon, double par2, double par4, double par6, float par8, float par9)
 	{
 		//		BossStatus.setBossStatus(dragon, false);
@@ -176,7 +176,7 @@ public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 	 * Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args:
 	 * entityLiving, partialTickTime
 	 */
-	@Override
+	/*@Override
 	protected void preRenderCallback(EntityDragonBoss par1EntityLivingBase, float par2)
 	{
 		preRenderScale(par1EntityLivingBase, par2);
@@ -187,4 +187,4 @@ public class RenderDragonBoss extends RenderLiving<EntityDragonBoss> {
 	{
 		return func_110841_a(par1Entity);
 	}
-}
+}*/

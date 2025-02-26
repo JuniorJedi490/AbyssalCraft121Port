@@ -16,17 +16,17 @@ import java.util.Random;
 import com.shinoow.abyssalcraft.common.world.ChunkGeneratorAbyssalWasteland;
 import com.shinoow.abyssalcraft.lib.ACConfig;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.util.EnumParticleTypes;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
+//import net.minecraft.world.WorldServer;
 
-public class BlockPSDL extends Block {
+/*public class BlockPSDL extends Block {
 
 	public BlockPSDL()
 	{
@@ -70,4 +70,4 @@ public class BlockPSDL extends Block {
 
 		super.breakBlock(world, pos, state);
 	}
-}
+}*/

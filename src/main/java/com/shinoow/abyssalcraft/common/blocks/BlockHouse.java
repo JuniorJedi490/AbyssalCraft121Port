@@ -14,21 +14,21 @@ package com.shinoow.abyssalcraft.common.blocks;
 import com.shinoow.abyssalcraft.api.entity.EntityUtil;
 import com.shinoow.abyssalcraft.common.structures.StructureHouse;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+//import net.minecraft.block.Block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
+//import net.minecraft.block.state.IBlockState;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.init.Blocks;
+//import net.minecraft.util.EnumFacing;
+//import net.minecraft.util.EnumHand;
+//import net.minecraft.util.math.AxisAlignedBB;
+//import net.minecraft.util.math.BlockPos;
+//import net.minecraft.util.text.TextComponentString;
+//import net.minecraft.world.IBlockAccess;
+//import net.minecraft.world.World;
 
-public class BlockHouse extends Block {
+/*public class BlockHouse extends Block {
 
 	public BlockHouse() {
 		super(Material.WOOD);
@@ -116,4 +116,4 @@ public class BlockHouse extends Block {
 		}
 		return true;
 	}
-}
+}*/

@@ -14,11 +14,11 @@ package com.shinoow.abyssalcraft.common.blocks.tile;
 import com.shinoow.abyssalcraft.common.entity.EntityJzahar;
 import com.shinoow.abyssalcraft.lib.tileentity.TileEntitySingleMobSpawner;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
+//import net.minecraft.entity.EntityLiving;
+//import net.minecraft.entity.player.EntityPlayer;
+//import net.minecraft.world.World;
 
-public class TileEntityJzaharSpawner extends TileEntitySingleMobSpawner {
+/*public class TileEntityJzaharSpawner extends TileEntitySingleMobSpawner {
 
 	@Override
 	public int getActivationRange() {
@@ -38,4 +38,4 @@ public class TileEntityJzaharSpawner extends TileEntitySingleMobSpawner {
 
 		return player != null && !player.capabilities.isCreativeMode && player.posY >= pos.getY() - 1;
 	}
-}
+}*/

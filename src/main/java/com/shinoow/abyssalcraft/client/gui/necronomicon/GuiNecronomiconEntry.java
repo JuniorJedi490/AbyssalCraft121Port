@@ -15,7 +15,7 @@ import java.net.URL;
 
 import javax.imageio.ImageIO;
 
-import org.lwjgl.input.Keyboard;
+//import org.lwjgl.input.Keyboard;
 
 import com.shinoow.abyssalcraft.api.necronomicon.*;
 import com.shinoow.abyssalcraft.api.necronomicon.NecroData.Chapter;
@@ -24,17 +24,17 @@ import com.shinoow.abyssalcraft.client.gui.necronomicon.buttons.*;
 import com.shinoow.abyssalcraft.lib.NecronomiconResources;
 import com.shinoow.abyssalcraft.lib.NecronomiconText;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.GlStateManager.DestFactor;
-import net.minecraft.client.renderer.GlStateManager.SourceFactor;
+//import net.minecraft.client.gui.GuiButton;
+//import net.minecraft.client.gui.GuiScreen;
+//import net.minecraft.client.renderer.GlStateManager;
+//import net.minecraft.client.renderer.GlStateManager.DestFactor;
+//import net.minecraft.client.renderer.GlStateManager.SourceFactor;
 import net.minecraft.client.renderer.texture.DynamicTexture;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+//import net.minecraft.client.resources.I18n;
+//import net.minecraft.item.ItemStack;
+//import net.minecraft.util.ResourceLocation;
 
-public class GuiNecronomiconEntry extends GuiNecronomicon {
+/*public class GuiNecronomiconEntry extends GuiNecronomicon {
 
 	private ButtonNextPage buttonNextPage, buttonNextPageLong;
 	private ButtonNextPage buttonPreviousPage, buttonPreviousPageLong;
@@ -420,4 +420,4 @@ public class GuiNecronomiconEntry extends GuiNecronomicon {
 			if(data.hasText()) writeText(2, b ? unknownFull : data.getText(), b);
 		}
 	}
-}
+}*/
