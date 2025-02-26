@@ -16,22 +16,23 @@ import java.util.*;
 import com.shinoow.abyssalcraft.api.AbyssalCraftAPI;
 import com.shinoow.abyssalcraft.api.item.ACItems;
 
-//import net.minecraft.enchantment.EnchantmentHelper;
-//import net.minecraft.entity.EntityList;
-//import net.minecraft.entity.EntityLiving;
-//import net.minecraft.entity.EntityLivingBase;
-//import net.minecraft.entity.passive.*;
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.init.Blocks;
-//import net.minecraft.init.Items;
-//import net.minecraft.inventory.EntityEquipmentSlot;
-//import net.minecraft.item.Item;
-//import net.minecraft.item.ItemStack;
-//import net.minecraft.launchwrapper.Launch;
-//import net.minecraft.potion.Potion;
-//import net.minecraft.util.DamageSource;
-//import net.minecraft.util.ResourceLocation;
-//import net.minecraft.util.math.Vec3d;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.passive.*;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.launchwrapper.Launch;
+import net.minecraft.potion.Potion;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 
 /**
  * Utility class for handling things regarding entities.<br>
@@ -269,6 +270,43 @@ public final class EntityUtil {
 		}
 	}*/
 
+	/**
+	 * Lights the EntityLiving in question on fire if it's day and they don't have cover
+	 */
+	public static void burnFromSunlight(EntityLiving entity) {
+		if (entity.getEntityWorld().isDaytime() && !entity.getEntityWorld().isRemote && !entity.isChild())
+		{
+			float brightness = entity.getBrightness();
+
+			if (brightness > 0.5F && entity.getEntityWorld().rand.nextFloat() * 30.0F < (brightness - 0.4F) * 2.0F &&
+					entity.getEntityWorld().canSeeSky(new BlockPos(entity.posX, entity.posY + entity.getEyeHeight(), entity.posZ)))
+			{
+				boolean noHelmet = true;
+				ItemStack itemstack = entity.getItemStackFromSlot(EntityEquipmentSlot.HEAD);
+
+				if (!itemstack.isEmpty())
+				{
+					if (itemstack.isItemStackDamageable())
+					{
+						itemstack.setItemDamage(itemstack.getItemDamage() + entity.getEntityWorld().rand.nextInt(2));
+
+						if (itemstack.getItemDamage() >= itemstack.getMaxDamage())
+						{
+							entity.renderBrokenItemStack(itemstack);
+							entity.setItemStackToSlot(EntityEquipmentSlot.HEAD, ItemStack.EMPTY);
+						}
+					}
+
+					noHelmet = false;
+				}
+
+				if (noHelmet)
+					entity.setFire(8);
+
+			}
+		}
+	}
+	
 	/**
 	 * Adds the entity to a list of entities considered immune to the Dread Plague
 	 * @param entity Entity ID string
